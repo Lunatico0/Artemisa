@@ -3,7 +3,7 @@
         "id": 1,
         "nombre": "Camiseta Deportiva",
         "precio": 19.99,
-        "imagen": "https://placeholder.pics/svg/150",
+        "imagen": "https://placeholder.pics/svg/700x500",
         "descripcion": "Camiseta ligera y transpirable, perfecta para hacer ejercicio.",
         "categoria": {
             "id": "deportes",
@@ -14,7 +14,7 @@
         "id": 2,
         "nombre": "Zapatillas de Running",
         "precio": 49.99,
-        "imagen": "https://placeholder.pics/svg/150",
+        "imagen": "https://placeholder.pics/svg/700x500",
         "descripcion": "Zapatillas con amortiguación avanzada para largas distancias.",
         "categoria": {
             "id": "deportes",
@@ -25,7 +25,7 @@
         "id": 3,
         "nombre": "Mochila Escolar",
         "precio": 24.99,
-        "imagen": "https://placeholder.pics/svg/150",
+        "imagen": "https://placeholder.pics/svg/700x500",
         "descripcion": "Mochila resistente y espaciosa, ideal para el día a día escolar.",
         "categoria": {
             "id": "accesorios",
@@ -36,7 +36,7 @@
         "id": 4,
         "nombre": "Auriculares Bluetooth",
         "precio": 29.99,
-        "imagen": "https://placeholder.pics/svg/150",
+        "imagen": "https://placeholder.pics/svg/700x500",
         "descripcion": "Auriculares inalámbricos con sonido de alta calidad y batería de larga duración.",
         "categoria": {
             "id": "electronica",
@@ -47,7 +47,7 @@
         "id": 5,
         "nombre": "Reloj Inteligente",
         "precio": 79.99,
-        "imagen": "https://placeholder.pics/svg/150",
+        "imagen": "https://placeholder.pics/svg/700x500",
         "descripcion": "Reloj con monitoreo de salud y notificaciones inteligentes.",
         "categoria": {
             "id": "electronica",
@@ -58,7 +58,7 @@
         "id": 6,
         "nombre": "Gafas de Sol",
         "precio": 15.99,
-        "imagen": "https://placeholder.pics/svg/150",
+        "imagen": "https://placeholder.pics/svg/700x500",
         "descripcion": "Gafas con protección UV y diseño moderno.",
         "categoria": {
             "id": "accesorios",
@@ -69,7 +69,7 @@
         "id": 7,
         "nombre": "Pantalones Deportivos",
         "precio": 29.99,
-        "imagen": "https://placeholder.pics/svg/150",
+        "imagen": "https://placeholder.pics/svg/700x500",
         "descripcion": "Pantalones cómodos y elásticos, perfectos para actividades deportivas.",
         "categoria": {
             "id": "deportes",
@@ -80,7 +80,7 @@
         "id": 8,
         "nombre": "Botines de Fútbol",
         "precio": 59.99,
-        "imagen": "https://placeholder.pics/svg/150",
+        "imagen": "https://placeholder.pics/svg/700x500",
         "descripcion": "Botines con tacos, diseñados para un mejor agarre en el campo de fútbol.",
         "categoria": {
             "id": "deportes",
@@ -91,7 +91,7 @@
         "id": 9,
         "nombre": "Cinturón de Cuero",
         "precio": 19.99,
-        "imagen": "https://placeholder.pics/svg/150",
+        "imagen": "https://placeholder.pics/svg/700x500",
         "descripcion": "Cinturón de cuero genuino, ideal para uso diario.",
         "categoria": {
             "id": "accesorios",
@@ -102,7 +102,7 @@
         "id": 10,
         "nombre": "Tablet",
         "precio": 199.99,
-        "imagen": "https://placeholder.pics/svg/150",
+        "imagen": "https://placeholder.pics/svg/700x500",
         "descripcion": "Tablet con pantalla HD y gran capacidad de almacenamiento.",
         "categoria": {
             "id": "electronica",
