@@ -1,0 +1,14 @@
+[
+    {
+        "id": "deportes",
+        "nombre": "Deportes"
+    },
+    {
+        "id": "accesorios",
+        "nombre": "Accesorios"
+    },
+    {
+        "id": "electronica",
+        "nombre": "Electrónica"
+    }
+]

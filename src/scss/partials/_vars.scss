@@ -1,0 +1,33 @@
+$titulos: Arial, Helvetica, sans-serif;
+$fondo-body: #212121;
+$color-Hover: #7a6e6e75;
+$background-h1: #333;
+$cTexto: #c9c9c9;
+$carritoItem: #c0c0c0;
+$primario: #67d2da;
+$secundario: #1c1211;
+$acento: #3dd1ff;
+
+$textoLogo: #beb594;
+$ascent: #6e6653;
+
+$backgroundDark: #100e10;
+$textLight: #fcfcfc;
+$textDark: #100e10;
+$backgroundLight: #fcfcfc;
+$primary: #8e7290;
+$secondary: #bea9c0;
+$accent: #ac8caf;
+
+$shadowHeader: 0px 5px 10px rgba(0, 0, 0, .5);
+$dFlex: flex;
+$justifyAlign: center;
+$maxWidth: 1200px;
+$minWidth: 910px;
+$headerHeight: 6rem;
+$generalWidth: 70%;
+
+@media (prefers-color-scheme: dark ) {
+    $backgroundLight: $backgroundDark;
+    $textLight: $textDark
+}
