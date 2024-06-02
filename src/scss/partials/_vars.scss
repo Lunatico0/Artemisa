@@ -27,7 +27,7 @@ $minWidth: 910px;
 $headerHeight: 6rem;
 $generalWidth: 70%;
 
-@media (prefers-color-scheme: dark ) {
-    $backgroundLight: $backgroundDark;
-    $textLight: $textDark
+@media (prefers-color-scheme: dark) {
+  $backgroundLight: $backgroundDark;
+  $textLight: $textDark
 }

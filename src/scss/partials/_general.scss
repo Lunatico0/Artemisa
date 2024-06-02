@@ -1,95 +1,98 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    transition: 0.3s cubic-bezier(0, .49, .48, 1);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 0.3s cubic-bezier(0, .49, .48, 1);
 }
 
 .generalCont {
+  background-color: $backgroundLight;
+
+  .container {
     background-color: $backgroundLight;
-    .container {
-        background-color: $backgroundLight;
-        color: $textDark;
-        height: 100vh;
-        min-width: $minWidth;
-        width: $generalWidth;
-        margin: 0 auto;
+    color: $textDark;
+    height: 100vh;
+    min-width: $minWidth;
+    width: $generalWidth;
+    margin: 0 auto;
 
-        @media (max-width: 1300px) {
-            width: 100%;
-        }
-
-        .contenido {
-            width: 100%;
-        }
+    @media (max-width: 1300px) {
+      width: 100%;
     }
+
+    .contenido {
+      width: 100%;
+    }
+  }
 }
 
 .notFound {
-    background-color: $backgroundLight;
-    padding-top: calc($headerHeight + 1.5rem);
-    min-height: 100vh;
+  background-color: $backgroundLight;
+  padding-top: calc($headerHeight + 1.5rem);
+  min-height: 100vh;
 }
 
 .pokemones {
-    padding-top: 6rem;
-    display: flex;
-    flex: 10;
-    gap: 2rem;
+  padding-top: 6rem;
+  display: flex;
+  flex: 10;
+  gap: 2rem;
 }
 
 .active {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .oscuro {
 
-    .generalCont {
-        background-color: $backgroundDark;
-        color: $textLight;
-        .container {
-            .contenido {
-                .notFound {
-                    background-color: $backgroundDark;
-                    color: $textLight;
-                }
-            }
-        }
-    }
-
+  .generalCont {
     background-color: $backgroundDark;
     color: $textLight;
 
-    .itemListContainer {
-        background-color: $backgroundDark;
-        color: $textLight;
-        .itemDetail{
-            .itemDetailAside{
-                border: 1px solid #d8d8d8d8;
-            }
+    .container {
+      .contenido {
+        .notFound {
+          background-color: $backgroundDark;
+          color: $textLight;
         }
+      }
+    }
+  }
+
+  background-color: $backgroundDark;
+  color: $textLight;
+
+  .itemListContainer {
+    background-color: $backgroundDark;
+    color: $textLight;
+
+    .itemDetail {
+      .itemDetailAside {
+        border: 1px solid #d8d8d8d8;
+      }
+    }
+  }
+
+  .header {
+    background-color: $backgroundDark;
+    color: $textLight;
+
+    .carrito {
+      a {
+        color: $textLight;
+      }
     }
 
-    .header {
-        background-color: $backgroundDark;
-        color: $textLight;
-
-        .carrito {
-            a {
-                color: $textLight;
+    .headerCont {
+      .nav {
+        .navMenu {
+          .navItem {
+            .navLink {
+              color: $textLight;
             }
+          }
         }
-
-        .headerCont {
-            .nav {
-                .navMenu {
-                    .navItem {
-                        .navLink {
-                            color: $textLight;
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
+  }
 }

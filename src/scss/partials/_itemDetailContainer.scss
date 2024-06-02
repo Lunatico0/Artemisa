@@ -1,64 +1,64 @@
 .itemDetail {
-    position: relative;
-    z-index: 1;
-    display: flex;
+  position: relative;
+  z-index: 1;
+  display: flex;
 
-    .itemDetailInfo {
-        width: 60%;
+  .itemDetailInfo {
+    width: 60%;
 
-        .infoImagen {
-            aspect-ratio: 7/5;
-            max-width: 700px;
-            max-height: 500px;
-            width: 80%;
-            padding: 2rem;
-            display: flex;
-            margin: 0 auto;
-        }
-
-        .infoDescripcion{
-            font-size: 18px;
-        }
-
+    .infoImagen {
+      aspect-ratio: 7/5;
+      max-width: 700px;
+      max-height: 500px;
+      width: 80%;
+      padding: 2rem;
+      display: flex;
+      margin: 0 auto;
     }
 
-    .itemDetailAside {
-        display: grid;
-        grid-template-rows: repeat(3, 1fr);
-        gap: 3rem;
-        width: 40%;
-        justify-items: center ;
-        align-items: center;
-        border: 1px solid #0000009c;
-        border-radius: .5rem;
-
-        .detailPrecio{
-            align-self: flex-end;
-            font-size: 24px;
-            text-transform: uppercase;
-            font-weight: 700;
-        }
-
-        .detailNombre {
-            text-transform: uppercase;
-        }
-
-        .botones {
-            align-self: center;
-            width: 90%;
-            padding: 0.5rem 1rem;
-            background-color: $primary;
-            color: $textLight;
-            text-transform: uppercase;
-            border-radius: .3rem;
-            cursor: pointer;
-            border: 2px solid $primary;
-            transition: background-color 0.3s ease, color 0.3s ease;
-
-            &:hover {
-                background-color: $secondary;
-                color: $textDark;
-            }
-        }
+    .infoDescripcion {
+      font-size: 18px;
     }
+
+  }
+
+  .itemDetailAside {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 3rem;
+    width: 40%;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid #0000009c;
+    border-radius: .5rem;
+
+    .detailPrecio {
+      align-self: flex-end;
+      font-size: 24px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .detailNombre {
+      text-transform: uppercase;
+    }
+
+    .botones {
+      align-self: center;
+      width: 90%;
+      padding: 0.5rem 1rem;
+      background-color: $primary;
+      color: $textLight;
+      text-transform: uppercase;
+      border-radius: .3rem;
+      cursor: pointer;
+      border: 2px solid $primary;
+      transition: background-color 0.3s ease, color 0.3s ease;
+
+      &:hover {
+        background-color: $secondary;
+        color: $textDark;
+      }
+    }
+  }
 }
