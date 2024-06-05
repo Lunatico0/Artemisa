@@ -1,7 +1,7 @@
 import React from 'react'
 import NavBar from './NavBar'
-import Carrito from './Carrito'
 import { NavLink } from 'react-router-dom'
+import CartWidget from './CartWidget'
 
 const Header = (props) => {
 
@@ -10,7 +10,7 @@ const Header = (props) => {
       <div className='headerCont'>
         <NavBar />
         <NavLink to="/" className='brand' ><h1 className='logo'>ARTEMISA</h1></NavLink>
-        <Carrito cantidad="3" darkMode={props.darkMode} setDarkMode={props.setDarkMode} />
+        <CartWidget cantidad="3" darkMode={props.darkMode} setDarkMode={props.setDarkMode} />
       </div>
     </header>
   )

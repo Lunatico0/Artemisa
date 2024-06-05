@@ -40,7 +40,7 @@ const Item = ({ producto }) => {
   const descripcionRef = useRef(null);
   const [descripcionTruncada, setDescripcionTruncada] = useState(producto.descripcion);
 
-  const agregarItem = (e) => {
+  const handleAgregarItem = (e) => {
     console.log(e.currentTarget.id);
   };
 
@@ -61,7 +61,7 @@ const Item = ({ producto }) => {
           <p className='itemDetallesDescripcion' ref={descripcionRef}>{descripcionTruncada}</p>
           <p className='itemDetallesPrecio'>${producto.precio}</p>
         </div>
-        <button onClick={agregarItem} className="botones agregarProducto" id={producto.id}>Agregar</button>
+        <button onClick={handleAgregarItem} className="botones agregarProducto" id={producto.id}>Agregar</button>
       </div>
     </div>
   );

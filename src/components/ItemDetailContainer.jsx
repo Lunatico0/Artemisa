@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useParams } from 'react-router-dom';
 import data from '../data/productos.json';
 
 const ItemDetailContainer = () => {
+  const { carrito, setCarrito } = useContext();
   const { id } = useParams();
   const producto = data.find(item => item.id.toString() === id);
 
@@ -32,6 +33,7 @@ const ItemDetailContainer = () => {
           <button onClick={agregarItem} className="botones agregarProducto detailAgregar" id={producto.id}>Agregar</button>
         </div>
       </div>
+      {/* <Item key={producto.id} producto={producto} /> alternativa para reutilizar Item */}
     </div>
   )
 }

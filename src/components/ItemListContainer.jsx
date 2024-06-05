@@ -6,7 +6,7 @@ import data from '../data/productos.json';
 import categorias from '../data/category.json';
 import Item from './Item';
 
-const ItemListContainer = (props) => {
+const ItemListContainer = () => {
   const [productos, setProductos] = useState([]);
   const [titulo, setTitulo] = useState("Productos");
   const { categoryId } = useParams();
@@ -36,7 +36,7 @@ const ItemListContainer = (props) => {
       <h1 className='tituloProductos'>{titulo}</h1>
       <div className="carruselContainer">
         <div className="backgroundBanner">
-          
+
         </div>
       </div>
 
