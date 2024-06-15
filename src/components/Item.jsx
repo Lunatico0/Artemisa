@@ -1,5 +1,6 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { CartContext } from '../context/CartContext';
 
 //* Truncar descripcion de cada item despues de 2 lineas segun el ancho del container
 const truncateText = (text, lines, containerRef) => {
@@ -35,14 +36,13 @@ const truncateText = (text, lines, containerRef) => {
   return text;
 };
 
-const Item = ({ producto }) => {
+const Item = ( { producto } ) => {
   const navigate = useNavigate();
   const descripcionRef = useRef(null);
   const [descripcionTruncada, setDescripcionTruncada] = useState(producto.descripcion);
 
-  const handleAgregarItem = (e) => {
-    console.log(e.currentTarget.id);
-  };
+  const { carrito, setCarrito } = useContext(CartContext)
+
 
   const itemDetalles = (e) => {
     navigate(`/item/${e.currentTarget.id}`);
@@ -59,9 +59,9 @@ const Item = ({ producto }) => {
         <div className='detalles' onClick={itemDetalles} id={producto.id}>
           <h2 className='itemDetallesNombre' >{producto.nombre}</h2>
           <p className='itemDetallesDescripcion' ref={descripcionRef}>{descripcionTruncada}</p>
-          <p className='itemDetallesPrecio'>${producto.precio}</p>
+          <p className='itemDetallesPrecio'>u$s{producto.precio}</p>
         </div>
-        <button onClick={handleAgregarItem} className="botones agregarProducto" id={producto.id}>Agregar</button>
+        <button onClick={() => setCarrito([...carrito, producto])} className="botones agregarProducto" id={producto.id}>Agregar</button>
       </div>
     </div>
   );

@@ -3,13 +3,21 @@
   margin: 0;
   box-sizing: border-box;
   transition: 0.3s cubic-bezier(0, .49, .48, 1);
+  font-family: $titulos;
+}
+
+html {
+  background-color: $backgroundLight;
+  // background-image: url(/src/assets/background/craiyon_184442_black_and_gold_wooden_texture.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .generalCont {
-  background-color: $backgroundLight;
 
   .container {
-    background-color: $backgroundLight;
     color: $textDark;
     height: 100vh;
     min-width: $minWidth;
@@ -39,12 +47,26 @@
   gap: 2rem;
 }
 
+.carro{
+  margin-block: 10rem;
+  .form{
+    margin-block: 10rem;
+  }
+}
+
 .active {
   font-weight: bold;
 }
 
 .oscuro {
 
+  .mainContainer{
+    .sliderContainer{
+      .arrows{
+        color: $textLight;
+      }
+    }
+  }
   .generalCont {
     background-color: $backgroundDark;
     color: $textLight;
@@ -63,8 +85,14 @@
   color: $textLight;
 
   .itemListContainer {
-    background-color: $backgroundDark;
     color: $textLight;
+
+    .tituloProductos {
+      color: $textLight;
+      .navLink {
+        color: $textLight;
+      }
+    }
 
     .itemDetail {
       .itemDetailAside {
@@ -90,9 +118,73 @@
             .navLink {
               color: $textLight;
             }
+
+            .subMenu {
+              background-color: $backgroundDark;
+              .subNavItem{
+                .subNavLink{
+                  color: $textLight;
+                  &:hover{
+                    background-color: rgba($backgroundLight, .3);
+                  }
+                }
+              }
+            }
           }
         }
       }
     }
+  }
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .footer-section {
+      margin: 10px;
+      flex: 1;
+
+      h2 {
+        margin-bottom: 10px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin: 5px 0;
+
+          a {
+            color: white;
+            text-decoration: none;
+          }
+        }
+      }
+
+      .socials {
+        a {
+          color: white;
+          margin: 0 5px;
+          text-decoration: none;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    margin-top: 20px;
   }
 }

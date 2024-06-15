@@ -1,15 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   transition: 0.3s cubic-bezier(0, 0.49, 0.48, 1);
+  font-family: "Josefin Sans", sans-serif;
 }
 
-.generalCont {
+html {
   background-color: #fcfcfc;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
+
 .generalCont .container {
-  background-color: #fcfcfc;
   color: #100e10;
   height: 100vh;
   min-width: 910px;
@@ -38,12 +44,22 @@
   gap: 2rem;
 }
 
+.carro {
+  margin-block: 10rem;
+}
+.carro .form {
+  margin-block: 10rem;
+}
+
 .active {
   font-weight: bold;
 }
 
 .oscuro {
   background-color: #100e10;
+  color: #fcfcfc;
+}
+.oscuro .mainContainer .sliderContainer .arrows {
   color: #fcfcfc;
 }
 .oscuro .generalCont {
@@ -55,7 +71,12 @@
   color: #fcfcfc;
 }
 .oscuro .itemListContainer {
-  background-color: #100e10;
+  color: #fcfcfc;
+}
+.oscuro .itemListContainer .tituloProductos {
+  color: #fcfcfc;
+}
+.oscuro .itemListContainer .tituloProductos .navLink {
   color: #fcfcfc;
 }
 .oscuro .itemListContainer .itemDetail .itemDetailAside {
@@ -70,6 +91,120 @@
 }
 .oscuro .header .headerCont .nav .navMenu .navItem .navLink {
   color: #fcfcfc;
+}
+.oscuro .header .headerCont .nav .navMenu .navItem .subMenu {
+  background-color: #100e10;
+}
+.oscuro .header .headerCont .nav .navMenu .navItem .subMenu .subNavItem .subNavLink {
+  color: #fcfcfc;
+}
+.oscuro .header .headerCont .nav .navMenu .navItem .subMenu .subNavItem .subNavLink:hover {
+  background-color: rgba(252, 252, 252, 0.3);
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+footer .footer-content .footer-section {
+  margin: 10px;
+  flex: 1;
+}
+footer .footer-content .footer-section h2 {
+  margin-bottom: 10px;
+}
+footer .footer-content .footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+footer .footer-content .footer-section ul li {
+  margin: 5px 0;
+}
+footer .footer-content .footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+footer .footer-content .footer-section .socials a {
+  color: white;
+  margin: 0 5px;
+  text-decoration: none;
+  font-size: 18px;
+}
+footer .footer-bottom {
+  margin-top: 20px;
+}
+
+.mainContainer {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  padding-top: 9rem;
+  z-index: 1;
+}
+.mainContainer .sliderContainer {
+  position: relative;
+  height: 100%;
+}
+.mainContainer .sliderContainer .arrows {
+  color: #100e10;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 50px;
+  font-weight: 700;
+  z-index: 1;
+  cursor: pointer;
+}
+.mainContainer .sliderContainer .leftArrow {
+  left: 32px;
+}
+.mainContainer .sliderContainer .rightArrow {
+  right: 32px;
+}
+.mainContainer .sliderContainer .containerImages {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: 1px solid #eee;
+  overflow: hidden;
+}
+.mainContainer .sliderContainer .containerImages .lista,
+.mainContainer .sliderContainer .containerImages .listaItem {
+  list-style: none;
+  white-space: nowrap;
+}
+.mainContainer .sliderContainer .containerImages .lista .listaItem {
+  display: inline;
+}
+.mainContainer .sliderContainer .containerImages .lista .listaItem .img {
+  display: block;
+  margin: 0 auto;
+}
+.mainContainer .sliderContainer .dotsContainer {
+  display: flex;
+  justify-content: center;
+}
+.mainContainer .sliderContainer .dotsContainer .dotContainerItem {
+  margin: 8px 3px;
+  cursor: pointer;
+}
+.mainContainer .sliderContainer .dotsContainer .dotContainerItem .imgDot {
+  aspect-ratio: 4/3;
+  width: 3rem;
+  border-radius: 25%;
+}
+.mainContainer .sliderContainer .dotsContainer .active, .mainContainer .sliderContainer .dotsContainer .active .imgDot {
+  width: 4rem;
 }
 
 .header {
@@ -105,15 +240,11 @@
   align-items: center;
 }
 .header .headerCont .brand .logo {
+  font-family: "Times New Roman", Times, serif;
   display: flex;
-  color: #beb594;
+  color: #cda151;
   justify-content: center;
   align-items: center;
-}
-.header .headerCont .nav {
-  display: flex;
-  align-items: center;
-  margin-left: 3rem;
 }
 .header .headerCont .nav .navMenu {
   display: flex;
@@ -122,10 +253,39 @@
 }
 .header .headerCont .nav .navMenu .navItem {
   list-style: none;
+  position: relative;
 }
 .header .headerCont .nav .navMenu .navItem .navLink {
   text-decoration: none;
   color: #100e10;
+  padding: 1rem;
+  display: block;
+}
+.header .headerCont .nav .navMenu .navItem .subMenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fcfcfc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.header .headerCont .nav .navMenu .navItem .subMenu .subNavItem {
+  list-style: none;
+}
+.header .headerCont .nav .navMenu .navItem .subMenu .subNavItem .subNavLink {
+  text-decoration: none;
+  color: #100e10;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+.header .headerCont .nav .navMenu .navItem .subMenu .subNavItem .subNavLink:hover {
+  border-radius: 0.5rem;
+  background-color: rgba(16, 14, 16, 0.5);
+}
+.header .headerCont .nav .navMenu .navItem:hover .subMenu {
+  display: block;
 }
 .header .carrito {
   display: flex;
@@ -149,7 +309,7 @@
   content: " ";
   position: absolute;
   display: block;
-  background-color: rgba(190, 181, 148, 0.8);
+  background-color: #cda151;
   border-radius: 50%;
   height: 10px;
   width: 10px;
@@ -233,8 +393,7 @@
 }
 
 .itemListContainer {
-  padding-top: 7.5rem;
-  background-color: #fcfcfc;
+  padding-top: 8rem;
   color: #100e10;
   min-height: 100vh;
   padding-inline: 0.5rem;
@@ -244,6 +403,14 @@
   position: relative;
   z-index: 1;
   margin-bottom: 2rem;
+  font-size: 20px;
+}
+.itemListContainer .tituloProductos .navLink {
+  text-decoration: none;
+  color: #100e10;
+}
+.itemListContainer .tituloProductos .navLink:hover {
+  text-decoration: underline;
 }
 .itemListContainer .carruselContainer .backgroundBanner {
   position: fixed;
@@ -314,7 +481,7 @@
   cursor: pointer;
 }
 .itemListContainer .productos .item .itemDetalles {
-  background-color: rgba(142, 114, 144, 0.9);
+  background-color: #8e7290;
   border-radius: 0.5rem;
   margin-top: -1.5rem;
   padding: 1rem;
@@ -322,7 +489,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-image: url("/src/images/layered-waves-haikei.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

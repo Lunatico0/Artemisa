@@ -1,6 +1,5 @@
 .itemListContainer {
-  padding-top: calc($headerHeight + 1.5rem);
-  background-color: $backgroundLight;
+  padding-top: calc($headerHeight + 2rem);
   color: $textDark;
   min-height: 100vh;
   padding-inline: .5rem;
@@ -10,9 +9,20 @@
     position: relative;
     z-index: 1;
     margin-bottom: 2rem;
+    font-size: 20px;
+
+    .navLink {
+      text-decoration: none;
+      color: $textDark;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   .carruselContainer {
+
     .backgroundBanner {
       position: fixed;
       background-color: $secondary;
@@ -84,9 +94,8 @@
         cursor: pointer;
       }
 
-
       .itemDetalles {
-        background-color: rgba($primary, 0.9);
+        background-color: $primary;
         border-radius: .5rem;
         margin-top: -1.5rem;
         padding: 1rem;
@@ -94,7 +103,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-image: url('/src/images/layered-waves-haikei.png');
+        // background-image: url('/src/images/layered-waves-haikei.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -132,11 +141,7 @@
             color: $textLight;
           }
         }
-
-
-
       }
-
     }
   }
 }
