@@ -1,0 +1,3376 @@
+[
+  {
+    "id": "03C208SU0102218",
+    "descripcion": "Piso Flotante Melamínico Troy D2218 AC3 8mm",
+    "descripcionAlterna": "8mm x 159mm x 1380mm",
+    "precio": 14.66,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico",
+        "subcategoriaNombre": "Flotante Melaminico"
+      }
+    }
+  },
+  {
+    "id": "03C210SU0102431",
+    "descripcion": "Piso Flotante Melamínico Roble Cavallo D2431 AC4 10mm",
+    "descripcionAlterna": "10mm x 159mm x 1380m",
+    "precio": 19.49,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico",
+        "subcategoriaNombre": "Flotante Melaminico"
+      }
+    }
+  },
+  {
+    "id": "03C210SU0102439",
+    "descripcion": "Piso Flotante Melamínico Chocolate D2439 AC4 10mm",
+    "descripcionAlterna": "10mm x 159mm x 1380m",
+    "precio": 19.49,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico",
+        "subcategoriaNombre": "Flotante Melaminico"
+      }
+    }
+  },
+  {
+    "id": "03C210SU0202307",
+    "descripcion": "Piso Flotante Melamínico Pino Boathouse D2307 AC4 10mm",
+    "descripcionAlterna": "10mm x 116mm x 1380m",
+    "precio": 19.49,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico",
+        "subcategoriaNombre": "Flotante Melaminico"
+      }
+    }
+  },
+  {
+    "id": "03C210SU0202469",
+    "descripcion": "Piso Flotante Melamínico Roble Red Canyon D2469 AC4 10mm",
+    "descripcionAlterna": "10mm x 116mm x 1380m",
+    "precio": 19.49,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico",
+        "subcategoriaNombre": "Flotante Melaminico"
+      }
+    }
+  },
+  {
+    "id": "03C210SU0202838",
+    "descripcion": "Piso Flotante Melamínico Cerezo Historic Canyon D2838 AC4 10mm",
+    "descripcionAlterna": "10mm x 116mm x 1380m",
+    "precio": 19.49,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico",
+        "subcategoriaNombre": "Flotante Melaminico"
+      }
+    }
+  },
+  {
+    "id": "03C210SU0402413",
+    "descripcion": "Piso Flotante Melamínico Roble Cal D2413 AC4 10mm",
+    "descripcionAlterna": "10mm x 244mm x 1845m",
+    "precio": 19.49,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico",
+        "subcategoriaNombre": "Flotante Melaminico"
+      }
+    }
+  },
+  {
+    "id": "03C210SU0404932",
+    "descripcion": "Piso Flotante Melamínico Gris Natural D4932 AC4 10mm",
+    "descripcionAlterna": "10mm x 244mm x 1845m",
+    "precio": 19.49,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico",
+        "subcategoriaNombre": "Flotante Melaminico"
+      }
+    }
+  },
+  {
+    "id": "03C212SU0203726",
+    "descripcion": "Piso Flotante Melamínico Roble Jugfrau D3726 AC5 12mm",
+    "descripcionAlterna": "12mm x 244mm x 2025m",
+    "precio": 20.67,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico",
+        "subcategoriaNombre": "Flotante Melaminico"
+      }
+    }
+  },
+  {
+    "id": "03C212SU0203729",
+    "descripcion": "Piso Flotante Melamínico Roble Matterhorn D3729 AC5 12mm",
+    "descripcionAlterna": "12mm x 244mm x 2025m",
+    "precio": 20.67,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico",
+        "subcategoriaNombre": "Flotante Melaminico"
+      }
+    }
+  },
+  {
+    "id": "03C212SU0203730",
+    "descripcion": "Piso Flotante Melamínico Roble Pilatus D3730 AC5 12mm",
+    "descripcionAlterna": "12mm x 244mm x 2025m",
+    "precio": 20.67,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico",
+        "subcategoriaNombre": "Flotante Melaminico"
+      }
+    }
+  },
+  {
+    "id": "03FLGLBS1451713",
+    "descripcion": "Piso de Madera Estructurado Roble Blanco Apalache 1 Lama Super Mate F2 14mm",
+    "descripcionAlterna": "14/0,6",
+    "precio": 62.50,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "madera-estructurado",
+        "subcategoriaNombre": "Madera Estructurado"
+      }
+    }
+  },
+  {
+    "id": "03FLGLFR1412421",
+    "descripcion": "Piso de Madera Estructurado Fresno 2 Lamas Oil 14mm",
+    "descripcionAlterna": "14/3,2x200x2180mm",
+    "precio": 62.50,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "madera-estructurado",
+        "subcategoriaNombre": "Madera Estructurado"
+      }
+    }
+  },
+  {
+    "id": "03FLGLRN1451413",
+    "descripcion": "Piso de Madera Estructurado Roble Antique 1 Lama Super Mate 14mm",
+    "descripcionAlterna": "14/0.6x 170 x 2140mm",
+    "precio": 62.50,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "madera-estructurado",
+        "subcategoriaNombre": "Madera Estructurado"
+      }
+    }
+  },
+  {
+    "id": "03FLGLRO1443122",
+    "descripcion": "Piso de Madera Estructurado Roble Rústico 3 Lamas Satinado 14mm",
+    "descripcionAlterna": "14/3,2mmx198mmx2180",
+    "precio": 66.15,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "madera-estructurado",
+        "subcategoriaNombre": "Madera Estructurado"
+      }
+    }
+  },
+  {
+    "id": "03FLGLRO1451412",
+    "descripcion": "Piso de Madera Estructurado Roble Rústico 1 Lama Super Mate 14mm",
+    "descripcionAlterna": "14/3,2x145x2180mm",
+    "precio": 99.23,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "madera-estructurado",
+        "subcategoriaNombre": "Madera Estructurado"
+      }
+    }
+  },
+  {
+    "id": "03FLGLRO1L10SMW",
+    "descripcion": "Piso de Madera Estructurado Roble Whisky 1 Lama Super Mate 10mm",
+    "descripcionAlterna": "10/2.2x145x1200mm",
+    "precio": 51.75,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "madera-estructurado",
+        "subcategoriaNombre": "Madera Estructurado"
+      }
+    }
+  },
+  {
+    "id": "03FLGLRO1L13SME",
+    "descripcion": "Piso de Madera Estructurado Roble Rústico 1 Lama Super Mate 13mm - 145mm x 1980mm",
+    "descripcionAlterna": "13/3.2X145x1980mm",
+    "precio": 92.61,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "madera-estructurado",
+        "subcategoriaNombre": "Madera Estructurado"
+      }
+    }
+  },
+  {
+    "id": "03FLMTCU1201131",
+    "descripcion": "Piso de Madera Estructurado Cumaru 1 Lama Satinado 12mm",
+    "descripcionAlterna": "12/3 x 131mm x LsVs",
+    "precio": 112.46,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "madera-estructurado",
+        "subcategoriaNombre": "Madera Estructurado"
+      }
+    }
+  },
+  {
+    "id": "03FLMTJA1201131",
+    "descripcion": "Piso de Madera Estructurado Jatoba 1 Lama Satinado 12mm",
+    "descripcionAlterna": "12/3 x 131mm x LsVs",
+    "precio": 112.46,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "madera-estructurado",
+        "subcategoriaNombre": "Madera Estructurado"
+      }
+    }
+  },
+  {
+    "id": "03FLMTLA1201131",
+    "descripcion": "Piso de Madera Estructurado Lapacho 1 Lama Satinado 12mm",
+    "descripcionAlterna": "12/3 x 131mm x LsVs",
+    "precio": 112.46,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "madera-estructurado",
+        "subcategoriaNombre": "Madera Estructurado"
+      }
+    }
+  },
+  {
+    "id": "03PFCHBS1413201",
+    "descripcion": "Piso de Madera Maciza Bamboo Strand Woven Carbonizado 14mm",
+    "descripcionAlterna": "14mm x 137mm x 1850m",
+    "precio": 65.49,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "madera-maciza",
+        "subcategoriaNombre": "Madera Maciza"
+      }
+    }
+  },
+  {
+    "id": "03PFCHBS1413211",
+    "descripcion": "Piso de Madera Maciza Bamboo Strand Woven Natural 14mm",
+    "descripcionAlterna": "14mm x 137mm x 1850m",
+    "precio": 65.49,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "madera-maciza",
+        "subcategoriaNombre": "Madera Maciza"
+      }
+    }
+  },
+  {
+    "id": "03TGGRRA05119LV",
+    "descripcion": "Piso de Madera Maciza Entablonado Roble Americano Seleccionado 19mm",
+    "descripcionAlterna": "19mm x 5\" x largos v",
+    "precio": 145.53,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "madera-maciza",
+        "subcategoriaNombre": "Madera Maciza"
+      }
+    }
+  },
+  {
+    "id": "03UFINLO0410001",
+    "descripcion": "Piso de Madera Maciza Lapacho 15mm",
+    "descripcionAlterna": "15mm x 90mm x largos",
+    "precio": 59.54,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "madera-maciza",
+        "subcategoriaNombre": "Madera Maciza"
+      }
+    }
+  },
+  {
+    "id": "03UFINVI0410001",
+    "descripcion": "Piso de Madera Maciza Viraro 15mm",
+    "descripcionAlterna": "15mm x 90mm x largos",
+    "precio": 59.54,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "madera-maciza",
+        "subcategoriaNombre": "Madera Maciza"
+      }
+    }
+  },
+  {
+    "id": "04C2SU070028935",
+    "descripcion": "Piso Flotante Melamínico Pino Vizcaino D4941 AC4 7mm",
+    "descripcionAlterna": "7mm x 193mm x 1380mm",
+    "precio": 11.00,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico",
+        "subcategoriaNombre": "Flotante Melaminico"
+      }
+    }
+  },
+  {
+    "id": "04C2SU070110381",
+    "descripcion": "Piso Flotante Melamínico Haya D381 AC4 7mm",
+    "descripcionAlterna": "7mm x 193mm x 1380mm",
+    "precio": 13.24,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico",
+        "subcategoriaNombre": "Flotante Melaminico"
+      }
+    }
+  },
+  {
+    "id": "04C2SU070111460",
+    "descripcion": "Piso Flotante Melamínico Merbau D1460 AC4 7mm",
+    "descripcionAlterna": "7mm x 193mm x 1380mm",
+    "precio": 13.24,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico",
+        "subcategoriaNombre": "Flotante Melaminico"
+      }
+    }
+  },
+  {
+    "id": "04C2SU070111461",
+    "descripcion": "Piso Flotante Melamínico Merbau D1460 AC3 7mm",
+    "descripcionAlterna": "7mm x 193mm x 1380mm",
+    "precio": 13.24,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico",
+        "subcategoriaNombre": "Flotante Melaminico"
+      }
+    }
+  },
+  {
+    "id": "04C2SU070112413",
+    "descripcion": "Piso Flotante Melamínico Roble Cal D2413 AC4 7mm",
+    "descripcionAlterna": "7mm x 193mm x 1380mm",
+    "precio": 13.24,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico",
+        "subcategoriaNombre": "Flotante Melaminico"
+      }
+    }
+  },
+  {
+    "id": "04C2SU080002420",
+    "descripcion": "Piso Flotante Melamínico Wengue Tropical D2420 AC4 8mm",
+    "descripcionAlterna": "8mm x 193mm x 1380mm",
+    "precio": 14.22,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico",
+        "subcategoriaNombre": "Flotante Melaminico"
+      }
+    }
+  },
+  {
+    "id": "04C2SU080003783",
+    "descripcion": "Piso Flotante Melamínico Roble Montreux D3783 AC4 8mm",
+    "descripcionAlterna": "8mm x 193mm x 1380mm",
+    "precio": 14.22,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico",
+        "subcategoriaNombre": "Flotante Melaminico"
+      }
+    }
+  },
+  {
+    "id": "04C2SU080008011",
+    "descripcion": "Piso Flotante Melamínico Roble Strassburgo D8011 AC5 8mm",
+    "descripcionAlterna": "8mm x 193mm x 1380mm",
+    "precio": 13.40,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico",
+        "subcategoriaNombre": "Flotante Melaminico"
+      }
+    }
+  },
+  {
+    "id": "04C2SU080008677",
+    "descripcion": "Piso Flotante Melamínico Black Oak L8677 AC3 8mm",
+    "descripcionAlterna": "8mm x 193mm x 1380mm",
+    "precio": 14.22,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico",
+        "subcategoriaNombre": "Flotante Melaminico"
+      }
+    }
+  },
+  {
+    "id": "04C2SU080029134",
+    "descripcion": "Piso Flotante Melamínico Roble Sheffield D2253 AC5 8mm",
+    "descripcionAlterna": "8mm x 191mm x 1380mm",
+    "precio": 14.31,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico",
+        "subcategoriaNombre": "Flotante Melaminico"
+      }
+    }
+  },
+  {
+    "id": "04C2SU080029137",
+    "descripcion": "Piso Flotante Melamínico Roble Strassburgo D8011 AC5 8mm",
+    "descripcionAlterna": "8mm x 191mm x 1380mm",
+    "precio": 13.40,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico",
+        "subcategoriaNombre": "Flotante Melaminico"
+      }
+    }
+  },
+  {
+    "id": "04C2SU080029142",
+    "descripcion": "Piso Flotante Melamínico Roble Mieres D3784 AC5 8mm",
+    "descripcionAlterna": "8mm x 191mm x 1380mm",
+    "precio": 14.31,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico",
+        "subcategoriaNombre": "Flotante Melaminico"
+      }
+    }
+  },
+  {
+    "id": "04C2SU080029728",
+    "descripcion": "Piso Flotante Melamínico Nogal Chamoisee D3215 AC5 8mm",
+    "descripcionAlterna": "8mm x 193mm x 1380mm",
+    "precio": 11.91,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico",
+        "subcategoriaNombre": "Flotante Melaminico"
+      }
+    }
+  },
+  {
+    "id": "04C2SU080100101",
+    "descripcion": "Piso Flotante Melamínico Frontweiss K101 AC4 8mm",
+    "descripcionAlterna": "8mm x 193mm x 1380mm",
+    "precio": 14.22,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico",
+        "subcategoriaNombre": "Flotante Melaminico"
+      }
+    }
+  },
+  {
+    "id": "04C2SU080102838",
+    "descripcion": "Piso Flotante Melamínico Cerezo Historic D2838 AC3 8mm",
+    "descripcionAlterna": "8mm x 193mm x 1380mm",
+    "precio": 14.22,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico",
+        "subcategoriaNombre": "Flotante Melaminico"
+      }
+    }
+  },
+  {
+    "id": "04C2SU080103044",
+    "descripcion": "Piso Flotante Melamínico Roble Rift D3044 AC4 8mm",
+    "descripcionAlterna": "8mm x 193mm x 1380mm",
+    "precio": 14.22,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico",
+        "subcategoriaNombre": "Flotante Melaminico"
+      }
+    }
+  },
+  {
+    "id": "04C2SU080103180",
+    "descripcion": "Piso Flotante Melamínico Roble Lugano D3180 AC4 8mm",
+    "descripcionAlterna": "8mm x 193mm x 1380mm",
+    "precio": 16.00,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico",
+        "subcategoriaNombre": "Flotante Melaminico"
+      }
+    }
+  },
+  {
+    "id": "04C2SU080104659",
+    "descripcion": "Piso Flotante Melamínico Montpellier D4659 AC4 8mm",
+    "descripcionAlterna": "8mm x 193mm x 1380mm",
+    "precio": 16.00,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico",
+        "subcategoriaNombre": "Flotante Melaminico"
+      }
+    }
+  },
+  {
+    "id": "04C2SU080108007",
+    "descripcion": "Piso Flotante Melamínico Fresno Nórdico D8007 AC4 8mm",
+    "descripcionAlterna": "8mm x 193mm x 1380mm",
+    "precio": 14.22,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico",
+        "subcategoriaNombre": "Flotante Melaminico"
+      }
+    }
+  },
+  {
+    "id": "04C2SU080108011",
+    "descripcion": "Piso Flotante Melamínico Roble Strassburgo D8011 AC4 8mm",
+    "descripcionAlterna": "8mm x 193mm x 1380mm",
+    "precio": 14.22,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico",
+        "subcategoriaNombre": "Flotante Melaminico"
+      }
+    }
+  },
+  {
+    "id": "04C2SU080108014",
+    "descripcion": "Piso Flotante Melamínico Roble New York D8014 AC4 8mm",
+    "descripcionAlterna": "8mm x 193mm x 1380mm",
+    "precio": 16.00,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico",
+        "subcategoriaNombre": "Flotante Melaminico"
+      }
+    }
+  },
+  {
+    "id": "04C2SU080208614",
+    "descripcion": "Piso Flotante Melamínico Roble Gris L8614 AC4 8mm",
+    "descripcionAlterna": "8mm x 193mm x 1380mm",
+    "precio": 14.22,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico",
+        "subcategoriaNombre": "Flotante Melaminico"
+      }
+    }
+  },
+  {
+    "id": "04C2SU080208617",
+    "descripcion": "Piso Flotante Melamínico Roble Rústico L8617 AC4 8mm",
+    "descripcionAlterna": "8mm x 193mm x 1380mm",
+    "precio": 14.22,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico",
+        "subcategoriaNombre": "Flotante Melaminico"
+      }
+    }
+  },
+  {
+    "id": "04C2SU080208653",
+    "descripcion": "Piso Flotante Melamínico Roble Assago L8653 AC4 8mm",
+    "descripcionAlterna": "8mm x 193mm x 1380mm",
+    "precio": 13.34,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico",
+        "subcategoriaNombre": "Flotante Melaminico"
+      }
+    }
+  },
+  {
+    "id": "06BAAV300211000",
+    "descripcion": "Deck Baldosa Co-Extruded Antique",
+    "descripcionAlterna": "300 x 300 x 21mm",
+    "precio": 5.29,
+    "categoria": {
+      "categoriaId": "deck",
+      "categoriaNombre": "Deck",
+      "subcategoria": {
+        "subcategoriaId": "",
+        "subcategoriaNombre": ""
+      }
+    }
+  },
+  {
+    "id": "06BAAV300213000",
+    "descripcion": "Deck Baldosa Co-Extruded Silver",
+    "descripcionAlterna": "300 x 300 x 21mm",
+    "precio": 5.29,
+    "categoria": {
+      "categoriaId": "deck",
+      "categoriaNombre": "Deck",
+      "subcategoria": {
+        "subcategoriaId": "",
+        "subcategoriaNombre": ""
+      }
+    }
+  },
+  {
+    "id": "06BAAV300215000",
+    "descripcion": "Deck Baldosa Co-Extruded Teka",
+    "descripcionAlterna": "300 x 300 x 21mm",
+    "precio": 5.29,
+    "categoria": {
+      "categoriaId": "deck",
+      "categoriaNombre": "Deck",
+      "subcategoria": {
+        "subcategoriaId": "",
+        "subcategoriaNombre": ""
+      }
+    }
+  },
+  {
+    "id": "06DEBAFC2512200",
+    "descripcion": "Deck Composite Bamboo",
+    "descripcionAlterna": "25 x 146 x 2200mm",
+    "precio": 43.92,
+    "categoria": {
+      "categoriaId": "deck",
+      "categoriaNombre": "Deck",
+      "subcategoria": {
+        "subcategoriaId": "",
+        "subcategoriaNombre": ""
+      }
+    }
+  },
+  {
+    "id": "06DEBAPIACCA017",
+    "descripcion": "Clips Plásticos Deck Bolsa x 100 unidades",
+    "descripcionAlterna": "Bolsa 100 unidades",
+    "precio": 18.42,
+    "categoria": {
+      "categoriaId": "deck",
+      "categoriaNombre": "Deck",
+      "subcategoria": {
+        "subcategoriaId": "",
+        "subcategoriaNombre": ""
+      }
+    }
+  },
+  {
+    "id": "06DEBEZ0ACC0003",
+    "descripcion": "Clips Plásticos Deck Bolsa x 250 unidades",
+    "descripcionAlterna": "Bolsa 250 unidades",
+    "precio": 37.04,
+    "categoria": {
+      "categoriaId": "deck",
+      "categoriaNombre": "Deck",
+      "subcategoria": {
+        "subcategoriaId": "",
+        "subcategoriaNombre": ""
+      }
+    }
+  },
+  {
+    "id": "06DEHLG02105700",
+    "descripcion": "Junta Deck Co-Extruded Greige",
+    "descripcionAlterna": "10,5 x 70 x 2200mm",
+    "precio": 8.98,
+    "categoria": {
+      "categoriaId": "deck",
+      "categoriaNombre": "Deck",
+      "subcategoria": {
+        "subcategoriaId": "",
+        "subcategoriaNombre": ""
+      }
+    }
+  },
+  {
+    "id": "06DEHLG02221420",
+    "descripcion": "Deck Co-Extruded Greige",
+    "descripcionAlterna": "22 x 142 x 2200mm",
+    "precio": 56.23,
+    "categoria": {
+      "categoriaId": "deck",
+      "categoriaNombre": "Deck",
+      "subcategoria": {
+        "subcategoriaId": "",
+        "subcategoriaNombre": ""
+      }
+    }
+  },
+  {
+    "id": "06DEHLG06105700",
+    "descripcion": "Junta Deck Co-Extruded Silver Grey",
+    "descripcionAlterna": "10,5 x 70 x 2200mm",
+    "precio": 8.65,
+    "categoria": {
+      "categoriaId": "deck",
+      "categoriaNombre": "Deck",
+      "subcategoria": {
+        "subcategoriaId": "",
+        "subcategoriaNombre": ""
+      }
+    }
+  },
+  {
+    "id": "06DEHLG06221420",
+    "descripcion": "Deck Co-Extruded Silver Grey",
+    "descripcionAlterna": "22 x 142 x 2200mm",
+    "precio": 56.23,
+    "categoria": {
+      "categoriaId": "deck",
+      "categoriaNombre": "Deck",
+      "subcategoria": {
+        "subcategoriaId": "",
+        "subcategoriaNombre": ""
+      }
+    }
+  },
+  {
+    "id": "06DEHLG10221420",
+    "descripcion": "Deck Co-Extruded Caoba",
+    "descripcionAlterna": "22 x 142 x 2200mm",
+    "precio": 56.23,
+    "categoria": {
+      "categoriaId": "deck",
+      "categoriaNombre": "Deck",
+      "subcategoria": {
+        "subcategoriaId": "",
+        "subcategoriaNombre": ""
+      }
+    }
+  },
+  {
+    "id": "06DEHLZ30502200",
+    "descripcion": "Riel de Fijación Deck 30x50mm",
+    "descripcionAlterna": "30 x 50 x 2200mm",
+    "precio": 9.44,
+    "categoria": {
+      "categoriaId": "deck",
+      "categoriaNombre": "Deck",
+      "subcategoria": {
+        "subcategoriaId": "",
+        "subcategoriaNombre": ""
+      }
+    }
+  },
+  {
+    "id": "06DEHO0CA222200",
+    "descripcion": "Deck Co-Extruded Caoba Doble Faz",
+    "descripcionAlterna": "22 x 142 x 2200mm",
+    "precio": 49.30,
+    "categoria": {
+      "categoriaId": "deck",
+      "categoriaNombre": "Deck",
+      "subcategoria": {
+        "subcategoriaId": "",
+        "subcategoriaNombre": ""
+      }
+    }
+  },
+  {
+    "id": "06DEHO0CA702200",
+    "descripcion": "Junta Deck Co-Extruded Caoba",
+    "descripcionAlterna": "10,5 x 70 x 2200mm",
+    "precio": 9.05,
+    "categoria": {
+      "categoriaId": "deck",
+      "categoriaNombre": "Deck",
+      "subcategoria": {
+        "subcategoriaId": "",
+        "subcategoriaNombre": ""
+      }
+    }
+  },
+  {
+    "id": "06DEHOZSI702200",
+    "descripcion": "Junta Deck Co-Extruded Silver",
+    "descripcionAlterna": "10 x 70 x 2200mm",
+    "precio": 9.12,
+    "categoria": {
+      "categoriaId": "deck",
+      "categoriaNombre": "Deck",
+      "subcategoria": {
+        "subcategoriaId": "",
+        "subcategoriaNombre": ""
+      }
+    }
+  },
+  {
+    "id": "06DELADI2012465",
+    "descripcion": "Deck Lapacho Macizo Madera Natural IPE",
+    "descripcionAlterna": "20 x 100 x LVmm",
+    "precio": 100.09,
+    "categoria": {
+      "categoriaId": "deck",
+      "categoriaNombre": "Deck",
+      "subcategoria": {
+        "subcategoriaId": "",
+        "subcategoriaNombre": ""
+      }
+    }
+  },
+  {
+    "id": "06RPALR00000001",
+    "descripcion": "Riel de Aluminio Rectangular",
+    "descripcionAlterna": "20 x 40 x 3000mm",
+    "precio": 33.30,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-exterior",
+        "subcategoriaNombre": "Revestimiento Exterior"
+      }
+    }
+  },
+  {
+    "id": "06RPAPR00000002",
+    "descripcion": "Perfil de Acero",
+    "descripcionAlterna": "0,5 x 12,5 x 2600mm",
+    "precio": 7.16,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-exterior",
+        "subcategoriaNombre": "Revestimiento Exterior"
+      }
+    }
+  },
+  {
+    "id": "06RPAV00262900A",
+    "descripcion": "Revestimiento de Pared Exterior Wall Panel Light Grey",
+    "descripcionAlterna": "26 x 219 x 2900mm",
+    "precio": 44.98,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-exterior",
+        "subcategoriaNombre": "Revestimiento Exterior"
+      }
+    }
+  },
+  {
+    "id": "06RPAV00262900N",
+    "descripcion": "Revestimiento de Pared Exterior Wall Panel Walnut",
+    "descripcionAlterna": "26 x 219 x 2900mm",
+    "precio": 44.98,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-exterior",
+        "subcategoriaNombre": "Revestimiento Exterior"
+      }
+    }
+  },
+  {
+    "id": "06RPHL00191450G",
+    "descripcion": "Revestimiento de Pared Exterior Siding Co-Extruded Smoke Gris",
+    "descripcionAlterna": "19 x 145 x 2900mm",
+    "precio": 31.65,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-exterior",
+        "subcategoriaNombre": "Revestimiento Exterior"
+      }
+    }
+  },
+  {
+    "id": "06RPHL00191450T",
+    "descripcion": "Revestimiento de Pared Exterior Siding Co-Extruded Caoba",
+    "descripcionAlterna": "19 x 145 x 2900mm",
+    "precio": 31.65,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-exterior",
+        "subcategoriaNombre": "Revestimiento Exterior"
+      }
+    }
+  },
+  {
+    "id": "06RPHLC00000003",
+    "descripcion": "Clip de Inicio bolsa x 20 unidades",
+    "descripcionAlterna": "Bolsa 20 unidades",
+    "precio": 24.61,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-exterior",
+        "subcategoriaNombre": "Revestimiento Exterior"
+      }
+    }
+  },
+  {
+    "id": "06VIAV004210000",
+    "descripcion": "Viga Co-Extruded Teka 42mm x 60mm",
+    "descripcionAlterna": "42 x 60 x 2900mm",
+    "precio": 21.77,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-exterior",
+        "subcategoriaNombre": "Revestimiento Exterior"
+      }
+    }
+  },
+  {
+    "id": "06VIAV005210000",
+    "descripcion": "Viga Co-Extruded Teka 52mm x 100mm",
+    "descripcionAlterna": "52 x 100 x 2900mm",
+    "precio": 31.43,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-exterior",
+        "subcategoriaNombre": "Revestimiento Exterior"
+      }
+    }
+  },
+  {
+    "id": "06VIAV005230000",
+    "descripcion": "Viga Co-Extruded Silver Grey 52mm x 100mm",
+    "descripcionAlterna": "52 x 100 x 2900mm",
+    "precio": 31.43,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-exterior",
+        "subcategoriaNombre": "Revestimiento Exterior"
+      }
+    }
+  },
+  {
+    "id": "06VIAV006210000",
+    "descripcion": "Viga Co-Extruded Teka 62mm x 120mm",
+    "descripcionAlterna": "62 x 120 x 2900mm",
+    "precio": 41.10,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-exterior",
+        "subcategoriaNombre": "Revestimiento Exterior"
+      }
+    }
+  },
+  {
+    "id": "06VIAV006230000",
+    "descripcion": "Viga Co-Extruded Silver Grey 62mm x 120mm",
+    "descripcionAlterna": "62 x 120 x 2900mm",
+    "precio": 41.10,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-exterior",
+        "subcategoriaNombre": "Revestimiento Exterior"
+      }
+    }
+  },
+  {
+    "id": "06VIAV009424000",
+    "descripcion": "Terminación de Viga Silver Grey 42mm x 63mm",
+    "descripcionAlterna": "17 x 42 x 63mm",
+    "precio": 2.10,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-exterior",
+        "subcategoriaNombre": "Revestimiento Exterior"
+      }
+    }
+  },
+  {
+    "id": "06VIAV009524000",
+    "descripcion": "Terminación de Viga Silver Grey 52mm x 100mm",
+    "descripcionAlterna": "17 x 52 x 100mm",
+    "precio": 3.09,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-exterior",
+        "subcategoriaNombre": "Revestimiento Exterior"
+      }
+    }
+  },
+  {
+    "id": "06VIAV009622000",
+    "descripcion": "Terminación de Viga Teka 62mm x 120mm",
+    "descripcionAlterna": "17 x 62 x 120mm",
+    "precio": 6.11,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-exterior",
+        "subcategoriaNombre": "Revestimiento Exterior"
+      }
+    }
+  },
+  {
+    "id": "06VIAV009624000",
+    "descripcion": "Terminación de Viga Silver Grey 62mm x 120mm",
+    "descripcionAlterna": "17 x 62 x 120mm",
+    "precio": 6.11,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-exterior",
+        "subcategoriaNombre": "Revestimiento Exterior"
+      }
+    }
+  },
+  {
+    "id": "06VIHL004590000",
+    "descripcion": "Viga Co-Extruded Caoba 45mm x 90mm",
+    "descripcionAlterna": "45 x 90 x 2900mm",
+    "precio": 24.34,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-exterior",
+        "subcategoriaNombre": "Revestimiento Exterior"
+      }
+    }
+  },
+  {
+    "id": "06VIHL004590001",
+    "descripcion": "Viga Co-Extruded Greige 45mm x 90mm",
+    "descripcionAlterna": "45 x 90 x 2900mm",
+    "precio": 24.34,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-exterior",
+        "subcategoriaNombre": "Revestimiento Exterior"
+      }
+    }
+  },
+  {
+    "id": "06VIHL004590010",
+    "descripcion": "Viga Co-Extruded Caoba 50mm x 50mm",
+    "descripcionAlterna": "50 x 50 x 2900mm",
+    "precio": 16.19,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-exterior",
+        "subcategoriaNombre": "Revestimiento Exterior"
+      }
+    }
+  },
+  {
+    "id": "08HAESP1000K202",
+    "descripcion": "Espejo Led K202 600mm x 800mm",
+    "descripcionAlterna": "600 x 800",
+    "precio": 59.54,
+    "categoria": {
+      "categoriaId": "articulos-baño",
+      "categoriaNombre": "Articulos de Baño",
+      "subcategoria": {
+        "subcategoriaId": "espejo-led",
+        "subcategoriaNombre": "Espejos Led"
+      }
+    }
+  },
+  {
+    "id": "08HAESP1000K501",
+    "descripcion": "Espejo Led K501 600mm x 800mm",
+    "descripcionAlterna": "600 x 800",
+    "precio": 59.54,
+    "categoria": {
+      "categoriaId": "articulos-baño",
+      "categoriaNombre": "Articulos de Baño",
+      "subcategoria": {
+        "subcategoriaId": "espejo-led",
+        "subcategoriaNombre": "Espejos Led"
+      }
+    }
+  },
+  {
+    "id": "08HAESP1000K919",
+    "descripcion": "Espejo Led K919 600mm x 800mm",
+    "descripcionAlterna": "600 x 800",
+    "precio": 59.54,
+    "categoria": {
+      "categoriaId": "articulos-baño",
+      "categoriaNombre": "Articulos de Baño",
+      "subcategoria": {
+        "subcategoriaId": "espejo-led",
+        "subcategoriaNombre": "Espejos Led"
+      }
+    }
+  },
+  {
+    "id": "08HAESP1005K202",
+    "descripcion": "Espejo Led K202 600mm x 800mm caja x 5 unidades",
+    "descripcionAlterna": "600 x 800",
+    "precio": 48.22,
+    "categoria": {
+      "categoriaId": "articulos-baño",
+      "categoriaNombre": "Articulos de Baño",
+      "subcategoria": {
+        "subcategoriaId": "espejo-led",
+        "subcategoriaNombre": "Espejos Led"
+      }
+    }
+  },
+  {
+    "id": "08HAESP1005K501",
+    "descripcion": "Espejo Led K501 600mm x 800mm caja x 5 unidades",
+    "descripcionAlterna": "600 x 800",
+    "precio": 48.22,
+    "categoria": {
+      "categoriaId": "articulos-baño",
+      "categoriaNombre": "Articulos de Baño",
+      "subcategoria": {
+        "subcategoriaId": "espejo-led",
+        "subcategoriaNombre": "Espejos Led"
+      }
+    }
+  },
+  {
+    "id": "08HAESP1005K919",
+    "descripcion": "Espejo Led K919 600mm x 800mm caja x 5 unidades",
+    "descripcionAlterna": "600 x 800",
+    "precio": 48.22,
+    "categoria": {
+      "categoriaId": "articulos-baño",
+      "categoriaNombre": "Articulos de Baño",
+      "subcategoria": {
+        "subcategoriaId": "espejo-led",
+        "subcategoriaNombre": "Espejos Led"
+      }
+    }
+  },
+  {
+    "id": "08HAESP2000K403",
+    "descripcion": "Espejo Led K403 600mm x 600mm",
+    "descripcionAlterna": "600 x 600",
+    "precio": 59.54,
+    "categoria": {
+      "categoriaId": "articulos-baño",
+      "categoriaNombre": "Articulos de Baño",
+      "subcategoria": {
+        "subcategoriaId": "espejo-led",
+        "subcategoriaNombre": "Espejos Led"
+      }
+    }
+  },
+  {
+    "id": "08HAESP2005K403",
+    "descripcion": "Espejo Led K403 600mm x 600mm caja x 5 unidades",
+    "descripcionAlterna": "600 x 600",
+    "precio": 48.22,
+    "categoria": {
+      "categoriaId": "articulos-baño",
+      "categoriaNombre": "Articulos de Baño",
+      "subcategoria": {
+        "subcategoriaId": "espejo-led",
+        "subcategoriaNombre": "Espejos Led"
+      }
+    }
+  },
+  {
+    "id": "08HAESP3000K702",
+    "descripcion": "Espejo Led K702 800mm x 600mm",
+    "descripcionAlterna": "800 x 600",
+    "precio": 59.54,
+    "categoria": {
+      "categoriaId": "articulos-baño",
+      "categoriaNombre": "Articulos de Baño",
+      "subcategoria": {
+        "subcategoriaId": "espejo-led",
+        "subcategoriaNombre": "Espejos Led"
+      }
+    }
+  },
+  {
+    "id": "08HAESP3000K911",
+    "descripcion": "Espejo Led K911 800mm x 600mm",
+    "descripcionAlterna": "800 x 600",
+    "precio": 59.54,
+    "categoria": {
+      "categoriaId": "articulos-baño",
+      "categoriaNombre": "Articulos de Baño",
+      "subcategoria": {
+        "subcategoriaId": "espejo-led",
+        "subcategoriaNombre": "Espejos Led"
+      }
+    }
+  },
+  {
+    "id": "08HAESP3000K915",
+    "descripcion": "Espejo Led K915 800mm x 600mm",
+    "descripcionAlterna": "800 x 600",
+    "precio": 59.54,
+    "categoria": {
+      "categoriaId": "articulos-baño",
+      "categoriaNombre": "Articulos de Baño",
+      "subcategoria": {
+        "subcategoriaId": "espejo-led",
+        "subcategoriaNombre": "Espejos Led"
+      }
+    }
+  },
+  {
+    "id": "08HAESP3005K702",
+    "descripcion": "Espejo Led K702 800mm x 600mm caja x 5 unidades",
+    "descripcionAlterna": "800 x 600",
+    "precio": 48.22,
+    "categoria": {
+      "categoriaId": "articulos-baño",
+      "categoriaNombre": "Articulos de Baño",
+      "subcategoria": {
+        "subcategoriaId": "espejo-led",
+        "subcategoriaNombre": "Espejos Led"
+      }
+    }
+  },
+  {
+    "id": "08HAESP3005K911",
+    "descripcion": "Espejo Led K911 800mm x 600mm caja x 5 unidades",
+    "descripcionAlterna": "800 x 600",
+    "precio": 48.22,
+    "categoria": {
+      "categoriaId": "articulos-baño",
+      "categoriaNombre": "Articulos de Baño",
+      "subcategoria": {
+        "subcategoriaId": "espejo-led",
+        "subcategoriaNombre": "Espejos Led"
+      }
+    }
+  },
+  {
+    "id": "08HAESP3005K915",
+    "descripcion": "Espejo Led K915 800mm x 600mm caja x 5 unidades",
+    "descripcionAlterna": "800 x 600",
+    "precio": 53.58,
+    "categoria": {
+      "categoriaId": "articulos-baño",
+      "categoriaNombre": "Articulos de Baño",
+      "subcategoria": {
+        "subcategoriaId": "espejo-led",
+        "subcategoriaNombre": "Espejos Led"
+      }
+    }
+  },
+  {
+    "id": "08HAESP5000K207",
+    "descripcion": "Espejo Led con Reloj K207 800mm x 600mm",
+    "descripcionAlterna": "",
+    "precio": 71.54,
+    "categoria": {
+      "categoriaId": "articulos-baño",
+      "categoriaNombre": "Articulos de Baño",
+      "subcategoria": {
+        "subcategoriaId": "espejo-led",
+        "subcategoriaNombre": "Espejos Led"
+      }
+    }
+  },
+  {
+    "id": "08HAESP5000K306",
+    "descripcion": "Espejo Led con Reloj K306 800mm x 600mm",
+    "descripcionAlterna": "",
+    "precio": 71.54,
+    "categoria": {
+      "categoriaId": "articulos-baño",
+      "categoriaNombre": "Articulos de Baño",
+      "subcategoria": {
+        "subcategoriaId": "espejo-led",
+        "subcategoriaNombre": "Espejos Led"
+      }
+    }
+  },
+  {
+    "id": "08HAESP5000K921",
+    "descripcion": "Espejo Led con Reloj K921 1200mm x 800mm",
+    "descripcionAlterna": "1200 x 800",
+    "precio": 102.70,
+    "categoria": {
+      "categoriaId": "articulos-baño",
+      "categoriaNombre": "Articulos de Baño",
+      "subcategoria": {
+        "subcategoriaId": "espejo-led",
+        "subcategoriaNombre": "Espejos Led"
+      }
+    }
+  },
+  {
+    "id": "08HAESP5005K207",
+    "descripcion": "Espejo Led con Reloj K207 800mm x 600mm caja x 5 unidades",
+    "descripcionAlterna": "",
+    "precio": 54.99,
+    "categoria": {
+      "categoriaId": "articulos-baño",
+      "categoriaNombre": "Articulos de Baño",
+      "subcategoria": {
+        "subcategoriaId": "espejo-led",
+        "subcategoriaNombre": "Espejos Led"
+      }
+    }
+  },
+  {
+    "id": "08HAESP5005K306",
+    "descripcion": "Espejo Led con Reloj K306 800mm x 600mm caja x 5 unidades",
+    "descripcionAlterna": "",
+    "precio": 54.99,
+    "categoria": {
+      "categoriaId": "articulos-baño",
+      "categoriaNombre": "Articulos de Baño",
+      "subcategoria": {
+        "subcategoriaId": "espejo-led",
+        "subcategoriaNombre": "Espejos Led"
+      }
+    }
+  },
+  {
+    "id": "08HAESP5005K921",
+    "descripcion": "Espejo Led con Reloj K921 1200mm x 800mm caja x 5 unidades",
+    "descripcionAlterna": "1200 x 800",
+    "precio": 78.99,
+    "categoria": {
+      "categoriaId": "articulos-baño",
+      "categoriaNombre": "Articulos de Baño",
+      "subcategoria": {
+        "subcategoriaId": "espejo-led",
+        "subcategoriaNombre": "Espejos Led"
+      }
+    }
+  },
+  {
+    "id": "10IN0JC1047361T",
+    "descripcion": "Revestimiento de Pared Interior Gris",
+    "descripcionAlterna": "20,5 x 120 x 2850 mm",
+    "precio": 39.84,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-interior",
+        "subcategoriaNombre": "Revestimiento Interior"
+      }
+    }
+  },
+  {
+    "id": "10IN0JC1064361T",
+    "descripcion": "Perfil de Inicio Revestimiento Interior Gris",
+    "descripcionAlterna": "20,5 x 62,5 x 2850mm",
+    "precio": 7.64,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-interior",
+        "subcategoriaNombre": "Revestimiento Interior"
+      }
+    }
+  },
+  {
+    "id": "10IN0JC1065361T",
+    "descripcion": "Perfil de Terminación Revestimiento Interior Gris",
+    "descripcionAlterna": "20,5 x 31,5 x 2850 m",
+    "precio": 6.58,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-interior",
+        "subcategoriaNombre": "Revestimiento Interior"
+      }
+    }
+  },
+  {
+    "id": "10IN1JC1047397T",
+    "descripcion": "Revestimiento de Pared Interior Marfil",
+    "descripcionAlterna": "20,5 x 120 x 2850 mm",
+    "precio": 39.84,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-interior",
+        "subcategoriaNombre": "Revestimiento Interior"
+      }
+    }
+  },
+  {
+    "id": "10IN1JC1064397T",
+    "descripcion": "Perfil de Inicio Revestimiento Interior Marfil",
+    "descripcionAlterna": "20,5 x 62,5 x 2850mm",
+    "precio": 7.64,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-interior",
+        "subcategoriaNombre": "Revestimiento Interior"
+      }
+    }
+  },
+  {
+    "id": "10IN1JC1065397T",
+    "descripcion": "Perfil de Terminación Revestimiento Interior Marfil",
+    "descripcionAlterna": "20,5 x 31,5 x 2850 m",
+    "precio": 6.58,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-interior",
+        "subcategoriaNombre": "Revestimiento Interior"
+      }
+    }
+  },
+  {
+    "id": "10IN2JC104723QT",
+    "descripcion": "Revestimiento de Pared Interior Incienso",
+    "descripcionAlterna": "20,5 x 120 x 2850 mm",
+    "precio": 39.84,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-interior",
+        "subcategoriaNombre": "Revestimiento Interior"
+      }
+    }
+  },
+  {
+    "id": "10IN2JC106423QT",
+    "descripcion": "Perfil de Inicio Revestimiento Interior Incienso",
+    "descripcionAlterna": "20,5 x 62,5 x 2850mm",
+    "precio": 7.64,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-interior",
+        "subcategoriaNombre": "Revestimiento Interior"
+      }
+    }
+  },
+  {
+    "id": "10IN2JC106523QT",
+    "descripcion": "Perfil de Terminación Revestimiento Interior Incienso",
+    "descripcionAlterna": "20,5 x 31,5 x 2850 m",
+    "precio": 6.58,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-interior",
+        "subcategoriaNombre": "Revestimiento Interior"
+      }
+    }
+  },
+  {
+    "id": "10IN3JC1047711T",
+    "descripcion": "Revestimiento de Pared Interior Roble",
+    "descripcionAlterna": "20,5 x 120 x 2850 mm",
+    "precio": 39.84,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-interior",
+        "subcategoriaNombre": "Revestimiento Interior"
+      }
+    }
+  },
+  {
+    "id": "10INBO00A00JF10",
+    "descripcion": "Placas UV Sierra Gris",
+    "descripcionAlterna": "3 x 1220 x 2440mm",
+    "precio": 36.00,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-interior",
+        "subcategoriaNombre": "Revestimiento Interior"
+      }
+    }
+  },
+  {
+    "id": "10INBO00A00JF20",
+    "descripcion": "Placas UV Calacatta",
+    "descripcionAlterna": "3 x 1220 x 2440mm",
+    "precio": 36.00,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-interior",
+        "subcategoriaNombre": "Revestimiento Interior"
+      }
+    }
+  },
+  {
+    "id": "10INBO00A00JF28",
+    "descripcion": "Placas UV Marquina",
+    "descripcionAlterna": "3 x 1220 x 2440mm",
+    "precio": 36.00,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-interior",
+        "subcategoriaNombre": "Revestimiento Interior"
+      }
+    }
+  },
+  {
+    "id": "10INBO00A00JF29",
+    "descripcion": "Placas UV Crema Marfil",
+    "descripcionAlterna": "3 x 1220 x 2440mm",
+    "precio": 36.00,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-interior",
+        "subcategoriaNombre": "Revestimiento Interior"
+      }
+    }
+  },
+  {
+    "id": "10INBO00H00BLCK",
+    "descripcion": "Perfil de Unión Negro",
+    "descripcionAlterna": "17 x 2440mm",
+    "precio": 2.50,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-interior",
+        "subcategoriaNombre": "Revestimiento Interior"
+      }
+    }
+  },
+  {
+    "id": "10INBO00H00SILV",
+    "descripcion": "Perfíl de Unión Plata",
+    "descripcionAlterna": "17 x 2440mm",
+    "precio": 2.50,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-interior",
+        "subcategoriaNombre": "Revestimiento Interior"
+      }
+    }
+  },
+  {
+    "id": "10INBO00U00BLCK",
+    "descripcion": "Perfil de Inicio / Terminación Negro",
+    "descripcionAlterna": "14 x 2440mm",
+    "precio": 2.50,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-interior",
+        "subcategoriaNombre": "Revestimiento Interior"
+      }
+    }
+  },
+  {
+    "id": "10INBO00U00SILV",
+    "descripcion": "Perfil de Inicio / Terminación Plata",
+    "descripcionAlterna": "14 x 2440mm",
+    "precio": 2.50,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-interior",
+        "subcategoriaNombre": "Revestimiento Interior"
+      }
+    }
+  },
+  {
+    "id": "10INBO0EC00BLCK",
+    "descripcion": "Perfil Esquinero Negro",
+    "descripcionAlterna": "10 x 2440mm",
+    "precio": 3.10,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-interior",
+        "subcategoriaNombre": "Revestimiento Interior"
+      }
+    }
+  },
+  {
+    "id": "10INBO0EC00SILV",
+    "descripcion": "Perfil Esquinero Plata",
+    "descripcionAlterna": "10 x 2440mm",
+    "precio": 3.10,
+    "categoria": {
+      "categoriaId": "revestimiento",
+      "categoriaNombre": "Revestimientos",
+      "subcategoria": {
+        "subcategoriaId": "revestimiento-interior",
+        "subcategoriaNombre": "Revestimiento Interior"
+      }
+    }
+  },
+  {
+    "id": "60ALGC028011001",
+    "descripcion": "Césped Sintético Decorativo Soft en Rollo 10m2",
+    "descripcionAlterna": "ROLLO = 10,00M2",
+    "precio": 6.67,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "rollo-cesped_sintetico",
+        "subcategoriaNombre": "Rollo Cesped Sintetico"
+      }
+    }
+  },
+  {
+    "id": "60ALGC028011002",
+    "descripcion": "Césped Sintético Otoño Corto Soft en Rollo 10m2",
+    "descripcionAlterna": "ROLLO = 10,00M2",
+    "precio": 10.71,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "rollo-cesped_sintetico",
+        "subcategoriaNombre": "Rollo Cesped Sintetico"
+      }
+    }
+  },
+  {
+    "id": "60ALGC028011004",
+    "descripcion": "Césped Sintético Otoño Largo Soft en Rollo 10m2",
+    "descripcionAlterna": "ROLLO = 10,00M2",
+    "precio": 13.21,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "rollo-cesped_sintetico",
+        "subcategoriaNombre": "Rollo Cesped Sintetico"
+      }
+    }
+  },
+  {
+    "id": "60ALGC028011006",
+    "descripcion": "Césped Sintético Sport Soft en Rollo 10m2",
+    "descripcionAlterna": "ROLLO = 10,00M2",
+    "precio": 11.66,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "rollo-cesped_sintetico",
+        "subcategoriaNombre": "Rollo Cesped Sintetico"
+      }
+    }
+  },
+  {
+    "id": "60ALGC029022501",
+    "descripcion": "Césped Sintético Decorativo Soft Mega en Rollo 50m2",
+    "descripcionAlterna": "ROLLO = 50,00M2",
+    "precio": 5.72,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "rollo-cesped_sintetico",
+        "subcategoriaNombre": "Rollo Cesped Sintetico"
+      }
+    }
+  },
+  {
+    "id": "60ALGC029022502",
+    "descripcion": "Césped Sintético Otoño Corto Soft Mega en Rollo 50m2",
+    "descripcionAlterna": "ROLLO = 50,00M2",
+    "precio": 9.53,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "rollo-cesped_sintetico",
+        "subcategoriaNombre": "Rollo Cesped Sintetico"
+      }
+    }
+  },
+  {
+    "id": "60ALGC029022504",
+    "descripcion": "Césped Sintético Otoño Largo Soft Mega en Rollo 50m2",
+    "descripcionAlterna": "ROLLO = 50,00M2",
+    "precio": 12.50,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "rollo-cesped_sintetico",
+        "subcategoriaNombre": "Rollo Cesped Sintetico"
+      }
+    }
+  },
+  {
+    "id": "60ALGC029022506",
+    "descripcion": "Césped Sintético Sport Soft Mega en Rollo 50m2",
+    "descripcionAlterna": "ROLLO = 50,00M2",
+    "precio": 11.31,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "rollo-cesped_sintetico",
+        "subcategoriaNombre": "Rollo Cesped Sintetico"
+      }
+    }
+  },
+  {
+    "id": "70PVAV004VM1097",
+    "descripcion": "Piso Vinílico LVT Click Roble Egeo 4mm",
+    "descripcionAlterna": "4/0,3x177,8x1219,2mm",
+    "precio": 20.99,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "70PVAV004VM6046",
+    "descripcion": "Piso Vinílico LVT Click Roble Caspien 4mm",
+    "descripcionAlterna": "4/0,3x177,8x1219,2mm",
+    "precio": 20.99,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "70PVAV004VM6154",
+    "descripcion": "Piso Vinílico LVT Click Roble Arabia 4mm",
+    "descripcionAlterna": "4/0,3x177,8x1219,2mm",
+    "precio": 20.99,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "70PVHL000000A94",
+    "descripcion": "Piso Vinílico LVT Para Pegar Nougat 2mm",
+    "descripcionAlterna": "24 tablas",
+    "precio": 9.48,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-pegar",
+        "subcategoriaNombre": "Vinilico para Pegar"
+      }
+    }
+  },
+  {
+    "id": "70PVHLA19250003",
+    "descripcion": "Piso Vinílico LVT Click Florida Pine 4,2mm",
+    "descripcionAlterna": "",
+    "precio": 14.64,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "70PVHLMV114LVT1",
+    "descripcion": "Piso Vinílico LVT Para Pegar KW 6153 LVT001 3mm",
+    "descripcionAlterna": "3/0,3x184,15x1219,2",
+    "precio": 14.55,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-pegar",
+        "subcategoriaNombre": "Vinilico para Pegar"
+      }
+    }
+  },
+  {
+    "id": "70PVHLMV114LVT2",
+    "descripcion": "Piso Vinílico LVT Para Pegar KW 6311 LVT002 3mm",
+    "descripcionAlterna": "3/0,3x184,15x1219,2",
+    "precio": 14.55,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-pegar",
+        "subcategoriaNombre": "Vinilico para Pegar"
+      }
+    }
+  },
+  {
+    "id": "70PVHLMV114LVT3",
+    "descripcion": "Piso Vinílico LVT Para Pegar KW 6046 LVT003 3mm",
+    "descripcionAlterna": "3/0,3x184,15x1219,2",
+    "precio": 14.55,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-pegar",
+        "subcategoriaNombre": "Vinilico para Pegar"
+      }
+    }
+  },
+  {
+    "id": "70PVHLMV114LVT4",
+    "descripcion": "Piso Vinílico LVT Para Pegar KCT 2223 LVT004 3mm",
+    "descripcionAlterna": "3/0,3x609,6x304,8",
+    "precio": 14.55,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-pegar",
+        "subcategoriaNombre": "Vinilico para Pegar"
+      }
+    }
+  },
+  {
+    "id": "70PVHMV19310006",
+    "descripcion": "Piso Vinílico LVT Click Padrao Palito Cumaru 4mm",
+    "descripcionAlterna": "",
+    "precio": 13.07,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "70PVKDLP2KW6726",
+    "descripcion": "Piso Vinílico LVT Para Pegar KW 6726 2mm",
+    "descripcionAlterna": "2,0/0,2x184x950mm",
+    "precio": 12.02,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-pegar",
+        "subcategoriaNombre": "Vinilico para Pegar"
+      }
+    }
+  },
+  {
+    "id": "70PVKDLP3KW6141",
+    "descripcion": "Piso Vinílico LVT Para Pegar KW 6141 3mm",
+    "descripcionAlterna": "3,0/0,3x184x950mm",
+    "precio": 14.55,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-pegar",
+        "subcategoriaNombre": "Vinilico para Pegar"
+      }
+    }
+  },
+  {
+    "id": "70PVKDLP3KW6151",
+    "descripcion": "Piso Vinílico LVT Para Pegar KW 6151 3mm",
+    "descripcionAlterna": "3,0/0,3x184x950mm",
+    "precio": 14.55,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-pegar",
+        "subcategoriaNombre": "Vinilico para Pegar"
+      }
+    }
+  },
+  {
+    "id": "70PVKDLP3KW6314",
+    "descripcion": "Piso Vinílico LVT Para Pegar KW 6314 3mm",
+    "descripcionAlterna": "3,0/0,3x184x950mm",
+    "precio": 14.55,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-pegar",
+        "subcategoriaNombre": "Vinilico para Pegar"
+      }
+    }
+  },
+  {
+    "id": "70PVMGCP4VM6726",
+    "descripcion": "Piso Vinílico LVT Click Roble Atenea 4mm",
+    "descripcionAlterna": "4/0.3x180x1221mm",
+    "precio": 20.99,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "70PVNWZZ1271026",
+    "descripcion": "Alfombra Zig Zag Verde 4,5 mm en Rollo 18m2",
+    "descripcionAlterna": "4,5mm x 1.2m x 15m",
+    "precio": 18.52,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "rollo-zigzag",
+        "subcategoriaNombre": "Rollo ZigZag"
+      }
+    }
+  },
+  {
+    "id": "70PVNWZZ1271034",
+    "descripcion": "Alfombra Zig Zag Azul 4,5 mm en Rollo 18m2",
+    "descripcionAlterna": "4,5mm x 1.2m x 15m",
+    "precio": 18.52,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "rollo-zigzag",
+        "subcategoriaNombre": "Rollo ZigZag"
+      }
+    }
+  },
+  {
+    "id": "71RVAV004036722",
+    "descripcion": "Piso Vinílico SPC Click Roble California 4mm",
+    "descripcionAlterna": "4/0,55X181X1220mm",
+    "precio": 21.37,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVAV004036725",
+    "descripcion": "Piso Vinílico SPC Click Roble Alaska 4mm",
+    "descripcionAlterna": "4/0,55X181X1220mm",
+    "precio": 21.37,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVAV004036741",
+    "descripcion": "Piso Vinílico SPC Click Roble Apalache 4mm",
+    "descripcionAlterna": "4/0,55X181X1220mm",
+    "precio": 21.37,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVAV014644XL3",
+    "descripcion": "Piso Vinílico SPC Click Roble Detroit 4mm",
+    "descripcionAlterna": "4/0,5mmx183x1220mm",
+    "precio": 19.12,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVEF0A000U886",
+    "descripcion": "Piso Vinílico SPC Click Urth 5mm con manta",
+    "descripcionAlterna": "5(1IX)/0,3x182x1220",
+    "precio": 19.10,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVEF0A00N1632",
+    "descripcion": "Piso Vinílico SPC Click Natural 5mm con manta",
+    "descripcionAlterna": "5(1IX)/0,3x182x1220",
+    "precio": 19.10,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVEF0A00T417X",
+    "descripcion": "Piso Vinílico SPC Click Terrene 5mm con manta",
+    "descripcionAlterna": "5(1IX)/0,3x182x1220",
+    "precio": 19.10,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVEF0AF630023",
+    "descripcion": "Piso Vinílico SPC Click Fossil 5mm con manta",
+    "descripcionAlterna": "5(1IX)/0,3x182x1220",
+    "precio": 19.10,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL0000ET213",
+    "descripcion": "Piso Vinílico WPC + LVT Click Royal Sequoia 5,5mm",
+    "descripcionAlterna": "5,5/0,5 X179X1218mm",
+    "precio": 15.65,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL000ETM662",
+    "descripcion": "Piso Vinílico WPC + LVT Click Royal Cypress 5,5mm",
+    "descripcionAlterna": "16 tablas",
+    "precio": 15.65,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL000ETM663",
+    "descripcion": "Piso Vinílico WPC + LVT Click Royal Maple 5,5mm",
+    "descripcionAlterna": "",
+    "precio": 15.65,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL000ETM665",
+    "descripcion": "Piso Vinílico WPC + LVT Click Royal Elm 5,5mm",
+    "descripcionAlterna": "",
+    "precio": 15.65,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL000LUX006",
+    "descripcion": "Piso Vinílico SPC Click Golden Oak 4mm",
+    "descripcionAlterna": "8 tablas",
+    "precio": 17.48,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL000LUX008",
+    "descripcion": "Piso Vinílico SPC Click Sandalwood 4mm",
+    "descripcionAlterna": "8 tablas",
+    "precio": 17.48,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL000LUX009",
+    "descripcion": "Piso Vinílico SPC Click Silver Oak 4mm",
+    "descripcionAlterna": "8 tablas",
+    "precio": 17.48,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL000X01058",
+    "descripcion": "Piso Vinílico WPC Click Berna 5,5mm",
+    "descripcionAlterna": "5,5/0,3mmX179X1218mm",
+    "precio": 13.00,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL0040SP001",
+    "descripcion": "Piso Vinílico SPC Click Roble Fox SP001 4mm",
+    "descripcionAlterna": "4/0,3x180x1535mm",
+    "precio": 17.96,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL0040SP002",
+    "descripcion": "Piso Vinílico SPC Click Roble Millenium SP002 4mm",
+    "descripcionAlterna": "4/0,3x180x1535mm",
+    "precio": 17.96,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL0040SP003",
+    "descripcion": "Piso Vinílico SPC Click Roble Umber SP003 4mm",
+    "descripcionAlterna": "4/0,3X180X1535mm",
+    "precio": 17.96,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL0040SP004",
+    "descripcion": "Piso Vinílico SPC Click Roble Camel SP004 4mm",
+    "descripcionAlterna": "4/0,3X180X1535mm",
+    "precio": 17.96,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL0040SP005",
+    "descripcion": "Piso Vinílico SPC Click Bisque SP005 4mm",
+    "descripcionAlterna": "4/0,3x180x1220mm",
+    "precio": 17.20,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL0040SP006",
+    "descripcion": "Piso Vinílico SPC Click Silver SP006 4mm",
+    "descripcionAlterna": "4/0,3x180x1220mm",
+    "precio": 17.20,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL0040SP008",
+    "descripcion": "Piso Vinílico SPC Click Amber SP008 4mm",
+    "descripcionAlterna": "4/0,3x180x1220mm",
+    "precio": 17.20,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL0040SP009",
+    "descripcion": "Piso Vinílico SPC Click Pino Visby SP009 4mm",
+    "descripcionAlterna": "4/0,3x180x1220mm",
+    "precio": 19.86,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL0040SP010",
+    "descripcion": "Piso Vinílico SPC Click Pino Helsinski SP010 4mm",
+    "descripcionAlterna": "4/0,3x180x1220mm",
+    "precio": 19.86,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL0040SP011",
+    "descripcion": "Piso Vinílico SPC Click Pino Bergen SP011 4mm",
+    "descripcionAlterna": "4/0,3x180x1220mm",
+    "precio": 19.86,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL0040SP012",
+    "descripcion": "Piso Vinílico SPC Click Pino Odense SP012 4mm",
+    "descripcionAlterna": "4/0,3x180x1220mm",
+    "precio": 19.86,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL0040SP013",
+    "descripcion": "Piso Vinílico SPC Click Nogal Otranto SP013 4mm",
+    "descripcionAlterna": "4/0,5x180x1220mm",
+    "precio": 19.86,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL0040SP014",
+    "descripcion": "Piso Vinílico SPC Click Roble Nesso SP014 4mm",
+    "descripcionAlterna": "4/0,5x180x1220mm",
+    "precio": 19.86,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL0040SP015",
+    "descripcion": "Piso Vinílico SPC Click Roble Varenna SP015 4mm",
+    "descripcionAlterna": "4/0,5x180x1220mm",
+    "precio": 19.86,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL0040SP016",
+    "descripcion": "Piso Vinílico SPC Click Roble Atrani SP016 4mm",
+    "descripcionAlterna": "4/0,5x180x1220mm",
+    "precio": 19.86,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL0040SP021",
+    "descripcion": "Piso Vinílico SPC Click Gris Acero SP021 4mm",
+    "descripcionAlterna": "4/0,3x304,8x609,6mm",
+    "precio": 19.84,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL0040SP023",
+    "descripcion": "Piso Vinílico SPC Click Oro Suave SP023 4mm",
+    "descripcionAlterna": "4/0,3x304,8x609,6mm",
+    "precio": 19.84,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL0040SP024",
+    "descripcion": "Piso Vinílico SPC Click Hierro Antiguo SP024 4mm",
+    "descripcionAlterna": "4/0,3x304,8x609,6mm",
+    "precio": 19.84,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL0040SP029",
+    "descripcion": "Piso Vinílico SPC Click Calacatta SP029 4mm",
+    "descripcionAlterna": "4/0,3x304,8x609,6mm",
+    "precio": 20.43,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL0040SP030",
+    "descripcion": "Piso Vinílico SPC Click Marfil SP030 4mm",
+    "descripcionAlterna": "4/0,3x304,8x609,6mm",
+    "precio": 20.43,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL0040SP031",
+    "descripcion": "Piso Vinílico SPC Click Marquina SP031 4mm",
+    "descripcionAlterna": "4/0,3x304,8x609,6mm",
+    "precio": 20.43,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL0040SP032",
+    "descripcion": "Piso Vinílico SPC Click Agata SP032 4mm",
+    "descripcionAlterna": "4/0,3x304,8x609,6mm",
+    "precio": 20.43,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL0040SP033",
+    "descripcion": "Piso Vinílico SPC Click Roble Brandy SP033 4mm",
+    "descripcionAlterna": "4/0,5x180x1220mm",
+    "precio": 20.41,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL0040SP034",
+    "descripcion": "Piso Vinílico SPC Click Roble Sheridans SP034 4mm",
+    "descripcionAlterna": "4/0,5x180x1220mm",
+    "precio": 20.41,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL0040SP035",
+    "descripcion": "Piso Vinílico SPC Click Roble Long Island SP035 4mm",
+    "descripcionAlterna": "4/0,5x180x1220mm",
+    "precio": 20.41,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL0040SP036",
+    "descripcion": "Piso Vinílico SPC Click Spring SP036 4,5mm con manta",
+    "descripcionAlterna": "4.5/0,3x228x1524mm",
+    "precio": 18.43,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL0040SP037",
+    "descripcion": "Piso Vinílico SPC Click Winter SP037 4,5mm con manta",
+    "descripcionAlterna": "4.5/0,3x228x1524mm",
+    "precio": 18.43,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL0040SP038",
+    "descripcion": "Piso Vinílico SPC Click Autumn SP038 4,5mm con manta",
+    "descripcionAlterna": "4.5/0,3x228x1524mm",
+    "precio": 18.43,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL0050SP025",
+    "descripcion": "Piso Vinílico SPC Click Roble Siena SP025 5mm con manta",
+    "descripcionAlterna": "5/0,5x228x1800mm",
+    "precio": 22.62,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL0050SP026",
+    "descripcion": "Piso Vinílico SPC Click Roble Toscana SP026 5mm con manta",
+    "descripcionAlterna": "5/0,5x228x1800mm",
+    "precio": 22.62,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL0050SP027",
+    "descripcion": "Piso Vinílico SPC Click Roble Tívoli SP027 5mm con manta",
+    "descripcionAlterna": "5/0,5x228x1800mm",
+    "precio": 22.62,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL0050SP028",
+    "descripcion": "Piso Vinílico SPC Click Roble Treviso SP028 5mm con manta",
+    "descripcionAlterna": "5/0,5x228x1800mm",
+    "precio": 22.62,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL00CHF4514",
+    "descripcion": "Piso Vinílico SPC Click Mahogany 3,5mm",
+    "descripcionAlterna": "3,5/0,3mm152x1220",
+    "precio": 15.08,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL00X060396",
+    "descripcion": "Piso Vinílico WPC Click Basilea 5,5mm",
+    "descripcionAlterna": "5.5/0,3mmx179x1218",
+    "precio": 13.00,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHL0ORG22606",
+    "descripcion": "Piso Vinílico SPC Click Sandstone 5,5mm",
+    "descripcionAlterna": "5.5/0.5mmx304.8x609",
+    "precio": 12.00,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHLA19260009",
+    "descripcion": "Piso Vinílico SPC Click Bangor 4mm",
+    "descripcionAlterna": "4/0,3x182x1220",
+    "precio": 15.08,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHLA19270002",
+    "descripcion": "Piso Vinílico SPC Click Caramel 3,4mm",
+    "descripcionAlterna": "3,4/0,15mmx152x915",
+    "precio": 14.88,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHLA19280005",
+    "descripcion": "Piso Vinílico SPC Click Bayfield 5,5mm con manta",
+    "descripcionAlterna": "",
+    "precio": 16.00,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHLA19320001",
+    "descripcion": "Piso Vinílico SPC Click Saddle 4mm",
+    "descripcionAlterna": "4/0,5x180x1220 mm",
+    "precio": 15.08,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHLA19320003",
+    "descripcion": "Piso Vinílico SPC Click Hickory Natural 4mm",
+    "descripcionAlterna": "4/0,5x180x1220 mm",
+    "precio": 15.08,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHLAMV126002",
+    "descripcion": "Piso Vinílico SPC Click Countrywide Pine 4,4mm con manta",
+    "descripcionAlterna": "4,4/0,15x149x1220mm",
+    "precio": 15.08,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-sistema_click",
+        "subcategoriaNombre": "Vinilico Sistema Click"
+      }
+    }
+  },
+  {
+    "id": "71RVHLORGW18210",
+    "descripcion": "Piso Vinílico LVT Para Pegar Cacao Puro 2mm",
+    "descripcionAlterna": "Cacao Puro",
+    "precio": 8.82,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "vinilico-pegar",
+        "subcategoriaNombre": "Vinilico para Pegar"
+      }
+    }
+  },
+  {
+    "id": "73WPHL0000WP001",
+    "descripcion": "Piso Flotante Melamínico Waterproof Everest WP001 8mm",
+    "descripcionAlterna": "8 x 195 x 1515mm",
+    "precio": 19.93,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico-waterproof",
+        "subcategoriaNombre": "Flotante Melaminico Waterproof"
+      }
+    }
+  },
+  {
+    "id": "73WPHL0000WP002",
+    "descripcion": "Piso Flotante Melamínico Waterproof Aconcagua WP002 8mm",
+    "descripcionAlterna": "8 x 195 x 1215mm",
+    "precio": 19.93,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico-waterproof",
+        "subcategoriaNombre": "Flotante Melaminico Waterproof"
+      }
+    }
+  },
+  {
+    "id": "73WPHL0000WP003",
+    "descripcion": "Piso Flotante Melamínico Waterproof Mont Blanc WP003 8mm",
+    "descripcionAlterna": "8 x 195 x 1515mm",
+    "precio": 19.93,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico-waterproof",
+        "subcategoriaNombre": "Flotante Melaminico Waterproof"
+      }
+    }
+  },
+  {
+    "id": "73WPHL0000WP004",
+    "descripcion": "Piso Flotante Melamínico Waterproof Terminio WP004 8mm",
+    "descripcionAlterna": "8 x 195 x 1215mm",
+    "precio": 19.93,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico-waterproof",
+        "subcategoriaNombre": "Flotante Melaminico Waterproof"
+      }
+    }
+  },
+  {
+    "id": "73WPHL0000WP005",
+    "descripcion": "Piso Flotante Melamínico Waterproof Argento Oak WP005 10mm con manta",
+    "descripcionAlterna": "10 x 236 x 1835mm",
+    "precio": 22.15,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico-waterproof",
+        "subcategoriaNombre": "Flotante Melaminico Waterproof"
+      }
+    }
+  },
+  {
+    "id": "73WPHL0000WP006",
+    "descripcion": "Piso Flotante Melamínico Waterproof Sweet Oak WP006 10mm con manta",
+    "descripcionAlterna": "10 x 236 x 1835mm",
+    "precio": 22.15,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico-waterproof",
+        "subcategoriaNombre": "Flotante Melaminico Waterproof"
+      }
+    }
+  },
+  {
+    "id": "73WPHL0000WP007",
+    "descripcion": "Piso Flotante Melamínico Waterproof Cinnamon Oak WP007 10mm con manta",
+    "descripcionAlterna": "10 x 236 x 1835mm",
+    "precio": 22.15,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico-waterproof",
+        "subcategoriaNombre": "Flotante Melaminico Waterproof"
+      }
+    }
+  },
+  {
+    "id": "73WPHL0000WP008",
+    "descripcion": "Piso Flotante Melamínico Waterproof Sandy Oak WP008 10mm con manta",
+    "descripcionAlterna": "10 x 236 x 1835mm",
+    "precio": 22.15,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico-waterproof",
+        "subcategoriaNombre": "Flotante Melaminico Waterproof"
+      }
+    }
+  },
+  {
+    "id": "73WPHL0MV112009",
+    "descripcion": "Piso Flotante Melamínico Waterproof Houston 8mm",
+    "descripcionAlterna": "8 x 195 x 1215mm",
+    "precio": 13.89,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico-waterproof",
+        "subcategoriaNombre": "Flotante Melaminico Waterproof"
+      }
+    }
+  },
+  {
+    "id": "73WPHL0MV115001",
+    "descripcion": "Piso Flotante Melamínico Waterproof RP862 8,6mm",
+    "descripcionAlterna": "8,6 x 238 x 1215mm",
+    "precio": 13.89,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico-waterproof",
+        "subcategoriaNombre": "Flotante Melaminico Waterproof"
+      }
+    }
+  },
+  {
+    "id": "73WPHL0MV115012",
+    "descripcion": "Piso Flotante Melamínico Waterproof AF2012 12mm con manta",
+    "descripcionAlterna": "12 x 125 x 1215mm",
+    "precio": 16.27,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico-waterproof",
+        "subcategoriaNombre": "Flotante Melaminico Waterproof"
+      }
+    }
+  },
+  {
+    "id": "73WPHL0MV115014",
+    "descripcion": "Piso Flotante Melamínico Waterproof AF2002 12mm con manta",
+    "descripcionAlterna": "12 x 195 x 1215mm",
+    "precio": 16.27,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico-waterproof",
+        "subcategoriaNombre": "Flotante Melaminico Waterproof"
+      }
+    }
+  },
+  {
+    "id": "73WPHL0MV115018",
+    "descripcion": "Piso Flotante Melamínico Waterproof AF2006 12mm con manta",
+    "descripcionAlterna": "12 x 195 x 1215mm",
+    "precio": 16.27,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico-waterproof",
+        "subcategoriaNombre": "Flotante Melaminico Waterproof"
+      }
+    }
+  },
+  {
+    "id": "73WPHL0MV230212",
+    "descripcion": "Piso Flotante Melamínico Waterproof AF2052 8mm",
+    "descripcionAlterna": "8 x 195 x 1215mm",
+    "precio": 14.56,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico-waterproof",
+        "subcategoriaNombre": "Flotante Melaminico Waterproof"
+      }
+    }
+  },
+  {
+    "id": "73WPHLMV2302206",
+    "descripcion": "Piso Flotante Melamínico Waterproof AP107CW 10mm con manta",
+    "descripcionAlterna": "10 x 195 x 1515mm",
+    "precio": 13.89,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico-waterproof",
+        "subcategoriaNombre": "Flotante Melaminico Waterproof"
+      }
+    }
+  },
+  {
+    "id": "73WPHLMV2302207",
+    "descripcion": "Piso Flotante Melamínico Waterproof CH941 8mm",
+    "descripcionAlterna": "8 x 100 x 600mm",
+    "precio": 12.40,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico-waterproof",
+        "subcategoriaNombre": "Flotante Melaminico Waterproof"
+      }
+    }
+  },
+  {
+    "id": "73WPHLMV2302209",
+    "descripcion": "Piso Flotante Melamínico Waterproof CH943 8mm",
+    "descripcionAlterna": "8 x 100 x 600mm",
+    "precio": 12.40,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico-waterproof",
+        "subcategoriaNombre": "Flotante Melaminico Waterproof"
+      }
+    }
+  },
+  {
+    "id": "73WPHLOMV122000",
+    "descripcion": "Piso Flotante Melamínico Waterproof Vista 15mm con manta",
+    "descripcionAlterna": "15 x 236 x 1840mm",
+    "precio": 15.50,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico-waterproof",
+        "subcategoriaNombre": "Flotante Melaminico Waterproof"
+      }
+    }
+  },
+  {
+    "id": "73WPHLOMV122005",
+    "descripcion": "Piso Flotante Melamínico Waterproof Natura Maple 12mm con manta",
+    "descripcionAlterna": "12 x 195 x 1515mm",
+    "precio": 16.27,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico-waterproof",
+        "subcategoriaNombre": "Flotante Melaminico Waterproof"
+      }
+    }
+  },
+  {
+    "id": "73WPHLOMV122006",
+    "descripcion": "Piso Flotante Melamínico Waterproof Natura Cherry 12mm con manta",
+    "descripcionAlterna": "12 x 195 x 1515mm",
+    "precio": 16.27,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico-waterproof",
+        "subcategoriaNombre": "Flotante Melaminico Waterproof"
+      }
+    }
+  },
+  {
+    "id": "73WPHLOMV122007",
+    "descripcion": "Piso Flotante Melamínico Waterproof Natura Hickory 12mm con manta",
+    "descripcionAlterna": "12 x 195 x 1515mm",
+    "precio": 16.27,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico-waterproof",
+        "subcategoriaNombre": "Flotante Melaminico Waterproof"
+      }
+    }
+  },
+  {
+    "id": "73WPHLOMV125000",
+    "descripcion": "Piso Flotante Melamínico Waterproof Urbano 12mm",
+    "descripcionAlterna": "12 x 236 x 1840mm",
+    "precio": 17.27,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico-waterproof",
+        "subcategoriaNombre": "Flotante Melaminico Waterproof"
+      }
+    }
+  },
+  {
+    "id": "73WPHLOMV125001",
+    "descripcion": "Piso Flotante Melamínico Waterproof Milan 12mm",
+    "descripcionAlterna": "12 x 236 x 1840mm",
+    "precio": 17.27,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico-waterproof",
+        "subcategoriaNombre": "Flotante Melaminico Waterproof"
+      }
+    }
+  },
+  {
+    "id": "73WPHLOMV125002",
+    "descripcion": "Piso Flotante Melamínico Waterproof La Moda 12mm",
+    "descripcionAlterna": "12 x 236 x 1840mm",
+    "precio": 17.27,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico-waterproof",
+        "subcategoriaNombre": "Flotante Melaminico Waterproof"
+      }
+    }
+  },
+  {
+    "id": "73WPHLOMV125003",
+    "descripcion": "Piso Flotante Melamínico Waterproof Amato 12mm",
+    "descripcionAlterna": "12 x 236 x 1840mm",
+    "precio": 17.27,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico-waterproof",
+        "subcategoriaNombre": "Flotante Melaminico Waterproof"
+      }
+    }
+  },
+  {
+    "id": "73WPHLOMV125004",
+    "descripcion": "Piso Flotante Melamínico Waterproof Palermo 12mm",
+    "descripcionAlterna": "12 x 236 x 1840mm",
+    "precio": 17.27,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico-waterproof",
+        "subcategoriaNombre": "Flotante Melaminico Waterproof"
+      }
+    }
+  },
+  {
+    "id": "73WPHLOMV125005",
+    "descripcion": "Piso Flotante Melamínico Waterproof Vista 12mm",
+    "descripcionAlterna": "12 x 236 x 1840mm",
+    "precio": 17.27,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico-waterproof",
+        "subcategoriaNombre": "Flotante Melaminico Waterproof"
+      }
+    }
+  },
+  {
+    "id": "73WPHLOMV125006",
+    "descripcion": "Piso Flotante Melamínico Waterproof Roble Sandhill 10mm",
+    "descripcionAlterna": "10 x 195 x 1515mm",
+    "precio": 15.99,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico-waterproof",
+        "subcategoriaNombre": "Flotante Melaminico Waterproof"
+      }
+    }
+  },
+  {
+    "id": "73WPHLOMV125007",
+    "descripcion": "Piso Flotante Melamínico Waterproof Perennia 10mm",
+    "descripcionAlterna": "10 x 195 x 1515mm",
+    "precio": 15.99,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico-waterproof",
+        "subcategoriaNombre": "Flotante Melaminico Waterproof"
+      }
+    }
+  },
+  {
+    "id": "73WPHLOMV125008",
+    "descripcion": "Piso Flotante Melamínico Waterproof Sable 10mm",
+    "descripcionAlterna": "10 x 195 x 1515mm",
+    "precio": 15.99,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico-waterproof",
+        "subcategoriaNombre": "Flotante Melaminico Waterproof"
+      }
+    }
+  },
+  {
+    "id": "73WPHLOMV125009",
+    "descripcion": "Piso Flotante Melamínico Waterproof Natura Maple 10mm",
+    "descripcionAlterna": "10 x 195 x 1515mm",
+    "precio": 15.99,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico-waterproof",
+        "subcategoriaNombre": "Flotante Melaminico Waterproof"
+      }
+    }
+  },
+  {
+    "id": "73WPHLOMV125010",
+    "descripcion": "Piso Flotante Melamínico Waterproof Natura Cherry 10mm",
+    "descripcionAlterna": "10 x 195 x 1515mm",
+    "precio": 15.99,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico-waterproof",
+        "subcategoriaNombre": "Flotante Melaminico Waterproof"
+      }
+    }
+  },
+  {
+    "id": "73WPHLOMV125011",
+    "descripcion": "Piso Flotante Melamínico Waterproof Natura Hickory 10mm",
+    "descripcionAlterna": "10 x 195 x 1515mm",
+    "precio": 15.99,
+    "categoria": {
+      "categoriaId": "piso",
+      "categoriaNombre": "Pisos",
+      "subcategoria": {
+        "subcategoriaId": "flotante-melaminico-waterproof",
+        "subcategoriaNombre": "Flotante Melaminico Waterproof"
+      }
+    }
+  }
+]

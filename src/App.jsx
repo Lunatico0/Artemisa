@@ -1,47 +1,44 @@
-import { useEffect, useState } from 'react'
-import './style.css'
+import './style.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { CartProvider } from './context/CartContext';
 import Header from './components/header/Header';
+import Carrito from './components/Carrito';
 import ItemListContainer from './components/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer';
 import NotFound from './components/NotFound';
 import Footer from './components/footer/Footer';
-import ItemDetailContainer from './components/ItemDetailContainer';
+import Carrusel from './components/Carrusel';
+import CheckOut from './components/CheckOut';
+import { Button } from 'react-bootstrap';
+import CargarProductos from './components/CargarProductos';
 
 function App() {
-
-  const [darkMode, setDarkMode] = useState(() => {
-    if (window.matchMedia('(prefers-color.scheme: dark)').matches) {
-      return "oscuro"
-    }
-    return "claro"
-  });
-
-  useEffect(() => {
-    if (darkMode === "oscuro") {
-      document.querySelector('html').classList.add("oscuro");
-    } else {
-      document.querySelector('html').classList.remove("oscuro");
-    }
-  }, [darkMode])
-
   return (
-    <BrowserRouter>
-      <div className="generalCont">
-        <div className="container">
-          <div className="contenido">
-            <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-            <Routes>
-              <Route path='/' element={<ItemListContainer />} />
-              <Route path='/productos' element={<ItemListContainer />} />
-              <Route path='/category/:categoryId' element={<ItemListContainer />} />
-              <Route path='/item/:id' element={<ItemDetailContainer />} />
-              <Route path='/*' element={<NotFound />} />
-            </Routes>
-            <Footer />
+    <CartProvider >
+      <BrowserRouter>
+        <div className="generalCont">
+          <div className="marmolSuperior"></div>
+          <div className="container">
+            <div className="contenido">
+              <Header />
+              <Routes>
+                <Route path='/' element={<ItemListContainer />} />
+                <Route path='/productos' element={<ItemListContainer />} />
+                <Route path='/category/:categoryId' element={<ItemListContainer />} />
+                <Route path='/item/:id' element={<ItemDetailContainer />} />
+                <Route path='/carrito' element={<Carrito />} />
+                <Route path='/finalizar-compra' element={<CheckOut />} />
+                <Route path='/cargar-productos' element={<CargarProductos />} />
+                <Route path='/carrusel' element={<Carrusel />} />
+                <Route path='/*' element={<NotFound />} />
+              </Routes>
+              <Footer />
+            </div>
           </div>
         </div>
-      </div>
-    </BrowserRouter>
+      </BrowserRouter>
+    </CartProvider>
   )
 }
 

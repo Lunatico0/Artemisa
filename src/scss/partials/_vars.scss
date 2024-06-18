@@ -1,4 +1,6 @@
-$titulos: Arial, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+$titulos: "Josefin Sans", sans-serif;
 $fondo-body: #212121;
 $color-Hover: #7a6e6e75;
 $background-h1: #333;
@@ -8,7 +10,7 @@ $primario: #67d2da;
 $secundario: #1c1211;
 $acento: #3dd1ff;
 
-$textoLogo: #beb594;
+$textoLogo: #cda151;
 $ascent: #6e6653;
 
 $backgroundDark: #100e10;
@@ -27,7 +29,7 @@ $minWidth: 910px;
 $headerHeight: 6rem;
 $generalWidth: 70%;
 
-@media (prefers-color-scheme: dark ) {
-    $backgroundLight: $backgroundDark;
-    $textLight: $textDark
+@media (prefers-color-scheme: dark) {
+  $backgroundLight: $backgroundDark;
+  $textLight: $textDark
 }

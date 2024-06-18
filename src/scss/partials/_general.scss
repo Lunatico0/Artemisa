@@ -1,95 +1,230 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    transition: 0.3s cubic-bezier(0, .49, .48, 1);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 0.3s cubic-bezier(0, .49, .48, 1);
+  font-family: $titulos;
+}
+
+html {
+  background-color: $backgroundLight;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  .oscuro > html{
+    background-color: $backgroundDark;
+  }
 }
 
 .generalCont {
-    background-color: $backgroundLight;
-    .container {
-        background-color: $backgroundLight;
-        color: $textDark;
-        height: 100vh;
-        min-width: $minWidth;
-        width: $generalWidth;
-        margin: 0 auto;
 
-        @media (max-width: 1300px) {
-            width: 100%;
-        }
+  .marmolSuperior {
+    position: fixed;
+    background-image: url("/src/assets/marmolBlanco.jpg");
+    width: 100%;
+    height: 250px;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
 
-        .contenido {
-            width: 100%;
-        }
+  .container {
+    color: $textDark;
+    height: 100vh;
+    min-width: $minWidth;
+    width: $generalWidth;
+    margin: 0 auto;
+
+    @media (max-width: 1300px) {
+      width: 100%;
     }
+
+    .contenido {
+      width: 100%;
+    }
+  }
 }
 
 .notFound {
-    background-color: $backgroundLight;
-    padding-top: calc($headerHeight + 1.5rem);
-    min-height: 100vh;
+  background-color: $backgroundLight;
+  padding-top: calc($headerHeight + 1.5rem);
+  min-height: 100vh;
 }
 
 .pokemones {
-    padding-top: 6rem;
-    display: flex;
-    flex: 10;
-    gap: 2rem;
+  padding-top: 6rem;
+  display: flex;
+  flex: 10;
+  gap: 2rem;
+}
+
+.carro {
+  margin-block: 10rem;
+
+  .form {
+    margin-block: 10rem;
+  }
 }
 
 .active {
-    font-weight: bold;
+  font-weight: bold;
+}
+
+.carousel {
+  position: relative;
+  z-index: 2;
+  top: 2rem;
+}
+
+.carousel-inner>.carousel-item {
+  height: 400px;
 }
 
 .oscuro {
-
-    .generalCont {
-        background-color: $backgroundDark;
-        color: $textLight;
-        .container {
-            .contenido {
-                .notFound {
-                    background-color: $backgroundDark;
-                    color: $textLight;
-                }
-            }
-        }
-    }
-
+  html{
     background-color: $backgroundDark;
+  }
+
+  .mainContainer {
+    .sliderContainer {
+      .arrows {
+        color: $textLight;
+      }
+    }
+  }
+
+  .generalCont {
     color: $textLight;
 
-    .itemListContainer {
-        background-color: $backgroundDark;
-        color: $textLight;
-        .itemDetail{
-            .itemDetailAside{
-                border: 1px solid #d8d8d8d8;
-            }
-        }
+    .marmolSuperior {
+      background-image: url("/src/assets/marmolNegro.jpeg");
     }
 
-    .header {
-        background-color: $backgroundDark;
-        color: $textLight;
-
-        .carrito {
-            a {
-                color: $textLight;
-            }
+    .container {
+      .contenido {
+        .notFound {
+          background-color: $backgroundDark;
+          color: $textLight;
         }
+      }
+    }
+  }
 
-        .headerCont {
-            .nav {
-                .navMenu {
-                    .navItem {
-                        .navLink {
-                            color: $textLight;
-                        }
-                    }
+  color: $textLight;
+
+  .itemListContainer {
+    color: $textLight;
+
+
+
+    .tituloProductos {
+      color: $textLight;
+
+      .navLink {
+        color: $textLight;
+      }
+    }
+
+    .itemDetail {
+      .itemDetailAside {
+        border: 1px solid #d8d8d8d8;
+      }
+    }
+  }
+
+  .header {
+    color: $textLight;
+
+
+
+
+
+    .carrito {
+      a {
+        color: $textLight;
+      }
+    }
+
+    .headerCont {
+      background-color: $backgroundDark;
+
+      .nav {
+        .navMenu {
+          .navItem {
+            .navLink {
+              color: $textLight;
+            }
+
+            .subMenu {
+              background-color: $backgroundDark;
+
+              .subNavItem {
+                .subNavLink {
+                  color: $textLight;
+
+                  &:hover {
+                    background-color: rgba($backgroundLight, .3);
+                  }
                 }
+              }
             }
+          }
         }
+      }
     }
+  }
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .footer-section {
+      margin: 10px;
+      flex: 1;
+
+      h2 {
+        margin-bottom: 10px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin: 5px 0;
+
+          a {
+            color: white;
+            text-decoration: none;
+          }
+        }
+      }
+
+      .socials {
+        a {
+          color: white;
+          margin: 0 5px;
+          text-decoration: none;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    margin-top: 20px;
+  }
 }
