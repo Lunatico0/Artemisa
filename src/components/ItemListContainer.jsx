@@ -3,6 +3,7 @@ import { NavLink, useParams } from 'react-router-dom';
 import { collection, getDocs, query, where } from 'firebase/firestore';
 import { db } from "../firebase/config";
 import Item from './Item';
+import Carrusel from './Carrusel';
 
 const ItemListContainer = () => {
   const [productos, setProductos] = useState([]);
@@ -88,10 +89,8 @@ const ItemListContainer = () => {
 
   return (
     <div className="itemListContainer">
+      <Carrusel/>
       <h1 className='tituloProductos'>{titulo}</h1>
-      <div className="carruselContainer">
-        <div className="backgroundBanner"></div>
-      </div>
       <div className='productos'>
         {productos.length > 0 ? (
           productos.map(producto => (

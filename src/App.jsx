@@ -1,4 +1,5 @@
-import './style.css'
+import './style.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
 import Header from './components/header/Header';
@@ -9,6 +10,7 @@ import NotFound from './components/NotFound';
 import Footer from './components/footer/Footer';
 import Carrusel from './components/Carrusel';
 import CheckOut from './components/CheckOut';
+import { Button } from 'react-bootstrap';
 import CargarProductos from './components/CargarProductos';
 
 function App() {
@@ -16,10 +18,10 @@ function App() {
     <CartProvider >
       <BrowserRouter>
         <div className="generalCont">
+          <div className="marmolSuperior"></div>
           <div className="container">
             <div className="contenido">
               <Header />
-              {/* <Carrusel /> */}
               <Routes>
                 <Route path='/' element={<ItemListContainer />} />
                 <Route path='/productos' element={<ItemListContainer />} />
@@ -27,7 +29,8 @@ function App() {
                 <Route path='/item/:id' element={<ItemDetailContainer />} />
                 <Route path='/carrito' element={<Carrito />} />
                 <Route path='/finalizar-compra' element={<CheckOut />} />
-                {/* <Route path='/cargar-productos' element={<CargarProductos />} /> */}
+                <Route path='/cargar-productos' element={<CargarProductos />} />
+                <Route path='/carrusel' element={<Carrusel />} />
                 <Route path='/*' element={<NotFound />} />
               </Routes>
               <Footer />

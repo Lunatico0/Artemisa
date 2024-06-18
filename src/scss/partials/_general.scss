@@ -8,14 +8,27 @@
 
 html {
   background-color: $backgroundLight;
-  // background-image: url(/src/assets/background/craiyon_184442_black_and_gold_wooden_texture.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+
+  .oscuro > html{
+    background-color: $backgroundDark;
+  }
 }
 
 .generalCont {
+
+  .marmolSuperior {
+    position: fixed;
+    background-image: url("/src/assets/marmolBlanco.jpg");
+    width: 100%;
+    height: 250px;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
 
   .container {
     color: $textDark;
@@ -47,9 +60,10 @@ html {
   gap: 2rem;
 }
 
-.carro{
+.carro {
   margin-block: 10rem;
-  .form{
+
+  .form {
     margin-block: 10rem;
   }
 }
@@ -58,18 +72,35 @@ html {
   font-weight: bold;
 }
 
-.oscuro {
+.carousel {
+  position: relative;
+  z-index: 2;
+  top: 2rem;
+}
 
-  .mainContainer{
-    .sliderContainer{
-      .arrows{
+.carousel-inner>.carousel-item {
+  height: 400px;
+}
+
+.oscuro {
+  html{
+    background-color: $backgroundDark;
+  }
+
+  .mainContainer {
+    .sliderContainer {
+      .arrows {
         color: $textLight;
       }
     }
   }
+
   .generalCont {
-    background-color: $backgroundDark;
     color: $textLight;
+
+    .marmolSuperior {
+      background-image: url("/src/assets/marmolNegro.jpeg");
+    }
 
     .container {
       .contenido {
@@ -81,14 +112,16 @@ html {
     }
   }
 
-  background-color: $backgroundDark;
   color: $textLight;
 
   .itemListContainer {
     color: $textLight;
 
+
+
     .tituloProductos {
       color: $textLight;
+
       .navLink {
         color: $textLight;
       }
@@ -102,8 +135,11 @@ html {
   }
 
   .header {
-    background-color: $backgroundDark;
     color: $textLight;
+
+
+
+
 
     .carrito {
       a {
@@ -112,6 +148,8 @@ html {
     }
 
     .headerCont {
+      background-color: $backgroundDark;
+
       .nav {
         .navMenu {
           .navItem {
@@ -121,10 +159,12 @@ html {
 
             .subMenu {
               background-color: $backgroundDark;
-              .subNavItem{
-                .subNavLink{
+
+              .subNavItem {
+                .subNavLink {
                   color: $textLight;
-                  &:hover{
+
+                  &:hover {
                     background-color: rgba($backgroundLight, .3);
                   }
                 }

@@ -1,48 +1,45 @@
 .header {
-  height: $headerHeight;
-  min-width: $minWidth;
-  width: $generalWidth;
-  margin: .5rem auto;
-  box-shadow: $shadowHeader;
-  display: $dFlex;
-  justify-content: $justifyAlign;
-  align-items: $justifyAlign;
-  border-radius: 99px;
+  width: 100%;
   position: fixed;
-  background-color: $backgroundLight;
-  z-index: 100;
+  display: block;
+  left: 0;
+  z-index: 10;
 
-  @media (max-width: 1300px) {
-    width: 100%;
-    border-radius: unset;
+  .brand {
+    margin: 0 auto;
+    text-decoration: none;
+
+    .logo {
+      font-family: 'Times New Roman', Times, serif;
+      display: flex;
+      background-color: transparent;
+      color: $textoLogo;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   .headerCont {
-    display: grid;
+    position: fixed;
+    height: $headerHeight;
+    width: 100%;
+    box-shadow: $shadowHeader;
+    display: $dFlex;
+    justify-content: space-between;
+    background-color: $backgroundLight;
+    z-index: 1;
     gap: 2rem;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: $justifyAlign;
-
-    .brand {
-      text-decoration: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      .logo {
-        font-family:'Times New Roman', Times, serif ;
-        display: flex;
-        color: $textoLogo;
-        justify-content: center;
-        align-items: center;
-      }
-    }
 
     .nav {
+      display: flex;
+      width: 100%;
+
       .navMenu {
         display: flex;
         align-items: center;
         gap: 2rem;
+        margin: auto;
+        padding-left: 4rem;
 
         .navItem {
           list-style: none;
@@ -60,10 +57,10 @@
             position: absolute;
             top: 100%;
             left: 0;
-            background-color: $backgroundLight; // Fondo del submenú
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Añade sombra
+            background-color: rgba(transparent, .5);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 0.5rem;
-            padding: 1rem; // Espaciado interior del submenú
+            padding: 1rem;
 
             .subNavItem {
               list-style: none;
@@ -71,10 +68,10 @@
               .subNavLink {
                 text-decoration: none;
                 color: $textDark;
-                padding: 0.5rem 1rem; // Espaciado para las subcategorías
-                display: block; // Asegura que el área de clic sea adecuada
+                padding: 0.5rem 1rem;
+                display: block;
 
-                &:hover{
+                &:hover {
                   border-radius: .5rem;
                   background-color: rgba($backgroundDark, .5);
                 }
@@ -87,137 +84,119 @@
           }
         }
       }
-
-    }
-  }
-
-
-
-  .carrito {
-    display: flex;
-    gap: 1rem;
-
-    .darkMode {
-      position: inherit;
-      width: 100%;
-      border: none;
-      background-color: transparent;
     }
 
-    a {
-      position: relative;
-      text-decoration: none;
-      color: $textDark;
-      width: 2.5rem;
-      display: flex;
-      align-items: center;
+    .carrito {
+      width: 4rem;
 
-      .numerito {
-        &::before {
-          content: " ";
-          position: absolute;
-          display: block;
-          background-color: $textoLogo;
-          border-radius: 50%;
-          height: 10px;
-          width: 10px;
-          top: 10%;
-          left: 85%;
+      .darkMode {
+        position: inherit;
+        width: 100%;
+        border: none;
+        background-color: transparent;
+      }
+
+      a {
+        position: relative;
+        text-decoration: none;
+        color: $textDark;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        .numerito {
+          &::before {
+            content: " ";
+            position: absolute;
+            display: block;
+            background-color: $textoLogo;
+            border-radius: 50%;
+            height: 10px;
+            width: 10px;
+            top: 25%;
+            left: 50%;
+          }
         }
       }
-    }
 
-    #toggle {
-      display: none;
+      #toggle {
+        display: none;
 
-      &[type=checkbox]:checked+.display {
-        background: $backgroundDark;
+        &[type=checkbox]:checked+.display {
+          background: transparent;
+
+          .label {
+
+            .circle {
+              left: 100%;
+              transform: translate(-110%, -50%);
+              background: transparent;
+
+              .sol {
+                margin-top: 200%;
+                opacity: 0;
+              }
+
+              .luna {
+                margin-top: 0%;
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+
+      .display {
+        width: 64%;
+        height: 100%;
+        display: flex;
+        border-radius: 99px;
+        align-items: $justifyAlign;
+        justify-content: $justifyAlign;
+        position: relative;
+        top: -175%;
+        background-color: transparent;
 
         .label {
-          background: $backgroundDark;
-          box-shadow: 10px 10px 30px rgba(0, 0, 0, .5) inset;
+          width: 50px;
+          height: 50px;
+          cursor: pointer;
 
           .circle {
-            left: 100%;
-            transform: translate(-110%, -50%);
-            background: #2c2c2f;
-            box-shadow: 10px 10px 20px rgba(0, 0, 0, .5),
-              -10px -10px 30px rgba(0, 0, 0, .5)inseet;
+            border: 1.5px solid black;
+            width: 100%;
+            height: 80%;
+            border-radius: 99px;
+            background: $backgroundLight;
+            position: relative;
+            top: 35%;
+            left: 0;
+            transform: translate(10%, -50%);
+            display: flex;
+            align-items: $justifyAlign;
+            justify-content: $justifyAlign;
+            overflow: hidden;
 
-            .sol {
-              margin-top: 200%;
-              opacity: 0;
+            svg {
+              width: 25px;
+              position: absolute;
             }
 
             .luna {
+              color: $textLight;
+              margin-top: -200%;
+              opacity: 0;
+            }
+
+            .sol {
+              color: #ffd600;
               margin-top: 0%;
               opacity: 1;
             }
           }
         }
       }
-    }
-
-    .display {
-      width: 64%;
-      height: 100%;
-      display: flex;
-      border-radius: 99px;
-      align-items: $justifyAlign;
-      justify-content: $justifyAlign;
-      background: $backgroundLight;
-
-      .label {
-        border: 1.5px solid black;
-        width: 100px;
-        height: 50px;
-        border-radius: 50px;
-        background: #f3f3f3;
-        box-shadow: 10px 10px 30px rgba(0, 0, 0, .05) inset;
-        cursor: pointer;
-
-        &:active {
-          .circle {
-            width: 50px;
-          }
-        }
-
-        .circle {
-          border: 1.5px solid black;
-          width: 40%;
-          height: 80%;
-          border-radius: 99px;
-          background: $backgroundLight;
-          box-shadow: 10px 10px 20px rgba(0, 0, 0, .05),
-            -10px -10px 30px rgba(0, 0, 0, .05)inseet;
-          position: relative;
-          top: 50%;
-          left: 0;
-          transform: translate(10%, -50%);
-          display: flex;
-          align-items: $justifyAlign;
-          justify-content: $justifyAlign;
-          overflow: hidden;
-
-          svg {
-            width: 25px;
-            position: absolute;
-          }
-
-          .luna {
-            color: $textLight;
-            margin-top: -200%;
-            opacity: 0;
-          }
-
-          .sol {
-            color: #ffd600;
-            margin-top: 0%;
-            opacity: 1;
-          }
-        }
-      }
-
     }
   }
 }

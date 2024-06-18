@@ -1,7 +1,7 @@
 import { React, useContext } from 'react'
 import { useForm } from 'react-hook-form'
 import { CartContext } from '../context/CartContext'
-import { collection, addDock} from "firebase/sirestore"
+import { collection, addDoc } from "firebase/firestore"
 
 const CheckOut = () => {
 

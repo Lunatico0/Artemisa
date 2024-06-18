@@ -8,7 +8,7 @@
     color: $textDark;
     position: relative;
     z-index: 1;
-    margin-bottom: 2rem;
+    margin-top: 4rem;
     font-size: 20px;
 
     .navLink {
@@ -21,19 +21,6 @@
     }
   }
 
-  .carruselContainer {
-
-    .backgroundBanner {
-      position: fixed;
-      background-color: $secondary;
-      width: 100%;
-      height: 200px;
-      left: 0;
-      top: 0;
-      z-index: 0;
-    }
-  }
-
   .productos {
     position: relative;
     display: grid;
@@ -42,7 +29,7 @@
     gap: 1rem;
     z-index: 1;
 
-    @media (max-width: 1300px) {
+    @media (max-width: 900px) {
       grid-template-columns: repeat(3, 1fr);
     }
 
