@@ -1,9 +1,11 @@
-import React from 'react'
-import NavBar from './NavBar'
-import { Link, NavLink } from 'react-router-dom'
-import CartWidget from './CartWidget'
+import React from 'react';
+import NavBar from './NavBar';
+import { NavLink } from 'react-router-dom';
+import CartWidget from './CartWidget';
+import useScroll from '../../hooks/useScroll';
 
 const Header = () => {
+  useScroll();
 
   return (
     <header className="header">
@@ -13,7 +15,7 @@ const Header = () => {
         <CartWidget />
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

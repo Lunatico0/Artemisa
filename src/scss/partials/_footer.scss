@@ -1,7 +1,15 @@
 .footer {
+  position: fixed;
+  left: 0;
+  width: 100vw;
   background: $backgroundDark;
   color: $textLight;
   padding: 20px;
+  z-index: 2;
+
+  &.hidden {
+    display: none;
+  }
 
   .nav{
     .nav-item{
@@ -34,8 +42,6 @@
           color: $primary;
         }
       }
-
-
     }
   }
 
@@ -48,7 +54,6 @@
 
       li {
         margin-bottom: 10px;
-
 
         a {
           color: #fff;

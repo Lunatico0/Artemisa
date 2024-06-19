@@ -8,22 +8,18 @@
 }
 
 html {
-  background-color: #fcfcfc;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-html .oscuro > html {
-  background-color: #100e10;
-}
 
 .generalCont .marmolSuperior {
   position: fixed;
   background-image: url("/src/assets/marmolBlanco.jpg");
-  width: 100%;
-  height: 250px;
-  left: 0;
+  width: 700%;
+  height: 350px;
+  left: -920px;
   top: 0;
   z-index: 1;
 }
@@ -49,13 +45,6 @@ html .oscuro > html {
   min-height: 100vh;
 }
 
-.pokemones {
-  padding-top: 6rem;
-  display: flex;
-  flex: 10;
-  gap: 2rem;
-}
-
 .carro {
   margin-block: 10rem;
 }
@@ -71,22 +60,28 @@ html .oscuro > html {
   position: relative;
   z-index: 2;
   top: 2rem;
+  width: 120%;
+  left: -10%;
 }
 
 .carousel-inner > .carousel-item {
   height: 400px;
 }
+.carousel-inner > .carousel-item img {
+  object-fit: fill;
+  min-width: 100%;
+  max-height: 143%;
+}
 
 .oscuro {
-  color: #fcfcfc;
-}
-.oscuro html {
   background-color: #100e10;
+  color: #fcfcfc;
 }
 .oscuro .mainContainer .sliderContainer .arrows {
   color: #fcfcfc;
 }
 .oscuro .generalCont {
+  background-color: #100e10;
   color: #fcfcfc;
 }
 .oscuro .generalCont .marmolSuperior {
@@ -190,6 +185,9 @@ footer .footer-bottom {
   color: #cda151;
   justify-content: center;
   align-items: center;
+}
+.header .brand.hidden {
+  display: none;
 }
 .header .headerCont {
   position: fixed;
@@ -341,69 +339,6 @@ footer .footer-bottom {
   color: #ffd600;
   margin-top: 0%;
   opacity: 1;
-}
-
-.mainContainer {
-  position: relative;
-  width: 100%;
-  height: 50vh;
-  padding-top: 9rem;
-  z-index: 1;
-}
-.mainContainer .sliderContainer {
-  position: relative;
-  height: 25rem;
-}
-.mainContainer .sliderContainer .arrows {
-  color: #100e10;
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  font-size: 50px;
-  font-weight: 700;
-  z-index: 1;
-  cursor: pointer;
-}
-.mainContainer .sliderContainer .leftArrow {
-  left: 32px;
-}
-.mainContainer .sliderContainer .rightArrow {
-  right: 32px;
-}
-.mainContainer .sliderContainer .containerImages {
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  border: 1px solid #eee;
-  overflow: hidden;
-}
-.mainContainer .sliderContainer .containerImages .lista,
-.mainContainer .sliderContainer .containerImages .listaItem {
-  list-style: none;
-  white-space: nowrap;
-}
-.mainContainer .sliderContainer .containerImages .lista .listaItem {
-  display: inline;
-}
-.mainContainer .sliderContainer .containerImages .lista .listaItem .img {
-  display: block;
-  margin: 0 auto;
-}
-.mainContainer .sliderContainer .dotsContainer {
-  display: flex;
-  justify-content: center;
-}
-.mainContainer .sliderContainer .dotsContainer .dotContainerItem {
-  margin: 8px 3px;
-  cursor: pointer;
-}
-.mainContainer .sliderContainer .dotsContainer .dotContainerItem .imgDot {
-  aspect-ratio: 4/3;
-  width: 3rem;
-  border-radius: 25%;
-}
-.mainContainer .sliderContainer .dotsContainer .active, .mainContainer .sliderContainer .dotsContainer .active .imgDot {
-  width: 4rem;
 }
 
 .itemListContainer {
@@ -586,9 +521,16 @@ footer .footer-bottom {
 }
 
 .footer {
+  position: fixed;
+  left: 0;
+  width: 100vw;
   background: #100e10;
   color: #fcfcfc;
   padding: 20px;
+  z-index: 2;
+}
+.footer.hidden {
+  display: none;
 }
 .footer .nav .nav-item .nav-link {
   color: #fcfcfc;
