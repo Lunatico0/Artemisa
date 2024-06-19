@@ -2,7 +2,7 @@ import React from 'react';
 import NavBar from './NavBar';
 import { NavLink } from 'react-router-dom';
 import CartWidget from './CartWidget';
-import useScroll from '../../hooks/useScroll';
+import useScroll from '../../hooks/useScroll.js';
 
 const Header = () => {
   useScroll();
