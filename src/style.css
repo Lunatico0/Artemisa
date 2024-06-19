@@ -111,7 +111,7 @@ html .oscuro > html {
 .oscuro .header {
   color: #fcfcfc;
 }
-.oscuro .header .carrito a {
+.oscuro .header .carrito a span {
   color: #fcfcfc;
 }
 .oscuro .header .headerCont {
@@ -172,69 +172,6 @@ footer .footer-bottom {
   margin-top: 20px;
 }
 
-.mainContainer {
-  position: relative;
-  width: 100%;
-  height: 50vh;
-  padding-top: 9rem;
-  z-index: 1;
-}
-.mainContainer .sliderContainer {
-  position: relative;
-  height: 25rem;
-}
-.mainContainer .sliderContainer .arrows {
-  color: #100e10;
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  font-size: 50px;
-  font-weight: 700;
-  z-index: 1;
-  cursor: pointer;
-}
-.mainContainer .sliderContainer .leftArrow {
-  left: 32px;
-}
-.mainContainer .sliderContainer .rightArrow {
-  right: 32px;
-}
-.mainContainer .sliderContainer .containerImages {
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  border: 1px solid #eee;
-  overflow: hidden;
-}
-.mainContainer .sliderContainer .containerImages .lista,
-.mainContainer .sliderContainer .containerImages .listaItem {
-  list-style: none;
-  white-space: nowrap;
-}
-.mainContainer .sliderContainer .containerImages .lista .listaItem {
-  display: inline;
-}
-.mainContainer .sliderContainer .containerImages .lista .listaItem .img {
-  display: block;
-  margin: 0 auto;
-}
-.mainContainer .sliderContainer .dotsContainer {
-  display: flex;
-  justify-content: center;
-}
-.mainContainer .sliderContainer .dotsContainer .dotContainerItem {
-  margin: 8px 3px;
-  cursor: pointer;
-}
-.mainContainer .sliderContainer .dotsContainer .dotContainerItem .imgDot {
-  aspect-ratio: 4/3;
-  width: 3rem;
-  border-radius: 25%;
-}
-.mainContainer .sliderContainer .dotsContainer .active, .mainContainer .sliderContainer .dotsContainer .active .imgDot {
-  width: 4rem;
-}
-
 .header {
   width: 100%;
   position: fixed;
@@ -291,7 +228,7 @@ footer .footer-bottom {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
   padding: 1rem;
@@ -301,13 +238,13 @@ footer .footer-bottom {
 }
 .header .headerCont .nav .navMenu .navItem .subMenu .subNavItem .subNavLink {
   text-decoration: none;
-  color: #100e10;
+  color: #fcfcfc;
   padding: 0.5rem 1rem;
   display: block;
 }
 .header .headerCont .nav .navMenu .navItem .subMenu .subNavItem .subNavLink:hover {
   border-radius: 0.5rem;
-  background-color: rgba(16, 14, 16, 0.5);
+  background-color: #100e10;
 }
 .header .headerCont .nav .navMenu .navItem:hover .subMenu {
   display: block;
@@ -404,6 +341,69 @@ footer .footer-bottom {
   color: #ffd600;
   margin-top: 0%;
   opacity: 1;
+}
+
+.mainContainer {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  padding-top: 9rem;
+  z-index: 1;
+}
+.mainContainer .sliderContainer {
+  position: relative;
+  height: 25rem;
+}
+.mainContainer .sliderContainer .arrows {
+  color: #100e10;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 50px;
+  font-weight: 700;
+  z-index: 1;
+  cursor: pointer;
+}
+.mainContainer .sliderContainer .leftArrow {
+  left: 32px;
+}
+.mainContainer .sliderContainer .rightArrow {
+  right: 32px;
+}
+.mainContainer .sliderContainer .containerImages {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: 1px solid #eee;
+  overflow: hidden;
+}
+.mainContainer .sliderContainer .containerImages .lista,
+.mainContainer .sliderContainer .containerImages .listaItem {
+  list-style: none;
+  white-space: nowrap;
+}
+.mainContainer .sliderContainer .containerImages .lista .listaItem {
+  display: inline;
+}
+.mainContainer .sliderContainer .containerImages .lista .listaItem .img {
+  display: block;
+  margin: 0 auto;
+}
+.mainContainer .sliderContainer .dotsContainer {
+  display: flex;
+  justify-content: center;
+}
+.mainContainer .sliderContainer .dotsContainer .dotContainerItem {
+  margin: 8px 3px;
+  cursor: pointer;
+}
+.mainContainer .sliderContainer .dotsContainer .dotContainerItem .imgDot {
+  aspect-ratio: 4/3;
+  width: 3rem;
+  border-radius: 25%;
+}
+.mainContainer .sliderContainer .dotsContainer .active, .mainContainer .sliderContainer .dotsContainer .active .imgDot {
+  width: 4rem;
 }
 
 .itemListContainer {

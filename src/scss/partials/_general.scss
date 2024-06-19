@@ -143,7 +143,9 @@ html {
 
     .carrito {
       a {
-        color: $textLight;
+        span{
+          color: $textLight;
+        }
       }
     }
 
