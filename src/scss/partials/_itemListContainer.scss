@@ -1,5 +1,5 @@
 .itemListContainer {
-  padding-top: calc($headerHeight + 2rem);
+  padding-top: calc($headerHeight + 4rem);
   color: $textDark;
   min-height: 100vh;
   padding-inline: .5rem;
@@ -8,7 +8,7 @@
     color: $textDark;
     position: relative;
     z-index: 1;
-    margin-top: 4rem;
+    margin-top: 2rem;
     font-size: 20px;
 
     .navLink {
@@ -61,6 +61,7 @@
         cursor: pointer;
         border: none;
         transition: background-color 0.3s ease, color 0.3s ease;
+        border: solid 1px $secondary;
 
         &:hover {
           background-color: $primary;
@@ -115,10 +116,10 @@
             color: $textLight;
             display: -webkit-box;
             -webkit-box-orient: vertical;
-            -webkit-line-clamp: 2; // Truncar después de 2 líneas
+            -webkit-line-clamp: 2;
             overflow: hidden;
             text-overflow: ellipsis;
-            white-space: normal; // Permite saltos de línea
+            white-space: normal;
           }
 
           .itemDetallesPrecio {

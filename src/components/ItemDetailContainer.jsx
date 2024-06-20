@@ -31,11 +31,12 @@ const ItemDetailContainer = () => {
       </div>
       <div className="itemDetail">
         <div className='itemDetailInfo'>
-          <img className='infoImagen' src={producto.imagen} alt={producto.nombre} />
-          <p className='infoDescripcion'>{producto.descripcion}</p>
+          <img className='infoImagen' src={producto.imagen} alt={producto.descripcion} />
+          <p className='infoDescripcion'>{producto.descripcionAlterna}</p>
         </div>
         <div className='itemDetailAside'>
-          <h2 className='detailNombre'>{producto.nombre}</h2>
+          <h2 className='detailNombre'>{producto.descripcion}</h2>
+          <h2 className='detailAdicional'>{producto.descripcionAlterna}</h2>
           <p className='detailPrecio'>${producto.precio}</p>
           <button onClick={() => setCarrito([...carrito, producto])} className="botones agregarProducto detailAgregar" id={producto.id}>Agregar</button>
         </div>

@@ -133,7 +133,6 @@
 
         .display {
           width: 64px;
-          /* Ajusta el tamaño según sea necesario */
           height: 32px;
           display: flex;
           align-items: center;
@@ -154,7 +153,6 @@
             height: 80%;
             border-radius: 99px;
             background: #fff;
-            /* Ajusta el color de fondo */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -166,7 +164,7 @@
               position: absolute;
               color: black;
             }
-    
+
             .sol {
               color: #ffd600;
             }
