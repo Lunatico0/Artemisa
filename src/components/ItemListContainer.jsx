@@ -23,7 +23,6 @@ const ItemListContainer = () => {
           );
           getDocs(subProdQuery)
             .then((subres) => {
-              console.log(subres.docs[0].data().categoria.categoriaId)
               setProductos(
                 subres.docs.map((doc) => ({ ...doc.data(), id: doc.id }))
               );
