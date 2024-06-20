@@ -57,8 +57,8 @@ Este proyecto fue realizado como entrega final para el curso **React JS**, que c
 
 Puedes encontrarme en:
 
-- LinkedIn: [Patricio Pittana]([LinkedIn](https://www.linkedin.com/in/patricio-pittana-2185b6177/))
-- GitHub: [PatricioPittana]([GitHub](https://github.com/PatricioPittana))
-- GitHub secundario: [Lunatico0]([GitHub](https://github.com/Lunatico0))
+- LinkedIn: [Patricio Pittana](https://www.linkedin.com/in/patricio-pittana-2185b6177/)
+- GitHub: [PatricioPittana](https://github.com/PatricioPittana)
+- GitHub secundario: [Lunatico0](https://github.com/Lunatico0)
 
 ¡Gracias por revisar mi proyecto! Espero que les guste y cualquier feedback será bien recibido.
