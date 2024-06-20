@@ -12,83 +12,59 @@ const ItemListContainer = () => {
 
   useEffect(() => {
     const productosRef = collection(db, "productos");
-    const categoriasRef = collection(db, "categoria");
-
-    let prodQuery;
-    if (categoryId) { prodQuery = query( productosRef, where("categoria.categoriaId", "==", categoryId) );
-    } else {
-      prodQuery = productosRef;
-    }
+    let prodQuery = categoryId ? query(productosRef, where("categoria.categoriaId", "==", categoryId)) : productosRef;
 
     getDocs(prodQuery)
       .then((res) => {
         if (res.empty) {
-          
           const subProdQuery = query(
             productosRef,
-            where("categoria.subcategorias.subcategoriaId", "==", categoryId)
+            where("categoria.subcategoria.subcategoriaId", "==", categoryId)
           );
-          return getDocs(subProdQuery);
+          getDocs(subProdQuery)
+            .then((subres) => {
+              console.log(subres.docs[0].data().categoria.categoriaId)
+              setProductos(
+                subres.docs.map((doc) => ({ ...doc.data(), id: doc.id }))
+              );
+              setTitulo(
+                <>
+                  <NavLink className="navLink" to={`/category/${subres.docs[0].data().categoria.categoriaId}`}>
+                    {subres.docs[0].data().categoria.categoriaNombre}
+                  </NavLink>
+                  {" > "}
+                  <NavLink className="navLink" to={`/category/${subres.docs[0].data().categoria.subcategoria.subcategoriaId}`}>
+                    {subres.docs[0].data().categoria.subcategoria.subcategoriaNombre}
+                  </NavLink>
+                </>
+              );
+            })
         }
         return res;
       })
+
       .then((res) => {
         setProductos(
           res.docs.map((doc) => ({ ...doc.data(), id: doc.id }))
         );
+        categoryId ?
+          setTitulo(
+            <>
+              <NavLink className="navLink" to={`/category/${res.docs[0].data().categoria.categoriaId}`}>
+                {res.docs[0].data().categoria.categoriaNombre}
+              </NavLink>
+            </>
+          ) : setTitulo("")
       })
       .catch((error) => {
         console.error("Error al obtener productos: ", error);
       });
 
-    if (categoryId) {
-      const catQuery = query(categoriasRef, where("categoriaId", "==", categoryId));
-
-      //* Setear Titulo
-      getDocs(catQuery)
-        .then((res) => {
-          if (res.docs.length > 0) {
-            const categoriaData = res.docs[0].data();
-            setTitulo(
-              <NavLink className="navLink" to={`/category/${categoriaData.categoriaId}`}>
-                {categoriaData.categoriaNombre}
-              </NavLink>
-            );
-          } else {
-            const subcatQuery = query(categoriasRef, where("subcategorias.subcategoriaId", "==", categoryId));
-            getDocs(subcatQuery)
-              .then((subres) => {
-                if (subres.docs.length > 0) {
-                  const subcategoriaData = subres.docs[0].data();
-                  setTitulo(
-                    <>
-                      <NavLink className="navLink" to={`/category/${subcategoriaData.categoriaId}`}>
-                        {subcategoriaData.categoriaNombre}
-                      </NavLink>
-                      {' > '}
-                      <NavLink className="navLink" to={`/category/${subcategoriaData.subcategorias.subcategoriaId}`}>
-                        {subcategoriaData.subcategorias.subcategoriaNombre}
-                      </NavLink>
-                    </>
-                  );
-                }
-              })
-              .catch((error) => {
-                console.error("Error al obtener subcategorías: ", error);
-              });
-          }
-        })
-        .catch((error) => {
-          console.error("Error al obtener la categoría: ", error);
-        });
-    } else {
-      setTitulo("")
-    }
   }, [categoryId]);
 
   return (
     <div className="itemListContainer">
-      <Carrusel/>
+      <Carrusel />
       <h1 className='tituloProductos'>{titulo}</h1>
       <div className='productos'>
         {productos.length > 0 ? (
