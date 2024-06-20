@@ -39,7 +39,7 @@ Este es mi proyecto final de React.js realizado como parte de la carrera de **De
 
 1. Clonar el repositorio:
     ```console```
-    ```git clone https://github.com/csluduena/CoderHouse-DesarrolloFullStack-React-Trabajo2```
+    ```git clone https://github.com/Lunatico0/-react-57765-preentrega-2```
 2. Instalar las dependencias:
     ```npm install```
 3. Iniciar la aplicación:
@@ -57,7 +57,7 @@ Este proyecto fue realizado como entrega final para el curso **React JS**, que c
 
 Puedes encontrarme en:
 
-- LinkedIn: [Patricio Pittana]([Linkedin](https://www.linkedin.com/in/patricio-pittana-2185b6177/))
+- LinkedIn: [Patricio Pittana]([LinkedIn](https://www.linkedin.com/in/patricio-pittana-2185b6177/))
 - GitHub: [PatricioPittana]([GitHub](https://github.com/PatricioPittana))
 - GitHub secundario: [Lunatico0]([GitHub](https://github.com/Lunatico0))
 
