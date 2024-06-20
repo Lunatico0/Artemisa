@@ -21,44 +21,41 @@ const ItemListContainer = () => {
             productosRef,
             where("categoria.subcategoria.subcategoriaId", "==", categoryId)
           );
-          getDocs(subProdQuery)
-            .then((subres) => {
-              setProductos(
-                subres.docs.map((doc) => ({ ...doc.data(), id: doc.id }))
-              );
+          return getDocs(subProdQuery).then((subres) => {
+            if (!subres.empty) {
+              setProductos(subres.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+              const firstDocData = subres.docs[0].data();
               setTitulo(
                 <>
-                  <NavLink className="navLink" to={`/category/${subres.docs[0].data().categoria.categoriaId}`}>
-                    {subres.docs[0].data().categoria.categoriaNombre}
+                  <NavLink className="navLink" to={`/category/${firstDocData.categoria.categoriaId}`}>
+                    {firstDocData.categoria.categoriaNombre}
                   </NavLink>
                   {" > "}
-                  <NavLink className="navLink" to={`/category/${subres.docs[0].data().categoria.subcategoria.subcategoriaId}`}>
-                    {subres.docs[0].data().categoria.subcategoria.subcategoriaNombre}
+                  <NavLink className="navLink" to={`/category/${firstDocData.categoria.subcategoria.subcategoriaId}`}>
+                    {firstDocData.categoria.subcategoria.subcategoriaNombre}
                   </NavLink>
                 </>
               );
-            })
+            } else {
+              setProductos([]);
+              setTitulo("No hay productos");
+            }
+          });
+        } else {
+          setProductos(res.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+          categoryId ?
+            setTitulo(
+              <>
+                <NavLink className="navLink" to={`/category/${res.docs[0].data().categoria.categoriaId}`}>
+                  {res.docs[0].data().categoria.categoriaNombre}
+                </NavLink>
+              </>
+            ) : setTitulo("")
         }
-        return res;
-      })
-
-      .then((res) => {
-        setProductos(
-          res.docs.map((doc) => ({ ...doc.data(), id: doc.id }))
-        );
-        categoryId ?
-          setTitulo(
-            <>
-              <NavLink className="navLink" to={`/category/${res.docs[0].data().categoria.categoriaId}`}>
-                {res.docs[0].data().categoria.categoriaNombre}
-              </NavLink>
-            </>
-          ) : setTitulo("")
       })
       .catch((error) => {
         console.error("Error al obtener productos: ", error);
       });
-
   }, [categoryId]);
 
   return (
