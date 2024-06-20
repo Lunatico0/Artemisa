@@ -5,23 +5,25 @@ export const CartContext = createContext();
 export const CartProvider = ( {children} ) => {
 
   const [carrito, setCarrito] = useState([]);
-
+  
   const [darkMode, setDarkMode] = useState(() => {
-    if (window.matchMedia('(prefers-color.scheme: dark)').matches) {
+    if ((window.matchMedia('(prefers-color.scheme: dark)').matches) || (localStorage.getItem("darkMode") == "oscuro")) {
       return "oscuro"
     }
     return "claro"
   });
-
+  
   const handleDarkMode = () => {
-    setDarkMode(darkMode == "claro" ? "oscuro" : "claro")
+    setDarkMode(darkMode == "claro" ? "oscuro" : "claro");
   }
-
+  
   useEffect(() => {
     if (darkMode === "oscuro") {
       document.querySelector('html').classList.add("oscuro");
+      localStorage.setItem("darkMode", darkMode);
     } else {
       document.querySelector('html').classList.remove("oscuro");
+      localStorage.setItem("darkMode", darkMode);
     }
 
     localStorage.setItem("carrito", carrito)

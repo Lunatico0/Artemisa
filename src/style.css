@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 * {
   padding: 0;
@@ -276,69 +277,48 @@ footer .footer-bottom {
   top: 25%;
   left: 50%;
 }
-.header .headerCont .carrito #toggle {
+.header .headerCont .carrito .toggle-button {
+  position: relative;
+}
+.header .headerCont .carrito .toggle-button #toggle {
   display: none;
 }
-.header .headerCont .carrito #toggle[type=checkbox]:checked + .display {
-  background: transparent;
-}
-.header .headerCont .carrito #toggle[type=checkbox]:checked + .display .label .circle {
-  left: 100%;
-  transform: translate(-110%, -50%);
-  background: transparent;
-}
-.header .headerCont .carrito #toggle[type=checkbox]:checked + .display .label .circle .sol {
-  margin-top: 200%;
-  opacity: 0;
-}
-.header .headerCont .carrito #toggle[type=checkbox]:checked + .display .label .circle .luna {
-  margin-top: 0%;
-  opacity: 1;
-}
-.header .headerCont .carrito .display {
-  width: 64%;
-  height: 100%;
+.header .headerCont .carrito .toggle-button .display {
+  width: 64px;
+  /* Ajusta el tamaño según sea necesario */
+  height: 32px;
   display: flex;
-  border-radius: 99px;
   align-items: center;
   justify-content: center;
-  position: relative;
-  top: -175%;
+  border-radius: 99px;
   background-color: transparent;
+  position: relative;
 }
-.header .headerCont .carrito .display .label {
+.header .headerCont .carrito .toggle-button .display .label {
   width: 50px;
   height: 50px;
   cursor: pointer;
 }
-.header .headerCont .carrito .display .label .circle {
+.header .headerCont .carrito .toggle-button .display .circle {
   border: 1.5px solid black;
-  width: 100%;
+  width: 80%;
   height: 80%;
   border-radius: 99px;
-  background: #fcfcfc;
-  position: relative;
-  top: 35%;
-  left: 0;
-  transform: translate(10%, -50%);
+  background: #fff;
+  /* Ajusta el color de fondo */
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  position: relative;
+  top: -8.5rem;
 }
-.header .headerCont .carrito .display .label .circle svg {
+.header .headerCont .carrito .toggle-button .display .circle svg {
   width: 25px;
   position: absolute;
+  color: black;
 }
-.header .headerCont .carrito .display .label .circle .luna {
-  color: #fcfcfc;
-  margin-top: -200%;
-  opacity: 0;
-}
-.header .headerCont .carrito .display .label .circle .sol {
+.header .headerCont .carrito .toggle-button .display .circle .sol {
   color: #ffd600;
-  margin-top: 0%;
-  opacity: 1;
 }
 
 .itemListContainer {

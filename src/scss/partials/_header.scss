@@ -124,79 +124,51 @@
         }
       }
 
-      #toggle {
-        display: none;
+      .toggle-button {
+        position: relative;
 
-        &[type=checkbox]:checked+.display {
-          background: transparent;
+        #toggle {
+          display: none;
+        }
+
+        .display {
+          width: 64px;
+          /* Ajusta el tamaño según sea necesario */
+          height: 32px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 99px;
+          background-color: transparent;
+          position: relative;
 
           .label {
-
-            .circle {
-              left: 100%;
-              transform: translate(-110%, -50%);
-              background: transparent;
-
-              .sol {
-                margin-top: 200%;
-                opacity: 0;
-              }
-
-              .luna {
-                margin-top: 0%;
-                opacity: 1;
-              }
-            }
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
           }
-        }
-      }
-
-      .display {
-        width: 64%;
-        height: 100%;
-        display: flex;
-        border-radius: 99px;
-        align-items: $justifyAlign;
-        justify-content: $justifyAlign;
-        position: relative;
-        top: -175%;
-        background-color: transparent;
-
-        .label {
-          width: 50px;
-          height: 50px;
-          cursor: pointer;
 
           .circle {
             border: 1.5px solid black;
-            width: 100%;
+            width: 80%;
             height: 80%;
             border-radius: 99px;
-            background: $backgroundLight;
-            position: relative;
-            top: 35%;
-            left: 0;
-            transform: translate(10%, -50%);
+            background: #fff;
+            /* Ajusta el color de fondo */
             display: flex;
-            align-items: $justifyAlign;
-            justify-content: $justifyAlign;
-            overflow: hidden;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: -8.5rem;
 
             svg {
               width: 25px;
               position: absolute;
+              color: black;
             }
-
-            .luna {
-              color: $textLight;
-              margin-top: -200%;
-              opacity: 0;
-            }
-
+    
             .sol {
               color: #ffd600;
-              margin-top: 0%;
-              opacity: 1;
             }
           }
         }

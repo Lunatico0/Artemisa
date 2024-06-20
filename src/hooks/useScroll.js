@@ -3,13 +3,12 @@ import { useEffect } from 'react';
 const useScroll = () => {
   useEffect(() => {
     const brand = document.querySelector('.brand');
-    const footer = document.querySelector('.footer');
     let lastScrollTop = 0;
 
     const handleScroll = () => {
       const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-      // Ocultar y mostrar la marca según el desplazamiento
+      // Ocultar y mostrar la marca segun el desplazamiento
       if (currentScroll > lastScrollTop) {
         // Scrolling down
         brand.classList.add('hidden');

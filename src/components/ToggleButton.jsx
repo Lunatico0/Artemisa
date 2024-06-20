@@ -1,23 +1,29 @@
-import React, { useContext } from 'react'
-import { CartContext } from '../context/CartContext'
+import React, { useContext, useState } from 'react';
+import { CartContext } from '../context/CartContext';
 
 const ToggleButton = (props) => {
+  const { handleDarkMode } = useContext(CartContext);
+  const [isDarkMode, setIsDarkMode] = useState(localStorage.getItem("darkMode") === "oscuro");
 
-  const { handleDarkMode } = useContext(CartContext)
+  const handleClick = () => {
+    setIsDarkMode(!isDarkMode);
+    handleDarkMode();
+  };
 
   return (
-    <>
-      <input type="checkbox" id="toggle" onClick={handleDarkMode} />
+    <div className='toggle-button'>
+      <input type="checkbox" id="toggle" checked={isDarkMode} onChange={handleClick} />
       <div className='display'>
         <label className='label' htmlFor="toggle">
           <div className='circle'>
-            {props.img1}
-            {props.img2}
+            {
+              isDarkMode === true ? props.img2 : props.img1
+            }
           </div>
         </label>
       </div>
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default ToggleButton
+export default ToggleButton;
