@@ -15,11 +15,7 @@ const ItemListContainer = () => {
     const categoriasRef = collection(db, "categoria");
 
     let prodQuery;
-    if (categoryId) {
-      prodQuery = query(
-        productosRef,
-        where("categoria.categoriaId", "==", categoryId)
-      );
+    if (categoryId) { prodQuery = query( productosRef, where("categoria.categoriaId", "==", categoryId) );
     } else {
       prodQuery = productosRef;
     }
@@ -27,6 +23,7 @@ const ItemListContainer = () => {
     getDocs(prodQuery)
       .then((res) => {
         if (res.empty) {
+          
           const subProdQuery = query(
             productosRef,
             where("categoria.subcategorias.subcategoriaId", "==", categoryId)
@@ -46,6 +43,8 @@ const ItemListContainer = () => {
 
     if (categoryId) {
       const catQuery = query(categoriasRef, where("categoriaId", "==", categoryId));
+
+      //* Setear Titulo
       getDocs(catQuery)
         .then((res) => {
           if (res.docs.length > 0) {
