@@ -61,23 +61,25 @@
             position: absolute;
             top: 100%;
             left: 0;
-            background-color: rgba(transparent, .9);
+            background-color: rgba($backgroundLight, .8);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 0.5rem;
             padding: 1rem;
+            width: 15rem;
 
             .subNavItem {
               list-style: none;
 
               .subNavLink {
                 text-decoration: none;
-                color: $textLight;
+                color: $textDark;
                 padding: 0.5rem 1rem;
                 display: block;
 
                 &:hover {
                   border-radius: .5rem;
-                  background-color: $backgroundDark;
+                  background-color: rgba($backgroundDark, .8);
+                  color: $textLight;
                 }
               }
             }
