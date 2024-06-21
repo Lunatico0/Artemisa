@@ -322,7 +322,7 @@ footer .footer-bottom {
   color: #100e10;
   min-height: 100vh;
   padding-inline: 0.5rem;
-  margin-bottom: 6rem;
+  padding-bottom: 6rem;
 }
 .itemListContainer .tituloProductos {
   color: #100e10;
