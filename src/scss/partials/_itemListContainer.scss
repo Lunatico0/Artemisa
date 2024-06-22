@@ -4,6 +4,8 @@
   min-height: 100vh;
   padding-inline: .5rem;
   padding-bottom: 6rem;
+  position: relative;
+  z-index: 2;
 
   .tituloProductos {
     color: $textDark;

@@ -64,8 +64,6 @@ const Item = ({ producto }) => {
     producto.imagenesSecundarias?.imagen3 || ""
   ]
 
-  console.log(imagenesProd)
-
   return (
     <div className='item'>
       <Carrusel imagenes={imagenesProd} autoPlay={false} showIndicators={false} />

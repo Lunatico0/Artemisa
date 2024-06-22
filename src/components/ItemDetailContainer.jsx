@@ -5,8 +5,10 @@ import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import Carrusel from './Carrusel';
 import imagenes from "../data/carruselImagenes.json";
+import { Breadcrumb } from 'react-bootstrap';
 
 const ItemDetailContainer = () => {
+  const { breadcrumb } = useContext(CartContext)
   const { id } = useParams();
   const [producto, setProducto] = useState()
 
@@ -19,12 +21,12 @@ const ItemDetailContainer = () => {
 
   const { carrito, setCarrito } = useContext(CartContext)
 
-  useEffect(() =>{
+  useEffect(() => {
     const productoRef = doc(db, "productos", id)
 
     getDoc(productoRef)
       .then(res => {
-        setProducto( { ...res.data(), id: res.id } )
+        setProducto({ ...res.data(), id: res.id })
       })
 
   }, [id])
@@ -32,13 +34,17 @@ const ItemDetailContainer = () => {
   if (!producto) {
     return <p>Producto no encontrado</p>;
   }
-  console.log(imagenesProd)
 
   return (
     <div className="itemListContainer">
       <div className="carruselContainer">
-        <div className="backgroundBanner"/>
+        <div className="backgroundBanner" />
       </div>
+      <Breadcrumb className='navcrumb'>
+        <Breadcrumb.Item href={`/category/${producto.categoria.categoriaId}`}>{producto.categoria.categoriaNombre}</Breadcrumb.Item>
+        <Breadcrumb.Item href={`/category/${producto.categoria.subcategoria.subcategoriaId}`}>{producto.categoria.subcategoria.subcategoriaNombre}</Breadcrumb.Item>
+        <Breadcrumb.Item active href={`/category/${producto.descripcion}`}>{producto.descripcion}</Breadcrumb.Item>
+      </Breadcrumb>
       <div className="itemDetail">
         <div className='itemDetailInfo'>
           <Carrusel imagenes={imagenesProd} autoPlay={false} showIndicators={false} />
@@ -51,7 +57,6 @@ const ItemDetailContainer = () => {
           <button onClick={() => setCarrito([...carrito, producto])} className="botones agregarProducto detailAgregar" id={producto.id}>Agregar</button>
         </div>
       </div>
-      {/* <Item key={producto.id} producto={producto} /> alternativa para reutilizar Item */}
     </div>
   )
 }

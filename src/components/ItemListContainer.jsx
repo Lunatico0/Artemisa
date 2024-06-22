@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { NavLink, useParams } from 'react-router-dom';
 import { collection, getDocs, query, where } from 'firebase/firestore';
 import { db } from "../firebase/config";
 import Item from './Item';
 import Carrusel from './Carrusel';
 import imagenes from "../data/carruselImagenes.json";
+import { CartContext } from '../context/CartContext';
 
 const ItemListContainer = () => {
+  let { breadcrumb } = useContext(CartContext)
   const [productos, setProductos] = useState([]);
   const [titulo, setTitulo] = useState("");
   const { categoryId } = useParams();
@@ -57,6 +59,7 @@ const ItemListContainer = () => {
       .catch((error) => {
         console.error("Error al obtener productos: ", error);
       });
+      breadcrumb = titulo;
   }, [categoryId]);
 
   return (

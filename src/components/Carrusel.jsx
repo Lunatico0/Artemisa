@@ -7,11 +7,13 @@ const Carrusel = ({ imagenes = [], autoPlay = true, showIndicators = true }) => 
   }
 
   return (
-    <Carousel interval={autoPlay ? 5000 : null} indicators={showIndicators} >
+    <Carousel interval={autoPlay ? 5000 : null} indicators={showIndicators}>
       {imagenes.map((img, index) => (
-        <Carousel.Item key={index}>
-          <img src={img} alt={`Slide ${index}`} />
-        </Carousel.Item>
+        img ? (
+          <Carousel.Item key={index}>
+            <img src={img} alt={`Slide ${index}`} />
+          </Carousel.Item>
+        ) : null
       ))}
     </Carousel>
   );

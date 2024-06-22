@@ -5,6 +5,7 @@ export const CartContext = createContext();
 export const CartProvider = ( {children} ) => {
 
   const [carrito, setCarrito] = useState([]);
+  let breadcrumb = "";
   
   //* DarkMode
   const [darkMode, setDarkMode] = useState(() => {
@@ -57,7 +58,7 @@ export const CartProvider = ( {children} ) => {
   }
 
   return(
-    <CartContext.Provider value={{ carrito, vaciarCarrito, eliminarProducto, setCarrito, handleDarkMode, calcularCantidad, calcularTotal }}>
+    <CartContext.Provider value={{ breadcrumb, carrito, vaciarCarrito, eliminarProducto, setCarrito, handleDarkMode, calcularCantidad, calcularTotal }}>
       {children}
     </CartContext.Provider>
   )
