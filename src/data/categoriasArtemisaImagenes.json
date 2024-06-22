@@ -1,0 +1,40 @@
+[
+  {
+    "categoriaId": "piso",
+    "categoriaNombre": "Pisos",
+    "subcategorias": [
+      {
+        "subcategoriaId": "madera-maciza",
+        "subcategoriaNombre": "Madera Maciza"
+      },
+      {
+        "subcategoriaId": "rollo-zigzag",
+        "subcategoriaNombre": "Rollo ZigZag"
+      }
+    ]
+  },
+  {
+    "categoriaId": "deck",
+    "categoriaNombre": "Deck",
+    "subcategorias": ""
+  },
+  {
+    "categoriaId": "revestimiento",
+    "categoriaNombre": "Revestimientos",
+    "subcategorias": [
+      {
+        "subcategoriaId": "revestimiento-exterior",
+        "subcategoriaNombre": "Revestimiento Exterior"
+      },
+      {
+        "subcategoriaId": "revestimiento-interior",
+        "subcategoriaNombre": "Revestimiento Interior"
+      }
+    ]
+  },
+  {
+    "categoriaId": "articulos-baño",
+    "categoriaNombre": "Articulos de Baño",
+    "subcategorias": ""
+  }
+]

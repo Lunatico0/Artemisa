@@ -6,6 +6,7 @@ export const CartProvider = ( {children} ) => {
 
   const [carrito, setCarrito] = useState([]);
   
+  //* DarkMode
   const [darkMode, setDarkMode] = useState(() => {
     if ((window.matchMedia('(prefers-color.scheme: dark)').matches) || (localStorage.getItem("darkMode") == "oscuro")) {
       return "oscuro"
@@ -30,18 +31,22 @@ export const CartProvider = ( {children} ) => {
     
   }, [handleDarkMode, carrito])
 
+  //* Cantidad de productos
   const calcularCantidad = () => {
     return carrito.length
   }
 
+  //* Total Productos
   const calcularTotal = () => {
     return carrito.reduce((acc, prod) => acc + prod.precio, 0).toFixed(2);
   }
 
+  //* Vaciar Carrito
   const vaciarCarrito = () =>{
     setCarrito([])
   }
 
+  //* Eliminar unidad de dicho producto
   const eliminarProducto = (producto) => {
     const productoEncontrado = carrito.find(prod => prod.id === producto.id);
     const indice = carrito.indexOf(productoEncontrado);
@@ -52,7 +57,7 @@ export const CartProvider = ( {children} ) => {
   }
 
   return(
-    <CartContext.Provider value={{ carrito, setCarrito, handleDarkMode, calcularCantidad, calcularTotal }}>
+    <CartContext.Provider value={{ carrito, vaciarCarrito, eliminarProducto, setCarrito, handleDarkMode, calcularCantidad, calcularTotal }}>
       {children}
     </CartContext.Provider>
   )

@@ -1,20 +1,18 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-import imagenes from "../data/carruselImagenes.json";
 
-const Carrusel = () => {
+const Carrusel = ({ imagenes = [], autoPlay = true, showIndicators = true }) => {
+  if (!imagenes || imagenes.length === 0) {
+    return null;
+  }
+
   return (
-    <Carousel>
-      {
-        imagenes.length > 0 ? (
-        imagenes.map((img, index) => (
-          <Carousel.Item key={index}>
-            <img src={img.url} alt={`Slide ${index}`} />
-          </Carousel.Item>
-        ))
-      ) : (
-        console.log("No hay imagenes")
-      )}
+    <Carousel interval={autoPlay ? 5000 : null} indicators={showIndicators} >
+      {imagenes.map((img, index) => (
+        <Carousel.Item key={index}>
+          <img src={img} alt={`Slide ${index}`} />
+        </Carousel.Item>
+      ))}
     </Carousel>
   );
 }

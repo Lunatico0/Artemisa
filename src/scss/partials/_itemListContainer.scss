@@ -51,6 +51,37 @@
       overflow: hidden;
       background-color: $backgroundLight;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 28rem;
+
+      .carousel {
+        height: 18rem;
+        width: 115%;
+        left: -14px;
+
+        .carousel-control-next {
+          visibility: hidden;
+          opacity: 0;
+          width: 25%;
+          transition: ease-in-out .3s;
+        }
+        
+        .carousel-control-prev {
+          visibility: hidden;
+          opacity: 0;
+          transition: ease-in-out .3s;
+        }
+        
+        &:hover{
+          .carousel-control-next{
+            visibility: visible;
+            opacity: 1;
+          }
+          .carousel-control-prev{
+            visibility: visible;
+            opacity: 1;
+          } 
+        } 
+      }
 
       .botones {
         align-self: flex-start;
@@ -97,6 +128,7 @@
         background-position: center;
         background-repeat: no-repeat;
         height: 11rem;
+        z-index: 2;
 
         .detalles {
           cursor: pointer;

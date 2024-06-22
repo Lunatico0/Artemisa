@@ -3,10 +3,19 @@ import { useParams } from 'react-router-dom';
 import { CartContext } from '../context/CartContext';
 import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../firebase/config';
+import Carrusel from './Carrusel';
+import imagenes from "../data/carruselImagenes.json";
 
 const ItemDetailContainer = () => {
   const { id } = useParams();
   const [producto, setProducto] = useState()
+
+  let imagenesProd = [
+    producto?.imagenPrincipal || "",
+    producto?.imagenesSecundarias?.imagen1 || "",
+    producto?.imagenesSecundarias?.imagen2 || "",
+    producto?.imagenesSecundarias?.imagen3 || ""
+  ]
 
   const { carrito, setCarrito } = useContext(CartContext)
 
@@ -23,6 +32,7 @@ const ItemDetailContainer = () => {
   if (!producto) {
     return <p>Producto no encontrado</p>;
   }
+  console.log(imagenesProd)
 
   return (
     <div className="itemListContainer">
@@ -31,7 +41,7 @@ const ItemDetailContainer = () => {
       </div>
       <div className="itemDetail">
         <div className='itemDetailInfo'>
-          <img className='infoImagen' src={producto.imagen} alt={producto.descripcion} />
+          <Carrusel imagenes={imagenesProd} autoPlay={false} showIndicators={false} />
           <p className='infoDescripcion'>{producto.descripcionAlterna}</p>
         </div>
         <div className='itemDetailAside'>

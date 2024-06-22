@@ -49,9 +49,10 @@ html {
 }
 
 .carro {
-  padding-top: 10rem;
-
-
+  padding-top: 12rem;
+  padding-bottom: 6rem;
+  position: relative;
+  z-index: 3;
 }
 
 .active {

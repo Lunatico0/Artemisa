@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { CartContext } from '../context/CartContext';
+import Carrusel from './Carrusel';
 
 //* Truncar descripcion de cada item despues de 2 lineas segun el ancho del container
 const truncateText = (text, lines, containerRef) => {
@@ -36,7 +37,10 @@ const truncateText = (text, lines, containerRef) => {
   return text;
 };
 
-const Item = ( { producto } ) => {
+const Item = ({ producto }) => {
+
+
+
   const navigate = useNavigate();
   const descripcionRef = useRef(null);
   const [descripcionTruncada, setDescripcionTruncada] = useState(producto.descripcion);
@@ -50,11 +54,21 @@ const Item = ( { producto } ) => {
 
   useEffect(() => {
     setDescripcionTruncada(truncateText(producto.descripcion, 2, descripcionRef));
+
   }, [producto.descripcion]);
+
+  let imagenesProd = [
+    producto.imagenPrincipal,
+    producto.imagenesSecundarias?.imagen1 || "",
+    producto.imagenesSecundarias?.imagen2 || "",
+    producto.imagenesSecundarias?.imagen3 || ""
+  ]
+
+  console.log(imagenesProd)
 
   return (
     <div className='item'>
-      <img src={producto.imagen} alt={producto.imagen} onClick={itemDetalles} id={producto.id} />
+      <Carrusel imagenes={imagenesProd} autoPlay={false} showIndicators={false} />
       <div className="itemDetalles">
         <div className='detalles' onClick={itemDetalles} id={producto.id}>
           <h2 className='itemDetallesNombre' >{producto.nombre}</h2>

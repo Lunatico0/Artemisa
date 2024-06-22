@@ -4,6 +4,7 @@ import { collection, getDocs, query, where } from 'firebase/firestore';
 import { db } from "../firebase/config";
 import Item from './Item';
 import Carrusel from './Carrusel';
+import imagenes from "../data/carruselImagenes.json";
 
 const ItemListContainer = () => {
   const [productos, setProductos] = useState([]);
@@ -60,7 +61,7 @@ const ItemListContainer = () => {
 
   return (
     <div className="itemListContainer">
-      <Carrusel />
+      <Carrusel imagenes={imagenes} autoPlay={true} showIndicators={true} />
       <h1 className='tituloProductos'>{titulo}</h1>
       <div className='productos'>
         {productos.length > 0 ? (

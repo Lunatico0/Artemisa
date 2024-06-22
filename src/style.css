@@ -46,7 +46,10 @@ html {
 }
 
 .carro {
-  padding-top: 10rem;
+  padding-top: 12rem;
+  padding-bottom: 6rem;
+  position: relative;
+  z-index: 3;
 }
 
 .active {
@@ -317,6 +320,13 @@ footer .footer-bottom {
   color: #ffd600;
 }
 
+.checkOut {
+  padding-top: 12rem;
+  padding-bottom: 6rem;
+  position: relative;
+  z-index: 3;
+}
+
 .itemListContainer {
   padding-top: 10rem;
   color: #100e10;
@@ -370,6 +380,31 @@ footer .footer-bottom {
   overflow: hidden;
   background-color: #fcfcfc;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 28rem;
+}
+.itemListContainer .productos .item .carousel {
+  height: 18rem;
+  width: 115%;
+  left: -14px;
+}
+.itemListContainer .productos .item .carousel .carousel-control-next {
+  visibility: hidden;
+  opacity: 0;
+  width: 25%;
+  transition: ease-in-out 0.3s;
+}
+.itemListContainer .productos .item .carousel .carousel-control-prev {
+  visibility: hidden;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+}
+.itemListContainer .productos .item .carousel:hover .carousel-control-next {
+  visibility: visible;
+  opacity: 1;
+}
+.itemListContainer .productos .item .carousel:hover .carousel-control-prev {
+  visibility: visible;
+  opacity: 1;
 }
 .itemListContainer .productos .item .botones {
   align-self: flex-start;
@@ -411,6 +446,7 @@ footer .footer-bottom {
   background-position: center;
   background-repeat: no-repeat;
   height: 11rem;
+  z-index: 2;
 }
 .itemListContainer .productos .item .itemDetalles .detalles {
   cursor: pointer;
@@ -461,6 +497,12 @@ footer .footer-bottom {
 }
 .itemDetail .itemDetailInfo .infoDescripcion {
   font-size: 18px;
+}
+.itemDetail .itemDetailInfo .carousel {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  left: 0;
 }
 .itemDetail .itemDetailAside {
   display: grid;

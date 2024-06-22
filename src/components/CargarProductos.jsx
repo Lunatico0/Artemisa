@@ -1,39 +1,18 @@
 import React, { useState } from 'react';
 import { collection, addDoc, getDocs, query, where } from 'firebase/firestore';
 import { db } from '../firebase/config';
+import productos from '../data/productosArtemisaImagenes.json'
+import categoria from '../data/categoriasArtemisaImagenes.json'
 
 const CargarProductos = () => {
   const [selectedOption, setSelectedOption] = useState('categoria');
 
   const handleSet = async (destino, origen) => {
-    try {
-      const ref = collection(db, destino);
-
-      if (destino === 'productos') {
-        // Consulta para verificar si el producto ya existe
-        const querySnapshot = await getDocs(query(ref, where('id', '==', origen.id)));
-
-        if (querySnapshot.empty) {
-          await addDoc(ref, origen);
-          console.log('Producto agregado correctamente.');
-        }
-      } else if (destino === 'categoria') {
-        const catQuerySnapshot = await getDocs(query(ref, where('categoriaId', '==', origen.categoriaId)));
-        const subCatQuerySnapshot = await getDocs(query(ref, where('subcategorias.subcategoriaId', '==', origen.subcategorias.subcategoriaId)));
-
-        if (catQuerySnapshot.empty) {
-          await addDoc(ref, origen);
-          console.log('Categoria agregada correctamente.');
-        }
-        if (subCatQuerySnapshot.empty) {
-          await addDoc(ref, origen);
-          console.log('Subcategoria agregada correctamente.');
-        }
-        console.log('Verificación de categoría y subcategorías.');
-      }
-    } catch (error) {
-      console.error('Error al agregar el producto o la categoría:', error);
-    }
+    const arrayToUpload = origen === 'categoria' ? categoria : productos;
+    const ref = collection(db, destino);
+    arrayToUpload.forEach(prod => {
+      addDoc(ref, prod);
+    });
   };
 
   const handleChange = (event) => {

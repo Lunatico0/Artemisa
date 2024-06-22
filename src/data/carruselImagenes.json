@@ -1,32 +1,8 @@
 [
-  {
-    "id": "1",
-    "alt": "Waterproof",
-    "url": "/assets/carrusel/images/carrusel-1.jpg"
-  },
-  {
-    "id": "2",
-    "alt": "Nuevos Ingresos",
-    "url": "/assets/carrusel/images/carrusel-2.jpg"
-  },
-  {
-    "id": "3",
-    "alt": "Vinilicos para pegar",
-    "url": "/assets/carrusel/images/carrusel-3.jpg"
-  },
-  {
-    "id": "4",
-    "alt": "Decks",
-    "url": "/assets/carrusel/images/carrusel-4.jpg"
-  },
-  {
-    "id": "5",
-    "alt": "Todo en cornizas",
-    "url": "/assets/carrusel/images/carrusel-5.jpg"
-  },
-  {
-    "id": "6",
-    "alt": "100% Acero inoxidable",
-    "url": "/assets/carrusel/images/carrusel-6.jpg"
-  }
+  "/assets/carrusel/images/carrusel-1.jpg",
+  "/assets/carrusel/images/carrusel-2.jpg",
+  "/assets/carrusel/images/carrusel-3.jpg",
+  "/assets/carrusel/images/carrusel-4.jpg",
+  "/assets/carrusel/images/carrusel-5.jpg",
+  "/assets/carrusel/images/carrusel-6.jpg"
 ]
