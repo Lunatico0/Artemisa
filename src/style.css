@@ -72,6 +72,19 @@ html {
 .oscuro .carro {
   color: #fcfcfc;
 }
+.oscuro .carro .producto .prodDesc {
+  color: #fcfcfc;
+}
+.oscuro .carro .carroInfo .botones button {
+  color: #fcfcfc;
+  background: rgba(252, 252, 252, 0.3);
+}
+.oscuro .carro .carroInfo .botones .comprar {
+  background: rgba(252, 252, 252, 0.2);
+}
+.oscuro .carro .carroInfo .botones .comprar .navLink {
+  color: #fcfcfc;
+}
 .oscuro .mainContainer .sliderContainer .arrows {
   color: #fcfcfc;
 }

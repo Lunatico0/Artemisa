@@ -74,6 +74,32 @@ html {
   
   .carro{
     color: $textLight;
+    
+    .producto{
+
+      .prodDesc{
+        color: $textLight;
+      }
+    }
+    
+    .carroInfo{
+      
+      .botones{
+        
+        button{
+          color: $textLight;
+          background: rgba($backgroundLight, .3);
+        }
+        
+        .comprar{
+          background: rgba($backgroundLight, .2);
+
+          .navLink{
+            color: $textLight;
+          }
+        }
+      }
+    }
   }
 
   .mainContainer {

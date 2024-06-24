@@ -1,12 +1,13 @@
-import { createContext, useEffect, useState } from "react"
+import { createContext, useEffect, useState } from "react";
 
 export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
-
-  const [cantidad, setCantidad] = useState(1)
-
-  const [carrito, setCarrito] = useState([]);
+  const [cantidad, setCantidad] = useState(1);
+  const [carrito, setCarrito] = useState(() => {
+    const savedCart = localStorage.getItem("carrito");
+    return savedCart ? JSON.parse(savedCart) : [];
+  });
 
   let breadcrumb = "";
 
@@ -33,59 +34,42 @@ export const CartProvider = ({ children }) => {
 
   }, [handleDarkMode])
 
+  useEffect(() => {
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+  }, [carrito]);
+
   const agregarAlCarrito = (producto) => {
     const productoEncontrado = carrito.find(prod => prod.id === producto.id);
-    productoEncontrado ? setCarrito(carrito.map(prod =>
-      prod.id === producto.id ? { ...prod, cantidad: prod.cantidad + 1 } : prod
-    )) : setCarrito([...carrito, { ...producto, cantidad: 1 }]);
-    localStorage.setItem("carrito", JSON.stringify(carrito))
-  }
+    if (productoEncontrado) {
+      setCarrito(carrito.map(prod => prod.id === producto.id ? { ...prod, cantidad: prod.cantidad + 1 } : prod));
+    } else {
+      setCarrito([...carrito, { ...producto, cantidad: 1 }]);
+    }
+  };
 
-
-  //* Cantidad de productos
   const calcularCantidad = () => {
-    return carrito.length
-  }
+    return carrito.length;
+  };
 
-  //* Total Productos
   const calcularTotal = () => {
     return carrito.reduce((acc, prod) => acc + prod.precio * prod.cantidad, 0).toFixed(2);
-  }
+  };
 
-  //* Vaciar Carrito
   const vaciarCarrito = () => {
-    setCarrito([])
-  }
+    setCarrito([]);
+  };
 
-  //* agregar unidad de dicho producto
   const handleSumar = (producto) => {
-    setCarrito(carrito.map(prod => {
-      if (prod.id === producto.id) {
-        return { ...prod, cantidad: prod.cantidad + 1 };
-      }
-      return prod;
-    }));
-  }
+    setCarrito(carrito.map(prod => prod.id === producto.id ? { ...prod, cantidad: prod.cantidad + 1 } : prod));
+  };
 
-  //* restar unidad de dicho producto
   const handleRestar = (producto) => {
-    setCarrito(carrito.map(prod => {
-      if (prod.id === producto.id && prod.cantidad > 1) {
-        return { ...prod, cantidad: prod.cantidad - 1 };
-      }
-      return prod;
-    }));
-  }
+    setCarrito(carrito.map(prod => prod.id === producto.id && prod.cantidad > 1 ? { ...prod, cantidad: prod.cantidad - 1 } : prod));
+  };
 
-  //* agregar al carrito
-  const hadleAgregar = (producto) => {
-    const itemAgregado = { ...producto, cantidad }
-  }
-
-  //* Eliminar producto
   const eliminarProducto = (producto) => {
     setCarrito(carrito.filter(prod => prod.id !== producto.id));
-  }
+  };
 
   return (
     <CartContext.Provider value={{
@@ -93,7 +77,6 @@ export const CartProvider = ({ children }) => {
       breadcrumb,
       carrito,
       handleSumar,
-      hadleAgregar,
       handleRestar,
       vaciarCarrito,
       eliminarProducto,
@@ -105,6 +88,5 @@ export const CartProvider = ({ children }) => {
     }}>
       {children}
     </CartContext.Provider>
-  )
-
-}
+  );
+};
