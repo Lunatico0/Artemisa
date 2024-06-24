@@ -121,6 +121,11 @@ html {
   background-color: rgba(252, 252, 252, 0.3);
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 footer {
   background-color: #333;
   color: #fcfcfc;
@@ -365,13 +370,13 @@ footer .footer-bottom {
 .carro .producto .cantProd {
   position: relative;
   display: flex;
-  flex: 1 0 5rem;
+  flex: 1 0 4rem;
   justify-content: space-between;
   margin-right: 1rem;
   text-wrap: nowrap;
   gap: 0.5rem;
 }
-.carro .producto .cantProd .boton {
+.carro .producto .cantProd .boton, .carro .producto .cantProd .eliminar {
   align-self: flex-start;
   background-color: #bea9c0;
   color: #fcfcfc;
@@ -382,26 +387,27 @@ footer .footer-bottom {
   transition: background-color 0.3s ease, color 0.3s ease;
   border: solid 1px #bea9c0;
 }
-.carro .producto .cantProd .boton:hover {
+.carro .producto .cantProd .boton:hover, .carro .producto .cantProd .eliminar:hover {
   background-color: #8e7290;
   color: #100e10;
 }
-.carro .producto .cantProd .eliminar {
+.carro .producto .eliminar {
   position: absolute;
-  bottom: 4rem;
-  right: -1.5rem;
+  bottom: 7rem;
+  right: -0.5rem;
   background-color: transparent;
   border: none;
   backdrop-filter: opaccity(10%);
   transition: transform ease-in-out 0.15s;
 }
-.carro .producto .cantProd .eliminar:hover {
+.carro .producto .eliminar:hover {
   background-color: transparent;
   border: none;
   transform: scale(1.5);
 }
 .carro .carroInfo {
   display: flex;
+  flex-direction: row-reverse;
   height: 4rem;
   align-items: center;
   justify-content: space-between;

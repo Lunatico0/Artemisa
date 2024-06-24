@@ -44,7 +44,7 @@
     .cantProd {
       position: relative;
       display: flex;
-      flex: 1 0 5rem;
+      flex: 1 0 4rem;
       justify-content: space-between;
       margin-right: 1rem;
       text-wrap: nowrap;
@@ -66,53 +66,57 @@
           color: $textDark;
         }
       }
+    }
 
-      .eliminar {
-        position: absolute;
-        bottom: 4rem;
-        right: -1.5rem;
+    .eliminar {
+      @extend .boton;
+      position: absolute;
+      bottom: 7rem;
+      right: -0.5rem;
+      background-color: transparent;
+      border: none;
+      backdrop-filter: opaccity(10%);
+      transition: transform ease-in-out .15s;
+
+      &:hover {
         background-color: transparent;
         border: none;
-        backdrop-filter: opaccity(10%);
-        transition: transform ease-in-out .15s;
-
-        &:hover {
-          background-color: transparent;
-          border: none;
-          transform: scale(1.5);
-        }
+        transform: scale(1.5);
       }
     }
   }
-  .carroInfo{
+
+  .carroInfo {
     display: flex;
+    flex-direction: row-reverse;
     height: 4rem;
     align-items: center;
     justify-content: space-between;
 
-    .total{
+    .total {
       margin: 0;
     }
 
-    .botones{
+    .botones {
 
-      button{
+      button {
         width: 10rem;
         height: 3rem;
         background: rgba($backgroundDark, .7);
         border: none;
       }
-      
-      .vaciar{
+
+      .vaciar {
         border-top-left-radius: .5rem;
         border-bottom-left-radius: .5rem;
       }
-      
-      .comprar{
+
+      .comprar {
         background: rgba($backgroundDark, .6);
         border-bottom-right-radius: .5rem;
         border-top-right-radius: .5rem;
-        .navLink{
+
+        .navLink {
           color: $textDark;
           text-decoration: none;
         }
