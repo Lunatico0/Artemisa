@@ -123,7 +123,7 @@ html {
 
 footer {
   background-color: #333;
-  color: white;
+  color: #fcfcfc;
   text-align: center;
   padding: 20px 0;
   position: relative;
@@ -150,11 +150,11 @@ footer .footer-content .footer-section ul li {
   margin: 5px 0;
 }
 footer .footer-content .footer-section ul li a {
-  color: white;
+  color: #fcfcfc;
   text-decoration: none;
 }
 footer .footer-content .footer-section .socials a {
-  color: white;
+  color: #fcfcfc;
   margin: 0 5px;
   text-decoration: none;
   font-size: 18px;
@@ -350,9 +350,16 @@ footer .footer-bottom {
 }
 .carro .producto .prodDesc {
   flex: 4 0 20rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
 }
 .carro .producto .prodPrice {
-  flex: 1 0 4rem;
+  flex: 1 0 5rem;
+  text-wrap: nowrap;
 }
 .carro .producto .cantProd {
   position: relative;
@@ -360,6 +367,7 @@ footer .footer-bottom {
   flex: 1 0 5rem;
   justify-content: space-between;
   margin-right: 1rem;
+  text-wrap: nowrap;
   gap: 0.5rem;
 }
 .carro .producto .cantProd .boton {
@@ -383,7 +391,13 @@ footer .footer-bottom {
   right: -1.5rem;
   background-color: transparent;
   border: none;
-  backdrop-filter: blur(1px);
+  backdrop-filter: opaccity(10%);
+  transition: transform ease-in-out 0.15s;
+}
+.carro .producto .cantProd .eliminar:hover {
+  background-color: transparent;
+  border: none;
+  transform: scale(1.5);
 }
 
 .itemListContainer {

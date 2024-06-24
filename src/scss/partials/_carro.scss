@@ -27,10 +27,17 @@
 
     .prodDesc {
       flex: 4 0 20rem;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: normal;
     }
 
     .prodPrice {
-      flex: 1 0 4rem;
+      flex: 1 0 5rem;
+      text-wrap: nowrap;
     }
 
     .cantProd {
@@ -39,6 +46,7 @@
       flex: 1 0 5rem;
       justify-content: space-between;
       margin-right: 1rem;
+      text-wrap: nowrap;
       gap: .5rem;
 
       .boton {
@@ -64,7 +72,14 @@
         right: -1.5rem;
         background-color: transparent;
         border: none;
-        backdrop-filter: blur(1px);
+        backdrop-filter: opaccity(10%);
+        transition: transform ease-in-out .15s;
+
+        &:hover {
+          background-color: transparent;
+          border: none;
+          transform: scale(1.5);
+        }
       }
     }
   }
