@@ -15,6 +15,7 @@
     border: 1px solid #333;
     border-radius: .5rem;
     gap: .5rem;
+    backdrop-filter: blur(10px);
 
 
     .cartProdImg {

@@ -72,6 +72,10 @@ html {
 .oscuro {
   background-color: $backgroundDark;
   
+  .carro{
+    color: $textLight;
+  }
+
   .mainContainer {
     .sliderContainer {
       .arrows {
