@@ -1,8 +1,21 @@
+.navcrumb {
+
+  .breadcrumb {
+
+    .breadcrumb-item{
+      list-style: none;
+      a{
+        text-decoration: underline;
+        color: $textDark;
+      }
+    }
+  }
+}
+
 .itemDetail {
   position: relative;
   z-index: 1;
   display: flex;
-
 
   .itemDetailInfo {
     width: 60%;
@@ -30,7 +43,7 @@
       .carousel-inner {
 
         .carousel-item {
-          
+
           img {
             object-fit: fill;
             min-width: 100%;
@@ -70,7 +83,6 @@
       font-size: 1.3rem;
     }
 
-
     .botones {
       align-self: center;
       width: 90%;
@@ -82,7 +94,6 @@
       cursor: pointer;
       border: 2px solid $primary;
       transition: background-color 0.3s ease, color 0.3s ease;
-
 
       &:hover {
         background-color: $secondary;

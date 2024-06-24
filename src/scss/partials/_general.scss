@@ -48,13 +48,6 @@ html {
   min-height: 100vh;
 }
 
-.carro {
-  padding-top: 12rem;
-  padding-bottom: 6rem;
-  position: relative;
-  z-index: 2;
-}
-
 .active {
   font-weight: bold;
 }
@@ -109,8 +102,6 @@ html {
 
   .itemListContainer {
     color: $textLight;
-    position: relative;
-    z-index: 2;
 
     .tituloProductos {
       color: $textLight;
@@ -130,10 +121,6 @@ html {
 
   .header {
     color: $textLight;
-
-
-
-
 
     .carrito {
       a {
@@ -210,6 +197,7 @@ footer {
       }
 
       .socials {
+        
         a {
           color: white;
           margin: 0 5px;

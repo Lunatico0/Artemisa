@@ -1,0 +1,70 @@
+.carro {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 12rem;
+  padding-bottom: 6rem;
+  gap: 1rem;
+  z-index: 2;
+
+  .producto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 1px solid #333;
+    border-radius: .5rem;
+    gap: .5rem;
+
+
+    .cartProdImg {
+      aspect-ratio: 4/3;
+      width: 15rem;
+      margin: 1rem 0 1rem 1rem;
+      border-radius: .5rem;
+    }
+
+    .prodDesc {
+      flex: 4 0 20rem;
+    }
+
+    .prodPrice {
+      flex: 1 0 4rem;
+    }
+
+    .cantProd {
+      position: relative;
+      display: flex;
+      flex: 1 0 5rem;
+      justify-content: space-between;
+      margin-right: 1rem;
+      gap: .5rem;
+
+      .btn {
+        align-self: flex-start;
+        background-color: $secondary;
+        color: $textLight;
+        text-transform: uppercase;
+        border-radius: .4rem;
+        cursor: pointer;
+        border: none;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        border: solid 1px $secondary;
+
+        &:hover {
+          background-color: $primary;
+          color: $textDark;
+        }
+      }
+
+      .eliminar {
+        position: absolute;
+        bottom: 7rem;
+        right: -1.5rem;
+        background-color: transparent;
+        border: none;
+        backdrop-filter: blur(1px);
+      }
+    }
+  }
+}

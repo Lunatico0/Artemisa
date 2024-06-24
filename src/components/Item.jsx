@@ -45,7 +45,7 @@ const Item = ({ producto }) => {
   const descripcionRef = useRef(null);
   const [descripcionTruncada, setDescripcionTruncada] = useState(producto.descripcion);
 
-  const { carrito, setCarrito } = useContext(CartContext)
+  const { agregarAlCarrito } = useContext(CartContext)
 
 
   const itemDetalles = (e) => {
@@ -73,7 +73,7 @@ const Item = ({ producto }) => {
           <p className='itemDetallesDescripcion' ref={descripcionRef}>{descripcionTruncada}</p>
           <p className='itemDetallesPrecio'>u$s{producto.precio}</p>
         </div>
-        <button onClick={() => setCarrito([...carrito, producto])} className="botones agregarProducto" id={producto.id}>Agregar</button>
+        <button onClick={() => agregarAlCarrito(producto)} className="botones agregarProducto" id={producto.id}>Agregar</button>
       </div>
     </div>
   );

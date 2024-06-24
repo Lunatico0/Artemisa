@@ -19,7 +19,7 @@ const ItemDetailContainer = () => {
     producto?.imagenesSecundarias?.imagen3 || ""
   ]
 
-  const { carrito, setCarrito } = useContext(CartContext)
+  const { agregarAlCarrito } = useContext(CartContext)
 
   useEffect(() => {
     const productoRef = doc(db, "productos", id)
@@ -54,7 +54,7 @@ const ItemDetailContainer = () => {
           <h2 className='detailNombre'>{producto.descripcion}</h2>
           <h2 className='detailAdicional'>{producto.descripcionAlterna}</h2>
           <p className='detailPrecio'>${producto.precio}</p>
-          <button onClick={() => setCarrito([...carrito, producto])} className="botones agregarProducto detailAgregar" id={producto.id}>Agregar</button>
+          <button onClick={() => agregarAlCarrito(producto)} className="botones agregarProducto detailAgregar" id={producto.id}>Agregar</button>
         </div>
       </div>
     </div>
