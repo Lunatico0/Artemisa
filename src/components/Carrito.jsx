@@ -30,10 +30,10 @@ const Carrito = () => {
             <p className='prodDesc'>Descripción: {prod.descripcion}</p>
             <p className='prodPrice'>Precio: ${prod.precio}</p>
             <div className='cantProd'>
-              <button className='btn btnCantProdMas' onClick={() => handleSumar(prod)}>➕</button>
+              <button className='boton btnCantProdMenos' onClick={() => handleRestar(prod)}>➖</button>
               <p>Cantidad: {prod.cantidad}</p>
-              <button className='btn btnCantProdMenos' onClick={() => handleRestar(prod)}>➖</button>
-              <button className='btn eliminar' onClick={() => eliminarProducto(prod)}>🗑️</button>
+              <button className='boton btnCantProdMas' onClick={() => handleSumar(prod)}>➕</button>
+              <button className='boton eliminar' onClick={() => eliminarProducto(prod)}>🗑️</button>
             </div>
           </div>
         ))}

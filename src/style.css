@@ -358,7 +358,7 @@ footer .footer-bottom {
   margin-right: 1rem;
   gap: 0.5rem;
 }
-.carro .producto .cantProd .btn {
+.carro .producto .cantProd .boton {
   align-self: flex-start;
   background-color: #bea9c0;
   color: #fcfcfc;
@@ -369,7 +369,7 @@ footer .footer-bottom {
   transition: background-color 0.3s ease, color 0.3s ease;
   border: solid 1px #bea9c0;
 }
-.carro .producto .cantProd .btn:hover {
+.carro .producto .cantProd .boton:hover {
   background-color: #8e7290;
   color: #100e10;
 }
