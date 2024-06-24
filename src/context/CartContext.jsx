@@ -31,15 +31,14 @@ export const CartProvider = ({ children }) => {
       localStorage.setItem("darkMode", darkMode);
     }
 
-    localStorage.setItem("carrito", carrito)
-
-  }, [handleDarkMode, carrito])
+  }, [handleDarkMode])
 
   const agregarAlCarrito = (producto) => {
     const productoEncontrado = carrito.find(prod => prod.id === producto.id);
     productoEncontrado ? setCarrito(carrito.map(prod =>
       prod.id === producto.id ? { ...prod, cantidad: prod.cantidad + 1 } : prod
     )) : setCarrito([...carrito, { ...producto, cantidad: 1 }]);
+    localStorage.setItem("carrito", JSON.stringify(carrito))
   }
 
 

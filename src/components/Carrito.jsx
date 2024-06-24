@@ -3,9 +3,9 @@ import { CartContext } from '../context/CartContext';
 import { NavLink } from 'react-router-dom';
 
 const Carrito = () => {
-  const { carrito, calcularTotal, eliminarProducto, vaciarCarrito, handleSumar, handleRestar } = useContext(CartContext);
-
-
+  let { carrito, calcularTotal, eliminarProducto, vaciarCarrito, handleSumar, handleRestar } = useContext(CartContext);
+  
+  carrito = JSON.parse(localStorage.getItem("carrito", carrito)) || [];
 
   const agruparProductos = () => {
     const productoUnico = Array.from(new Set(carrito.map(prod => prod.id)));
@@ -27,7 +27,7 @@ const Carrito = () => {
               alt="prod.descripcion"
               className='cartProdImg'
             />
-            <p className='prodDesc'>{prod.descripcion}</p>
+            <NavLink to={`/item/${prod.id}`} className='prodDesc'>{prod.descripcion}</NavLink>
             <div className='cantProd'>
               <button className='boton btnCantProdMenos' onClick={() => handleRestar(prod)}>➖</button>
               <p>Cantidad: {prod.cantidad}</p>

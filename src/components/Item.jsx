@@ -39,8 +39,6 @@ const truncateText = (text, lines, containerRef) => {
 
 const Item = ({ producto }) => {
 
-
-
   const navigate = useNavigate();
   const descripcionRef = useRef(null);
   const [descripcionTruncada, setDescripcionTruncada] = useState(producto.descripcion);

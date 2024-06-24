@@ -362,6 +362,8 @@ footer .footer-bottom {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: normal;
+  color: #100e10;
+  text-decoration: none;
 }
 .carro .producto .prodPrice {
   flex: 1 0 5rem;
