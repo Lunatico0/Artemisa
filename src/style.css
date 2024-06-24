@@ -355,7 +355,7 @@ footer .footer-bottom {
   border-radius: 0.5rem;
 }
 .carro .producto .prodDesc {
-  flex: 4 0 20rem;
+  flex: 4 0 15rem;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -370,7 +370,7 @@ footer .footer-bottom {
 .carro .producto .cantProd {
   position: relative;
   display: flex;
-  flex: 1 0 4rem;
+  flex: 1 0 5rem;
   justify-content: space-between;
   margin-right: 1rem;
   text-wrap: nowrap;
