@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { CartContext } from '../context/CartContext';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Carrito = () => {
   const { carrito, calcularTotal, eliminarProducto, vaciarCarrito, handleSumar, handleRestar } = useContext(CartContext);
@@ -27,7 +27,7 @@ const Carrito = () => {
               alt="prod.descripcion"
               className='cartProdImg'
             />
-            <p className='prodDesc'>Descripción: {prod.descripcion}</p>
+            <p className='prodDesc'>{prod.descripcion}</p>
             <p className='prodPrice'>Precio: ${prod.precio}</p>
             <div className='cantProd'>
               <button className='boton btnCantProdMenos' onClick={() => handleRestar(prod)}>➖</button>
@@ -39,12 +39,16 @@ const Carrito = () => {
         ))}
         {
           carrito.length > 0 ?
-            <>
-              <h2>Total: ${calcularTotal()}</h2>
-              <button onClick={vaciarCarrito}>🗑️</button>
-              <Link to="/finalizar-compra">Ir a comprar</Link>
-            </>
-            : <h2>Tu carrito esta vacio 😥</h2>
+            <div className='carroInfo'>
+              <h2 className='total'>Total: ${calcularTotal()}</h2>
+              <div className="botones">
+                <button className='vaciar' onClick={vaciarCarrito}>Vaciar carrito🗑️</button>
+                <button className='comprar'>
+                  <NavLink className='navLink' to="/finalizar-compra">Ir a comprar 🛍️</NavLink>
+                </button>
+              </div>
+            </div>
+            : <h2 className='carroVacio'>Tu carrito esta vacio 😥</h2>
         }
       </div>
     </>

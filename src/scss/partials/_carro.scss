@@ -12,6 +12,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    height: 8rem;
     border: 1px solid #333;
     border-radius: .5rem;
     gap: .5rem;
@@ -20,8 +21,8 @@
 
     .cartProdImg {
       aspect-ratio: 4/3;
-      width: 15rem;
-      margin: 1rem 0 1rem 1rem;
+      width: 9rem;
+      margin: .5rem 0 .5rem .5rem;
       border-radius: .5rem;
     }
 
@@ -68,7 +69,7 @@
 
       .eliminar {
         position: absolute;
-        bottom: 7rem;
+        bottom: 4rem;
         right: -1.5rem;
         background-color: transparent;
         border: none;
@@ -79,6 +80,41 @@
           background-color: transparent;
           border: none;
           transform: scale(1.5);
+        }
+      }
+    }
+  }
+  .carroInfo{
+    display: flex;
+    height: 4rem;
+    align-items: center;
+    justify-content: space-between;
+
+    .total{
+      margin: 0;
+    }
+
+    .botones{
+
+      button{
+        width: 10rem;
+        height: 3rem;
+        background: rgba($backgroundDark, .7);
+        border: none;
+      }
+      
+      .vaciar{
+        border-top-left-radius: .5rem;
+        border-bottom-left-radius: .5rem;
+      }
+      
+      .comprar{
+        background: rgba($backgroundDark, .6);
+        border-bottom-right-radius: .5rem;
+        border-top-right-radius: .5rem;
+        .navLink{
+          color: $textDark;
+          text-decoration: none;
         }
       }
     }
