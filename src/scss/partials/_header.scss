@@ -12,10 +12,12 @@
     .logo {
       font-family: 'Times New Roman', Times, serif;
       display: flex;
-      background-color: transparent;
+      margin: 0;
+      background-color: rgba($backgroundDark, .5);
       color: $textoLogo;
       justify-content: center;
       align-items: center;
+      backdrop-filter: blur(7px);
     }
 
     &.hidden {

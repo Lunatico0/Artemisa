@@ -201,10 +201,12 @@ footer .footer-bottom {
 .header .brand .logo {
   font-family: "Times New Roman", Times, serif;
   display: flex;
-  background-color: transparent;
+  margin: 0;
+  background-color: rgba(16, 14, 16, 0.5);
   color: #cda151;
   justify-content: center;
   align-items: center;
+  backdrop-filter: blur(7px);
 }
 .header .brand.hidden {
   display: none;
@@ -647,7 +649,7 @@ footer .footer-bottom {
   left: 0;
 }
 .itemDetail .itemDetailInfo .carousel .carousel-inner .carousel-item img {
-  object-fit: fill;
+  object-fit: cover;
   min-width: 100%;
   max-height: 150%;
   margin-top: -4rem;
