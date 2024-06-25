@@ -28,9 +28,9 @@ const Carrito = () => {
             />
             <NavLink to={`/item/${prod.id}`} className='prodDesc'>{prod.descripcion}</NavLink>
             <div className='cantProd'>
-              <button className='boton btnCantProdMenos' onClick={() => handleRestar(prod)}>➖</button>
-              <p>Cantidad: {prod.cantidad}</p>
-              <button className='boton btnCantProdMas' onClick={() => handleSumar(prod)}>➕</button>
+              <button className='boton btnCantProdMenos' onClick={() => handleRestar(prod)}>-</button>
+              <p className='cantidad'>Cantidad: {prod.cantidad}</p>
+              <button className='boton btnCantProdMas' onClick={() => handleSumar(prod)}>+</button>
             </div>
             <button className='boton eliminar' onClick={() => eliminarProducto(prod)}>🗑️</button>
             <p className='prodPrice'>Precio: ${prod.precio}</p>

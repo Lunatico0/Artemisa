@@ -59,11 +59,14 @@ const ItemListContainer = () => {
       .catch((error) => {
         console.error("Error al obtener productos: ", error);
       });
-      breadcrumb = titulo;
+    breadcrumb = titulo;
   }, [categoryId]);
 
   return (
     <div className="itemListContainer">
+
+      {/* {productos.length > 0 ? <Carrusel imagenes={imagenes} autoPlay={true} showIndicators={true} /> : <ProgressBar animated now={80} />} */}
+
       <Carrusel imagenes={imagenes} autoPlay={true} showIndicators={true} />
       <h1 className='tituloProductos'>{titulo}</h1>
       <div className='productos'>

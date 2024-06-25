@@ -7,6 +7,10 @@
   font-family: "Josefin Sans", sans-serif;
 }
 
+p {
+  margin: 0;
+}
+
 html {
   background-position: center;
   background-size: cover;
@@ -377,6 +381,7 @@ footer .footer-bottom {
   width: 9rem;
   margin: 0.5rem 0 0.5rem 0.5rem;
   border-radius: 0.5rem;
+  object-fit: cover;
 }
 .carro .producto .prodDesc {
   flex: 4 0 15rem;
@@ -390,6 +395,7 @@ footer .footer-bottom {
   text-decoration: none;
 }
 .carro .producto .prodPrice {
+  margin: 0;
   flex: 1 0 5rem;
   text-wrap: nowrap;
 }
@@ -402,19 +408,23 @@ footer .footer-bottom {
   text-wrap: nowrap;
   gap: 0.5rem;
 }
+.carro .producto .cantProd .cantidad {
+  margin: 0;
+}
 .carro .producto .cantProd .boton, .carro .producto .cantProd .eliminar {
-  align-self: flex-start;
-  background-color: #bea9c0;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #566d66;
   color: #fcfcfc;
   text-transform: uppercase;
-  border-radius: 0.4rem;
+  border-radius: 50%;
   cursor: pointer;
   border: none;
   transition: background-color 0.3s ease, color 0.3s ease;
-  border: solid 1px #bea9c0;
+  border: solid 1px #566d66;
 }
 .carro .producto .cantProd .boton:hover, .carro .producto .cantProd .eliminar:hover {
-  background-color: #8e7290;
+  background-color: rgba(30, 61, 51, 0.4);
   color: #100e10;
 }
 .carro .producto .eliminar {
