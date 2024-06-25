@@ -8,6 +8,7 @@
   .brand {
     margin: 0 auto;
     text-decoration: none;
+    transition: opacity 0.5s, transform 0.5s;
 
     .logo {
       font-family: 'Times New Roman', Times, serif;
@@ -22,6 +23,8 @@
 
     &.hidden {
       display: none;
+      opacity: 0;
+      transform: translateY(-100%);
     }
   }
 

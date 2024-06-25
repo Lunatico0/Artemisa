@@ -10,10 +10,8 @@ const useScroll = () => {
 
       // Ocultar y mostrar la marca segun el desplazamiento
       if (currentScroll > lastScrollTop) {
-        // Scrolling down
         brand.classList.add('hidden');
       } else {
-        // Scrolling up
         brand.classList.remove('hidden');
       }
       lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;

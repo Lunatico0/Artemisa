@@ -197,6 +197,7 @@ footer .footer-bottom {
 .header .brand {
   margin: 0 auto;
   text-decoration: none;
+  transition: opacity 0.5s, transform 0.5s;
 }
 .header .brand .logo {
   font-family: "Times New Roman", Times, serif;
@@ -210,6 +211,8 @@ footer .footer-bottom {
 }
 .header .brand.hidden {
   display: none;
+  opacity: 0;
+  transform: translateY(-100%);
 }
 .header .headerCont {
   position: fixed;
