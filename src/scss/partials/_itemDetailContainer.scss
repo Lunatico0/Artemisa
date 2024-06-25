@@ -91,16 +91,16 @@
       align-self: center;
       width: 90%;
       padding: 0.5rem 1rem;
-      background-color: $primary;
+      background-color: $secondary;
       color: $textLight;
       text-transform: uppercase;
       border-radius: .3rem;
       cursor: pointer;
-      border: 2px solid $primary;
+      border: 2px solid $secondary;
       transition: background-color 0.3s ease, color 0.3s ease;
 
       &:hover {
-        background-color: $secondary;
+        background-color: $primary;
         color: $textDark;
       }
     }

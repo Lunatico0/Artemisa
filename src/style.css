@@ -987,16 +987,16 @@ footer .footer-bottom {
   align-self: center;
   width: 90%;
   padding: 0.5rem 1rem;
-  background-color: #a19d9d;
+  background-color: #4a4a4a;
   color: #fcfcfc;
   text-transform: uppercase;
   border-radius: 0.3rem;
   cursor: pointer;
-  border: 2px solid #a19d9d;
+  border: 2px solid #4a4a4a;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 .itemDetail .itemDetailAside .botones:hover {
-  background-color: #4a4a4a;
+  background-color: #a19d9d;
   color: #100e10;
 }
 
