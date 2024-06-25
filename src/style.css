@@ -118,7 +118,7 @@ footer .footer-bottom {
 
 .oscuro {
   color: #fcfcfc;
-  background-color: #100e10;
+  background-color: #4a4a4a;
 }
 .oscuro .carro {
   color: #fcfcfc;
@@ -140,14 +140,14 @@ footer .footer-bottom {
   color: #fcfcfc;
 }
 .oscuro .generalCont {
-  background-color: #100e10;
+  background-color: #4a4a4a;
   color: #fcfcfc;
 }
 .oscuro .generalCont .marmolSuperior {
   background-image: url("/src/assets/marmolNegro.jpeg");
 }
 .oscuro .generalCont .container .contenido .notFound {
-  background-color: #100e10;
+  background-color: #4a4a4a;
   color: #fcfcfc;
 }
 .oscuro .itemListContainer {
@@ -176,13 +176,13 @@ footer .footer-bottom {
   color: #fcfcfc;
 }
 .oscuro .header .headerCont {
-  background-color: #100e10;
+  background-color: #4a4a4a;
 }
 .oscuro .header .headerCont .nav .navMenu .navItem .navLink {
   color: #fcfcfc;
 }
 .oscuro .header .headerCont .nav .navMenu .navItem .subMenu {
-  background-color: #100e10;
+  background-color: #4a4a4a;
 }
 .oscuro .header .headerCont .nav .navMenu .navItem .subMenu .subNavItem .subNavLink {
   color: #fcfcfc;
@@ -200,7 +200,7 @@ footer .footer-bottom {
   color: #fcfcfc;
 }
 .oscuro .checkOut .register {
-  background-color: rgba(16, 14, 16, 0.5);
+  background-color: rgba(74, 74, 74, 0.5);
 }
 .oscuro .checkOut .register .form .nombre input, .oscuro div .checkOut .register .form .apellido input, div .oscuro .checkOut .register .form .apellido input,
 .oscuro div .checkOut .register .form .direccion input,
@@ -231,7 +231,7 @@ div .oscuro .checkOut .register .form .coments textarea,
 .oscuro div .checkOut .register .form > input textarea,
 div .oscuro .checkOut .register .form > input textarea {
   color: #fcfcfc;
-  background-color: rgba(16, 14, 16, 0.7);
+  background-color: rgba(74, 74, 74, 0.7);
   border: 1px solid rgba(252, 252, 252, 0.5);
 }
 .oscuro .checkOut .register .form .nombre span, .oscuro div .checkOut .register .form .apellido span, div .oscuro .checkOut .register .form .apellido span,
@@ -299,10 +299,10 @@ div .oscuro .checkOut .register .form .coments textarea.valid ~ span,
 .oscuro div .checkOut .register .form > input textarea.valid ~ span,
 div .oscuro .checkOut .register .form > input textarea.valid ~ span {
   color: rgba(252, 252, 252, 0.7);
-  background-color: rgba(16, 14, 16, 0.5);
+  background-color: rgba(74, 74, 74, 0.5);
 }
 .oscuro .compraRealizada .graciasCompra {
-  background-color: rgba(16, 14, 16, 0.5);
+  background-color: rgba(74, 74, 74, 0.5);
   color: #fcfcfc;
 }
 .oscuro .finalizar .total {
@@ -325,7 +325,7 @@ div .oscuro .checkOut .register .form > input textarea.valid ~ span {
   font-family: "Times New Roman", Times, serif;
   display: flex;
   margin: 0;
-  background-color: rgba(16, 14, 16, 0.5);
+  background-color: rgba(74, 74, 74, 0.5);
   color: #cda151;
   justify-content: center;
   align-items: center;
@@ -390,7 +390,7 @@ div .oscuro .checkOut .register .form > input textarea.valid ~ span {
 }
 .header .headerCont .nav .navMenu .navItem .subMenu .subNavItem .subNavLink:hover {
   border-radius: 0.5rem;
-  background-color: rgba(16, 14, 16, 0.8);
+  background-color: rgba(74, 74, 74, 0.8);
   color: #fcfcfc;
 }
 .header .headerCont .nav .navMenu .navItem:hover .subMenu {
@@ -565,7 +565,7 @@ div .oscuro .checkOut .register .form > input textarea.valid ~ span {
 .carro .carroInfo .botones button {
   width: 10rem;
   height: 3rem;
-  background: rgba(16, 14, 16, 0.7);
+  background: rgba(74, 74, 74, 0.7);
   border: none;
 }
 .carro .carroInfo .botones .vaciar {
@@ -573,7 +573,7 @@ div .oscuro .checkOut .register .form > input textarea.valid ~ span {
   border-bottom-left-radius: 0.5rem;
 }
 .carro .carroInfo .botones .comprar {
-  background: rgba(16, 14, 16, 0.6);
+  background: rgba(74, 74, 74, 0.6);
   border-bottom-right-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
@@ -931,7 +931,7 @@ div .checkOut .register .form .coments textarea,
 div .checkOut .register .form > input textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid rgba(16, 14, 16, 0.5);
+  border: 1px solid rgba(74, 74, 74, 0.5);
   background-color: rgba(252, 252, 252, 0.7);
   border-radius: 0.5rem;
   outline: none;
@@ -1046,7 +1046,7 @@ div .finalizar button:active {
   position: fixed;
   left: 0;
   width: 100vw;
-  background: #100e10;
+  background: #4a4a4a;
   color: #fcfcfc;
   padding: 20px;
   z-index: 2;
