@@ -48,7 +48,7 @@ export const CartProvider = ({ children }) => {
   };
 
   const calcularCantidad = () => {
-    return carrito.length;
+    return carrito.reduce((acc, prod) => acc + prod.cantidad, 0);
   };
 
   const calcularTotal = () => {
