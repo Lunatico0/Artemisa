@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
   const [footerStyle, setFooterStyle] = useState({ bottom: '-9rem' });
@@ -74,17 +75,14 @@ const Footer = () => {
         <Tab eventKey="nosotros" title="Nosotros" aria-label="Nosotros">
           <div className="footer-section about">
             <h2>About Us</h2>
-            <p>We are a company dedicated to providing the best products and services.</p>
+            <p>Vestimos tu hogar con la mejor calidad, calidez y delicadeza</p>
           </div>
         </Tab>
         <Tab eventKey="navegacion" title="Navegacion" aria-label="Navegacion">
           <div className="footer-section links">
             <h2>Quick Links</h2>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><NavLink to="/" onClick={scrollTop} className={({ isActive }) => isActive ? "active navLink" : "navLink"}>Inicio</NavLink></li>
             </ul>
           </div>
         </Tab>
@@ -92,8 +90,8 @@ const Footer = () => {
           <div className="footer-section contact">
             <h2>Contact Us</h2>
             <ul>
-              <li>Email: info@example.com</li>
-              <li>Phone: +123 456 789</li>
+              <li>Email: capittana116@gmail.com</li>
+              <li>Telefono: 3435578195</li>
             </ul>
           </div>
         </Tab>
