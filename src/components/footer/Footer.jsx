@@ -8,6 +8,10 @@ const Footer = () => {
   const footerRef = useRef(null);
   const [activeTab, setActiveTab] = useState('redes-sociales');
 
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
   const mostrarFooter = () => {
     setFooterStyle({ bottom: '0' });
   };
