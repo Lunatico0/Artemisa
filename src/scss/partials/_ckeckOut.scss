@@ -18,6 +18,7 @@ div {
       width: 40%;
       height: 28rem;
       overflow: scroll;
+      overflow-x: hidden;
 
       .producto {
         display: flex;
