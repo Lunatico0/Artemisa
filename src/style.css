@@ -706,17 +706,17 @@ footer .footer-bottom {
 .carro .producto .cantProd .boton, .carro .producto .cantProd .eliminar {
   width: 1.5rem;
   height: 1.5rem;
-  background-color: #566d66;
+  background-color: #4a4a4a;
   color: #fcfcfc;
   text-transform: uppercase;
   border-radius: 50%;
   cursor: pointer;
   border: none;
   transition: background-color 0.3s ease, color 0.3s ease;
-  border: solid 1px #566d66;
+  border: solid 1px #4a4a4a;
 }
 .carro .producto .cantProd .boton:hover, .carro .producto .cantProd .eliminar:hover {
-  background-color: rgba(30, 61, 51, 0.4);
+  background-color: #a19d9d;
   color: #100e10;
 }
 .carro .producto .eliminar {

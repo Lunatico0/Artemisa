@@ -61,18 +61,18 @@
       .boton {
         width: 1.5rem;
         height: 1.5rem;
-        background-color: #566d66;
+        background-color: $secondary;
         color: $textLight;
         text-transform: uppercase;
         border-radius: 50%;
         cursor: pointer;
         border: none;
         transition: background-color 0.3s ease, color 0.3s ease;
-        border: solid 1px #566d66;
+        border: solid 1px $secondary;
         
 
         &:hover {
-          background-color: rgba(30, 61, 51, 0.4);
+          background-color: $primary;
           color: $textDark;
         }
       }
