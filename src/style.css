@@ -427,9 +427,9 @@ footer .footer-bottom {
 .checkOut {
   display: flex;
   width: 100%;
-  padding-top: 12rem;
+  padding-top: 10rem;
   position: relative;
-  z-index: 3;
+  z-index: 2;
   gap: 2rem;
 }
 .checkOut .items {
@@ -637,15 +637,15 @@ footer .footer-bottom {
 }
 .finalizar button {
   padding: 0.5rem 1.5rem;
-  background-color: #8e7290;
-  border: 1px solid #8e7290;
+  background-color: #a19d9d;
+  border: 1px solid #a19d9d;
   border-radius: 0.5rem;
 }
 .finalizar button:hover {
-  background-color: #bea9c0;
+  background-color: #4a4a4a;
 }
 .finalizar button:active {
-  background-color: rgba(142, 114, 144, 0.8);
+  background-color: rgba(161, 157, 157, 0.8);
 }
 
 .carro {
@@ -847,17 +847,17 @@ footer .footer-bottom {
 .itemListContainer .productos .item .botones {
   align-self: flex-start;
   padding: 0.5rem 1rem;
-  background-color: #bea9c0;
+  background-color: #4a4a4a;
   color: #fcfcfc;
   text-transform: uppercase;
   border-radius: 2rem;
   cursor: pointer;
   border: none;
   transition: background-color 0.3s ease, color 0.3s ease;
-  border: solid 1px #bea9c0;
+  border: solid 1px #4a4a4a;
 }
 .itemListContainer .productos .item .botones:hover {
-  background-color: #8e7290;
+  background-color: #a19d9d;
   color: #100e10;
 }
 .itemListContainer .productos .item:hover {
@@ -872,7 +872,7 @@ footer .footer-bottom {
   cursor: pointer;
 }
 .itemListContainer .productos .item .itemDetalles {
-  background-color: #8e7290;
+  background-color: #a19d9d;
   border-radius: 0.5rem;
   margin-top: -1.5rem;
   padding: 1rem;
@@ -987,16 +987,16 @@ footer .footer-bottom {
   align-self: center;
   width: 90%;
   padding: 0.5rem 1rem;
-  background-color: #8e7290;
+  background-color: #a19d9d;
   color: #fcfcfc;
   text-transform: uppercase;
   border-radius: 0.3rem;
   cursor: pointer;
-  border: 2px solid #8e7290;
+  border: 2px solid #a19d9d;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 .itemDetail .itemDetailAside .botones:hover {
-  background-color: #bea9c0;
+  background-color: #4a4a4a;
   color: #100e10;
 }
 
@@ -1033,7 +1033,7 @@ footer .footer-bottom {
   width: 3rem;
 }
 .footer .socials a svg:hover {
-  color: #8e7290;
+  color: #a19d9d;
 }
 .footer .footer-section {
   margin-bottom: 20px;
@@ -1051,7 +1051,7 @@ footer .footer-bottom {
   transition: color 0.3s ease;
 }
 .footer .footer-section ul li a:hover {
-  color: #8e7290;
+  color: #a19d9d;
 }
 .footer .footer-bottom {
   text-align: center;
