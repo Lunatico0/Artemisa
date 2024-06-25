@@ -1,0 +1,191 @@
+.oscuro {
+  color: $textLight;
+  background-color: $backgroundDark;
+
+  .carro {
+    color: $textLight;
+
+    .producto {
+      .prodDesc {
+        color: $textLight;
+      }
+    }
+
+    .carroInfo {
+      .botones {
+        button {
+          color: $textLight;
+          background: rgba($backgroundLight, .3);
+        }
+
+        .comprar {
+          background: rgba($backgroundLight, .2);
+
+          .navLink {
+            color: $textLight;
+          }
+        }
+      }
+    }
+  }
+
+  .mainContainer {
+    .sliderContainer {
+      .arrows {
+        color: $textLight;
+      }
+    }
+  }
+
+  .generalCont {
+    background-color: $backgroundDark;
+    color: $textLight;
+
+    .marmolSuperior {
+      background-image: url("/src/assets/marmolNegro.jpeg");
+    }
+
+    .container {
+      .contenido {
+        .notFound {
+          background-color: $backgroundDark;
+          color: $textLight;
+        }
+      }
+    }
+  }
+
+  .itemListContainer {
+    .navcrumb {
+      .breadcrumb {
+        .breadcrumb-item {
+          a {
+            color: $textLight;
+          }
+        }
+
+        .breadcrumb-item.active {
+          color: rgba($textLight, .6);
+        }
+      }
+    }
+
+    color: $textLight;
+
+    .tituloProductos {
+      color: $textLight;
+
+      .navLink {
+        color: $textLight;
+      }
+    }
+
+    .itemDetail {
+      .itemDetailAside {
+        border: 1px solid #d8d8d8cc;
+        background-color: rgba($textDark, .6);
+      }
+    }
+  }
+
+  .header {
+    color: $textLight;
+
+    .carrito {
+      a {
+        span {
+          color: $textLight;
+        }
+      }
+    }
+
+    .headerCont {
+      background-color: $backgroundDark;
+
+      .nav {
+        .navMenu {
+          .navItem {
+            .navLink {
+              color: $textLight;
+            }
+
+            .subMenu {
+              background-color: $backgroundDark;
+
+              .subNavItem {
+                .subNavLink {
+                  color: $textLight;
+
+                  &:hover {
+                    background-color: rgba($backgroundLight, .3);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .checkOut {
+    .items {
+      .producto {
+        .cantProd {
+          .cantidad {
+            color: $textLight;
+          }
+
+          .prodDesc {
+            color: $textLight;
+          }
+        }
+
+        .prodPrice {
+          color: $textLight;
+        }
+      }
+    }
+
+    .register {
+      background-color: rgba($backgroundDark, .5);
+
+      .form {
+        .nombre {
+
+          & input,
+          textarea {
+            color: $textLight;
+            background-color: rgba($backgroundDark, .7);
+            border: 1px solid rgba($backgroundLight, .5);
+          }
+
+          & span {
+            color: rgba($textLight, .7);
+          }
+
+          & input:focus~span,
+          & input:valid~span,
+          & textarea:focus~span,
+          & textarea.valid~span {
+            color: rgba($textLight, .7);
+            background-color: rgba($backgroundDark, .5);
+          }
+        }
+      }
+    }
+  }
+
+  .compraRealizada{
+    .graciasCompra{
+      background-color: rgba($backgroundDark, .5);
+      color: $textLight;
+    }
+  }
+
+  .finalizar {
+    .total {
+      color: $textLight;
+    }
+  }
+}

@@ -69,81 +69,6 @@ html {
   max-height: 143%;
 }
 
-.oscuro {
-  background-color: #100e10;
-  color: #fcfcfc;
-}
-.oscuro .navcrumb .breadcrumb .breadcrumb-item a {
-  color: #fcfcfc;
-}
-.oscuro .navcrumb .breadcrumb .breadcrumb-item.active {
-  color: rgba(252, 252, 252, 0.6);
-}
-.oscuro .carro {
-  color: #fcfcfc;
-}
-.oscuro .carro .producto .prodDesc {
-  color: #fcfcfc;
-}
-.oscuro .carro .carroInfo .botones button {
-  color: #fcfcfc;
-  background: rgba(252, 252, 252, 0.3);
-}
-.oscuro .carro .carroInfo .botones .comprar {
-  background: rgba(252, 252, 252, 0.2);
-}
-.oscuro .carro .carroInfo .botones .comprar .navLink {
-  color: #fcfcfc;
-}
-.oscuro .mainContainer .sliderContainer .arrows {
-  color: #fcfcfc;
-}
-.oscuro .generalCont {
-  background-color: #100e10;
-  color: #fcfcfc;
-}
-.oscuro .generalCont .marmolSuperior {
-  background-image: url("/src/assets/marmolNegro.jpeg");
-}
-.oscuro .generalCont .container .contenido .notFound {
-  background-color: #100e10;
-  color: #fcfcfc;
-}
-.oscuro .itemListContainer {
-  color: #fcfcfc;
-}
-.oscuro .itemListContainer .tituloProductos {
-  color: #fcfcfc;
-}
-.oscuro .itemListContainer .tituloProductos .navLink {
-  color: #fcfcfc;
-}
-.oscuro .itemListContainer .itemDetail .itemDetailAside {
-  border: 1px solid rgba(216, 216, 216, 0.8);
-  background-color: rgba(16, 14, 16, 0.6);
-}
-.oscuro .header {
-  color: #fcfcfc;
-}
-.oscuro .header .carrito a span {
-  color: #fcfcfc;
-}
-.oscuro .header .headerCont {
-  background-color: #100e10;
-}
-.oscuro .header .headerCont .nav .navMenu .navItem .navLink {
-  color: #fcfcfc;
-}
-.oscuro .header .headerCont .nav .navMenu .navItem .subMenu {
-  background-color: #100e10;
-}
-.oscuro .header .headerCont .nav .navMenu .navItem .subMenu .subNavItem .subNavLink {
-  color: #fcfcfc;
-}
-.oscuro .header .headerCont .nav .navMenu .navItem .subMenu .subNavItem .subNavLink:hover {
-  background-color: rgba(252, 252, 252, 0.3);
-}
-
 p {
   margin: 0;
   padding: 0;
@@ -189,6 +114,156 @@ footer .footer-content .footer-section .socials a {
 }
 footer .footer-bottom {
   margin-top: 20px;
+}
+
+.oscuro {
+  color: #fcfcfc;
+  background-color: #100e10;
+}
+.oscuro .carro {
+  color: #fcfcfc;
+}
+.oscuro .carro .producto .prodDesc {
+  color: #fcfcfc;
+}
+.oscuro .carro .carroInfo .botones button {
+  color: #fcfcfc;
+  background: rgba(252, 252, 252, 0.3);
+}
+.oscuro .carro .carroInfo .botones .comprar {
+  background: rgba(252, 252, 252, 0.2);
+}
+.oscuro .carro .carroInfo .botones .comprar .navLink {
+  color: #fcfcfc;
+}
+.oscuro .mainContainer .sliderContainer .arrows {
+  color: #fcfcfc;
+}
+.oscuro .generalCont {
+  background-color: #100e10;
+  color: #fcfcfc;
+}
+.oscuro .generalCont .marmolSuperior {
+  background-image: url("/src/assets/marmolNegro.jpeg");
+}
+.oscuro .generalCont .container .contenido .notFound {
+  background-color: #100e10;
+  color: #fcfcfc;
+}
+.oscuro .itemListContainer {
+  color: #fcfcfc;
+}
+.oscuro .itemListContainer .navcrumb .breadcrumb .breadcrumb-item a {
+  color: #fcfcfc;
+}
+.oscuro .itemListContainer .navcrumb .breadcrumb .breadcrumb-item.active {
+  color: rgba(252, 252, 252, 0.6);
+}
+.oscuro .itemListContainer .tituloProductos {
+  color: #fcfcfc;
+}
+.oscuro .itemListContainer .tituloProductos .navLink {
+  color: #fcfcfc;
+}
+.oscuro .itemListContainer .itemDetail .itemDetailAside {
+  border: 1px solid rgba(216, 216, 216, 0.8);
+  background-color: rgba(16, 14, 16, 0.6);
+}
+.oscuro .header {
+  color: #fcfcfc;
+}
+.oscuro .header .carrito a span {
+  color: #fcfcfc;
+}
+.oscuro .header .headerCont {
+  background-color: #100e10;
+}
+.oscuro .header .headerCont .nav .navMenu .navItem .navLink {
+  color: #fcfcfc;
+}
+.oscuro .header .headerCont .nav .navMenu .navItem .subMenu {
+  background-color: #100e10;
+}
+.oscuro .header .headerCont .nav .navMenu .navItem .subMenu .subNavItem .subNavLink {
+  color: #fcfcfc;
+}
+.oscuro .header .headerCont .nav .navMenu .navItem .subMenu .subNavItem .subNavLink:hover {
+  background-color: rgba(252, 252, 252, 0.3);
+}
+.oscuro .checkOut .items .producto .cantProd .cantidad {
+  color: #fcfcfc;
+}
+.oscuro .checkOut .items .producto .cantProd .prodDesc {
+  color: #fcfcfc;
+}
+.oscuro .checkOut .items .producto .prodPrice {
+  color: #fcfcfc;
+}
+.oscuro .checkOut .register {
+  background-color: rgba(16, 14, 16, 0.5);
+}
+.oscuro .checkOut .register .form .nombre input, .oscuro .checkOut .register .form .apellido input,
+.oscuro .checkOut .register .form .direccion input,
+.oscuro .checkOut .register .form .tel input,
+.oscuro .checkOut .register .form .email input,
+.oscuro .checkOut .register .form .localidad input,
+.oscuro .checkOut .register .form .coments input,
+.oscuro .checkOut .register .form > input input,
+.oscuro .checkOut .register .form .nombre textarea,
+.oscuro .checkOut .register .form .apellido textarea,
+.oscuro .checkOut .register .form .direccion textarea,
+.oscuro .checkOut .register .form .tel textarea,
+.oscuro .checkOut .register .form .email textarea,
+.oscuro .checkOut .register .form .localidad textarea,
+.oscuro .checkOut .register .form .coments textarea,
+.oscuro .checkOut .register .form > input textarea {
+  color: #fcfcfc;
+  background-color: rgba(16, 14, 16, 0.7);
+  border: 1px solid rgba(252, 252, 252, 0.5);
+}
+.oscuro .checkOut .register .form .nombre span, .oscuro .checkOut .register .form .apellido span,
+.oscuro .checkOut .register .form .direccion span,
+.oscuro .checkOut .register .form .tel span,
+.oscuro .checkOut .register .form .email span,
+.oscuro .checkOut .register .form .localidad span,
+.oscuro .checkOut .register .form .coments span,
+.oscuro .checkOut .register .form > input span {
+  color: rgba(252, 252, 252, 0.7);
+}
+.oscuro .checkOut .register .form .nombre input:focus ~ span, .oscuro .checkOut .register .form .apellido input:focus ~ span,
+.oscuro .checkOut .register .form .direccion input:focus ~ span,
+.oscuro .checkOut .register .form .tel input:focus ~ span,
+.oscuro .checkOut .register .form .email input:focus ~ span,
+.oscuro .checkOut .register .form .localidad input:focus ~ span,
+.oscuro .checkOut .register .form .coments input:focus ~ span,
+.oscuro .checkOut .register .form > input input:focus ~ span, .oscuro .checkOut .register .form .nombre input:valid ~ span, .oscuro .checkOut .register .form .apellido input:valid ~ span,
+.oscuro .checkOut .register .form .direccion input:valid ~ span,
+.oscuro .checkOut .register .form .tel input:valid ~ span,
+.oscuro .checkOut .register .form .email input:valid ~ span,
+.oscuro .checkOut .register .form .localidad input:valid ~ span,
+.oscuro .checkOut .register .form .coments input:valid ~ span,
+.oscuro .checkOut .register .form > input input:valid ~ span, .oscuro .checkOut .register .form .nombre textarea:focus ~ span, .oscuro .checkOut .register .form .apellido textarea:focus ~ span,
+.oscuro .checkOut .register .form .direccion textarea:focus ~ span,
+.oscuro .checkOut .register .form .tel textarea:focus ~ span,
+.oscuro .checkOut .register .form .email textarea:focus ~ span,
+.oscuro .checkOut .register .form .localidad textarea:focus ~ span,
+.oscuro .checkOut .register .form .coments textarea:focus ~ span,
+.oscuro .checkOut .register .form > input textarea:focus ~ span, .oscuro .checkOut .register .form .nombre textarea.valid ~ span, .oscuro .checkOut .register .form .apellido textarea.valid ~ span,
+.oscuro .checkOut .register .form .direccion textarea.valid ~ span,
+.oscuro .checkOut .register .form .tel textarea.valid ~ span,
+.oscuro .checkOut .register .form .email textarea.valid ~ span,
+.oscuro .checkOut .register .form .localidad textarea.valid ~ span,
+.oscuro .checkOut .register .form .coments textarea.valid ~ span,
+.oscuro .checkOut .register .form > input textarea.valid ~ span {
+  color: rgba(252, 252, 252, 0.7);
+  background-color: rgba(16, 14, 16, 0.5);
+}
+.oscuro .compraRealizada .graciasCompra {
+  background-color: rgba(16, 14, 16, 0.5);
+  color: #fcfcfc;
+}
+.oscuro .finalizar .total {
+  color: #fcfcfc;
 }
 
 .header {
@@ -350,10 +425,227 @@ footer .footer-bottom {
 }
 
 .checkOut {
+  display: flex;
+  width: 100%;
   padding-top: 12rem;
-  padding-bottom: 6rem;
   position: relative;
   z-index: 3;
+  gap: 2rem;
+}
+.checkOut .items {
+  display: flex;
+  padding: 1rem 1rem 0 0;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 25rem;
+  width: 40%;
+  height: 28rem;
+  overflow: scroll;
+}
+.checkOut .items .producto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 6rem;
+  min-width: 23rem;
+  border: 1px solid #333;
+  border-radius: 0.5rem;
+  backdrop-filter: blur(10px);
+  justify-content: space-between;
+}
+.checkOut .items .producto .cartProdImg {
+  aspect-ratio: 4/3;
+  width: 7rem;
+  margin: 0.25rem 0 0.25rem 0.25rem;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+.checkOut .items .producto .cantProd {
+  display: flex;
+  min-width: 12rem;
+  flex: 1 0 50%;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+.checkOut .items .producto .cantProd .cantidad {
+  margin: 0;
+}
+.checkOut .items .producto .cantProd .prodDesc {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  color: #100e10;
+  width: 90%;
+  text-decoration: none;
+}
+.checkOut .items .producto .prodPrice {
+  flex: 1 0 15%;
+  min-width: 3.5rem;
+  margin: 0;
+  text-wrap: nowrap;
+  text-align: center;
+}
+.checkOut .register {
+  width: 60%;
+  height: 28rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: rgba(252, 252, 252, 0.5);
+  backdrop-filter: blur(5px);
+}
+.checkOut .register .form {
+  display: grid;
+  grid-template-areas: "nombre apellido" "email telefono" "direccion localidad" "comentarios comentarios";
+  position: relative;
+  width: 100%;
+  gap: 1rem;
+  height: 100%;
+  align-items: center;
+  padding: 3rem 0;
+}
+.checkOut .register .form .nombre, .checkOut .register .form .apellido,
+.checkOut .register .form .direccion,
+.checkOut .register .form .tel,
+.checkOut .register .form .email,
+.checkOut .register .form .localidad,
+.checkOut .register .form .coments,
+.checkOut .register .form > input {
+  grid-area: "nombre";
+  position: relative;
+  width: 100%;
+}
+.checkOut .register .form .nombre input, .checkOut .register .form .apellido input,
+.checkOut .register .form .direccion input,
+.checkOut .register .form .tel input,
+.checkOut .register .form .email input,
+.checkOut .register .form .localidad input,
+.checkOut .register .form .coments input,
+.checkOut .register .form > input input,
+.checkOut .register .form .nombre textarea,
+.checkOut .register .form .apellido textarea,
+.checkOut .register .form .direccion textarea,
+.checkOut .register .form .tel textarea,
+.checkOut .register .form .email textarea,
+.checkOut .register .form .localidad textarea,
+.checkOut .register .form .coments textarea,
+.checkOut .register .form > input textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(16, 14, 16, 0.5);
+  background-color: rgba(252, 252, 252, 0.7);
+  border-radius: 0.5rem;
+  outline: none;
+  color: #100e10;
+  font-size: 1rem;
+}
+.checkOut .register .form .nombre span, .checkOut .register .form .apellido span,
+.checkOut .register .form .direccion span,
+.checkOut .register .form .tel span,
+.checkOut .register .form .email span,
+.checkOut .register .form .localidad span,
+.checkOut .register .form .coments span,
+.checkOut .register .form > input span {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1rem;
+  color: rgba(16, 14, 16, 0.7);
+  transition: transform 0.3s;
+}
+.checkOut .register .form .nombre input:focus ~ span, .checkOut .register .form .apellido input:focus ~ span,
+.checkOut .register .form .direccion input:focus ~ span,
+.checkOut .register .form .tel input:focus ~ span,
+.checkOut .register .form .email input:focus ~ span,
+.checkOut .register .form .localidad input:focus ~ span,
+.checkOut .register .form .coments input:focus ~ span,
+.checkOut .register .form > input input:focus ~ span, .checkOut .register .form .nombre input:valid ~ span, .checkOut .register .form .apellido input:valid ~ span,
+.checkOut .register .form .direccion input:valid ~ span,
+.checkOut .register .form .tel input:valid ~ span,
+.checkOut .register .form .email input:valid ~ span,
+.checkOut .register .form .localidad input:valid ~ span,
+.checkOut .register .form .coments input:valid ~ span,
+.checkOut .register .form > input input:valid ~ span, .checkOut .register .form .nombre textarea:focus ~ span, .checkOut .register .form .apellido textarea:focus ~ span,
+.checkOut .register .form .direccion textarea:focus ~ span,
+.checkOut .register .form .tel textarea:focus ~ span,
+.checkOut .register .form .email textarea:focus ~ span,
+.checkOut .register .form .localidad textarea:focus ~ span,
+.checkOut .register .form .coments textarea:focus ~ span,
+.checkOut .register .form > input textarea:focus ~ span, .checkOut .register .form .nombre textarea.valid ~ span, .checkOut .register .form .apellido textarea.valid ~ span,
+.checkOut .register .form .direccion textarea.valid ~ span,
+.checkOut .register .form .tel textarea.valid ~ span,
+.checkOut .register .form .email textarea.valid ~ span,
+.checkOut .register .form .localidad textarea.valid ~ span,
+.checkOut .register .form .coments textarea.valid ~ span,
+.checkOut .register .form > input textarea.valid ~ span {
+  color: rgba(16, 14, 16, 0.7);
+  transform: translate(10px, -10px);
+  padding: 0 10px;
+  border-radius: 1rem;
+  background-color: rgba(252, 252, 252, 0.5);
+  backdrop-filter: blur(10px);
+}
+.checkOut .register .form .apellido {
+  grid-area: "apellido";
+}
+.checkOut .register .form .direccion {
+  grid-area: "direccion";
+}
+.checkOut .register .form .tel {
+  grid-area: "telefono";
+}
+.checkOut .register .form .email {
+  grid-area: "email";
+}
+.checkOut .register .form .localidad {
+  grid-area: "localidad";
+}
+.checkOut .register .form .coments {
+  grid-area: "comentarios";
+}
+.checkOut .register .form .coments textarea {
+  width: calc(200% + 1rem);
+}
+
+.compraRealizada {
+  display: flex;
+  padding-top: 12rem;
+  position: relative;
+  z-index: 3;
+  gap: 2rem;
+}
+.compraRealizada .graciasCompra {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+  background-color: rgba(252, 252, 252, 0.5);
+  border-radius: 0.5rem;
+  backdrop-filter: blur(10px);
+}
+
+.finalizar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.finalizar button {
+  padding: 0.5rem 1.5rem;
+  background-color: #8e7290;
+  border: 1px solid #8e7290;
+  border-radius: 0.5rem;
+}
+.finalizar button:hover {
+  background-color: #bea9c0;
+}
+.finalizar button:active {
+  background-color: rgba(142, 114, 144, 0.8);
 }
 
 .carro {

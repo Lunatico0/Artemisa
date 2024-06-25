@@ -71,11 +71,23 @@ export const CartProvider = ({ children }) => {
     setCarrito(carrito.filter(prod => prod.id !== producto.id));
   };
 
+  const agruparProductos = () => {
+    const productoUnico = Array.from(new Set(carrito.map(prod => prod.id)));
+    return productoUnico.map(id => {
+      const producto = carrito.find(prod => prod.id === id);
+      const total = producto.cantidad * producto.precio;
+      return {
+        ...producto, total
+      };
+    });
+  };
+
   return (
     <CartContext.Provider value={{
       cantidad,
       breadcrumb,
       carrito,
+      agruparProductos,
       handleSumar,
       handleRestar,
       vaciarCarrito,
