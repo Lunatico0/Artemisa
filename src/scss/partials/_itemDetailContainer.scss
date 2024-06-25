@@ -9,6 +9,10 @@
         color: $textDark;
       }
     }
+
+    .breadcrumb-item.active{
+      color: rgba($textDark, .7);
+    }
   }
 }
 

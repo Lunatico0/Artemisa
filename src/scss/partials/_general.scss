@@ -72,6 +72,22 @@ html {
 .oscuro {
   background-color: $backgroundDark;
   
+  .navcrumb {
+
+    .breadcrumb {
+  
+      .breadcrumb-item{
+
+        a{
+          color: $textLight;
+        }
+      }
+      .breadcrumb-item.active{
+        color: rgba($textLight, .6);
+      }
+    }
+  }
+
   .carro{
     color: $textLight;
     

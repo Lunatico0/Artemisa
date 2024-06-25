@@ -69,6 +69,12 @@ html {
   background-color: #100e10;
   color: #fcfcfc;
 }
+.oscuro .navcrumb .breadcrumb .breadcrumb-item a {
+  color: #fcfcfc;
+}
+.oscuro .navcrumb .breadcrumb .breadcrumb-item.active {
+  color: rgba(252, 252, 252, 0.6);
+}
 .oscuro .carro {
   color: #fcfcfc;
 }
@@ -609,6 +615,9 @@ footer .footer-bottom {
 .navcrumb .breadcrumb .breadcrumb-item a {
   text-decoration: underline;
   color: #100e10;
+}
+.navcrumb .breadcrumb .breadcrumb-item.active {
+  color: rgba(16, 14, 16, 0.7);
 }
 
 .itemDetail {

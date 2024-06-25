@@ -17,7 +17,7 @@ const ToggleButton = (props) => {
         <label className='label' htmlFor="toggle">
           <div className='circle'>
             {
-              isDarkMode === true ? props.img2 : props.img1
+              isDarkMode === true ? props.img1 : props.img2
             }
           </div>
         </label>
