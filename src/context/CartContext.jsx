@@ -87,6 +87,7 @@ export const CartProvider = ({ children }) => {
       cantidad,
       breadcrumb,
       carrito,
+      darkMode,
       agruparProductos,
       handleSumar,
       handleRestar,

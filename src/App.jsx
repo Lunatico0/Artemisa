@@ -1,7 +1,10 @@
 import './style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-toastify/dist/ReactToastify.css';
+import { useContext } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { CartProvider } from './context/CartContext';
+import { CartContext, CartProvider } from './context/CartContext';
+import { ToastContainer, toast } from 'react-toastify';
 import Header from './components/header/Header';
 import Carrito from './components/Carrito';
 import ItemListContainer from './components/ItemListContainer';
@@ -10,10 +13,7 @@ import NotFound from './components/NotFound';
 import Footer from './components/footer/Footer';
 import Carrusel from './components/Carrusel';
 import CheckOut from './components/CheckOut';
-import { Button } from 'react-bootstrap';
 import CargarProductos from './components/CargarProductos';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -24,6 +24,7 @@ function App() {
           <div className="container">
             <div className="contenido">
               <ToastContainer 
+              theme="dark"
               stacked 
               autoClose={3000}
               position="bottom-right"
