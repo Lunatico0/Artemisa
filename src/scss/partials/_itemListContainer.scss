@@ -64,7 +64,7 @@
         width: 115%;
         left: -14px;
 
-        .carousel-inner{
+        .carousel-inner {
           @media (max-width: 1400px) {
             height: 15rem;
           }
@@ -76,23 +76,17 @@
           width: 25%;
           transition: ease-in-out .3s;
         }
-        
+
         .carousel-control-prev {
-          visibility: hidden;
-          opacity: 0;
-          transition: ease-in-out .3s;
+          @extend .carousel-control-next;
+          width: 20%;
         }
-        
-        &:hover{
-          .carousel-control-next{
-            visibility: visible;
-            opacity: 1;
-          }
-          .carousel-control-prev{
-            visibility: visible;
-            opacity: 1;
-          } 
-        } 
+
+        &:hover .carousel-control-next, 
+        &:hover .carousel-control-prev {
+          visibility: visible;
+          opacity: 1;
+        }
       }
 
       .botones {
@@ -112,7 +106,7 @@
           color: $textDark;
         }
 
-        &:active{
+        &:active {
           background-color: rgba($primary, .9);
         }
       }

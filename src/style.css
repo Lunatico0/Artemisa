@@ -658,22 +658,16 @@ div .oscuro .checkOut .register .form > input textarea.valid ~ span {
     height: 15rem;
   }
 }
-.itemListContainer .productos .item .carousel .carousel-control-next {
+.itemListContainer .productos .item .carousel .carousel-control-next, .itemListContainer .productos .item .carousel .carousel-control-prev {
   visibility: hidden;
   opacity: 0;
   width: 25%;
   transition: ease-in-out 0.3s;
 }
 .itemListContainer .productos .item .carousel .carousel-control-prev {
-  visibility: hidden;
-  opacity: 0;
-  transition: ease-in-out 0.3s;
+  width: 20%;
 }
-.itemListContainer .productos .item .carousel:hover .carousel-control-next {
-  visibility: visible;
-  opacity: 1;
-}
-.itemListContainer .productos .item .carousel:hover .carousel-control-prev {
+.itemListContainer .productos .item .carousel:hover .carousel-control-next, .itemListContainer .productos .item .carousel:hover .carousel-control-prev {
   visibility: visible;
   opacity: 1;
 }

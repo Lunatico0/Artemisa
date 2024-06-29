@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { CartContext } from '../context/CartContext';
 import Carrusel from './Carrusel';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 
 //* Truncar descripcion de cada item despues de 2 lineas segun el ancho del container
 const truncateText = (text, lines, containerRef) => {
@@ -71,7 +71,7 @@ const Item = ({ producto }) => {
   const notify = () => {
     toast(`Se agrego exitosamente ${producto.descripcion}`);
   }
-  
+
   return (
     <div className='item'>
       <Carrusel imagenes={imagenesProd} autoPlay={false} showIndicators={false} />

@@ -25,6 +25,7 @@ function App() {
             <div className="contenido">
               <ToastContainer 
               stacked 
+              autoClose={3000}
               position="bottom-right"
               />
               <Header />
