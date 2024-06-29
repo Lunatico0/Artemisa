@@ -2,10 +2,12 @@ import React, { useContext, useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { CartContext } from '../context/CartContext';
 import Carrusel from './Carrusel';
+import { ToastContainer, toast } from 'react-toastify';
 
 //* Truncar descripcion de cada item despues de 2 lineas segun el ancho del container
 const truncateText = (text, lines, containerRef) => {
   if (!containerRef.current) return text;
+  
 
   const computedStyle = window.getComputedStyle(containerRef.current);
   const lineHeight = parseFloat(computedStyle.lineHeight);
@@ -61,7 +63,15 @@ const Item = ({ producto }) => {
     producto.imagenesSecundarias?.imagen2 || "",
     producto.imagenesSecundarias?.imagen3 || ""
   ]
+  
+  const handleAgregar = () => {
+    agregarAlCarrito(producto)
+  }
 
+  const notify = () => {
+    toast(`Se agrego exitosamente ${producto.descripcion}`);
+  }
+  
   return (
     <div className='item'>
       <Carrusel imagenes={imagenesProd} autoPlay={false} showIndicators={false} />
@@ -71,7 +81,7 @@ const Item = ({ producto }) => {
           <p className='itemDetallesDescripcion' ref={descripcionRef}>{descripcionTruncada}</p>
           <p className='itemDetallesPrecio'>u$s{producto.precio}</p>
         </div>
-        <button onClick={() => agregarAlCarrito(producto)} className="botones agregarProducto" id={producto.id}>Agregar</button>
+        <button onClick={() => { notify(); handleAgregar(); }} className="botones agregarProducto" id={producto.id}>Agregar</button>
       </div>
     </div>
   );

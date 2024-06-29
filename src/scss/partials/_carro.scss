@@ -8,6 +8,7 @@
   z-index: 2;
 
   .producto {
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -17,8 +18,8 @@
     border-radius: .5rem;
     gap: .5rem;
     backdrop-filter: blur(10px);
-    
-    
+
+
     .cartProdImg {
       aspect-ratio: 4/3;
       width: 9rem;
@@ -26,7 +27,7 @@
       border-radius: .5rem;
       object-fit: cover;
     }
-    
+
     .prodDesc {
       flex: 4 0 15rem;
       display: -webkit-box;
@@ -38,13 +39,13 @@
       color: $textDark;
       text-decoration: none;
     }
-    
+
     .prodPrice {
       margin: 0;
       flex: 1 0 5rem;
       text-wrap: nowrap;
     }
-    
+
     .cantProd {
       position: relative;
       display: flex;
@@ -53,8 +54,8 @@
       margin-right: 1rem;
       text-wrap: nowrap;
       gap: .5rem;
-      
-      .cantidad{
+
+      .cantidad {
         margin: 0;
       }
 
@@ -69,7 +70,7 @@
         border: none;
         transition: background-color 0.3s ease, color 0.3s ease;
         border: solid 1px $secondary;
-        
+
 
         &:hover {
           background-color: $primary;
@@ -79,7 +80,6 @@
     }
 
     .eliminar {
-      @extend .boton;
       position: absolute;
       bottom: 7rem;
       right: -0.5rem;

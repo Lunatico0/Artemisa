@@ -12,6 +12,8 @@ import Carrusel from './components/Carrusel';
 import CheckOut from './components/CheckOut';
 import { Button } from 'react-bootstrap';
 import CargarProductos from './components/CargarProductos';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -21,6 +23,10 @@ function App() {
           <div className="marmolSuperior"></div>
           <div className="container">
             <div className="contenido">
+              <ToastContainer 
+              stacked 
+              position="bottom-right"
+              />
               <Header />
               <Routes>
                 <Route path='/' element={<ItemListContainer />} />

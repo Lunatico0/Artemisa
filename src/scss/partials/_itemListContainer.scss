@@ -55,10 +55,20 @@
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       height: 28rem;
 
+      @media (max-width: 1400px) {
+        height: 24rem;
+      }
+
       .carousel {
         height: 18rem;
         width: 115%;
         left: -14px;
+
+        .carousel-inner{
+          @media (max-width: 1400px) {
+            height: 15rem;
+          }
+        }
 
         .carousel-control-next {
           visibility: hidden;
@@ -98,8 +108,12 @@
         border: solid 1px $secondary;
 
         &:hover {
-          background-color: $primary;
+          background-color: rgba($secondary, .6);
           color: $textDark;
+        }
+
+        &:active{
+          background-color: rgba($primary, .9);
         }
       }
 
@@ -128,7 +142,7 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        height: 11rem;
+        height: 12rem;
         z-index: 2;
 
         .detalles {
@@ -154,6 +168,10 @@
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: normal;
+
+            @media (max-width: 1400px) {
+              height: 3rem;
+            }
           }
 
           .itemDetallesPrecio {

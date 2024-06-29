@@ -6,6 +6,7 @@ import { db } from '../firebase/config';
 import Carrusel from './Carrusel';
 import imagenes from "../data/carruselImagenes.json";
 import { Breadcrumb } from 'react-bootstrap';
+import { toast } from 'react-toastify';
 
 const ItemDetailContainer = () => {
   const { breadcrumb } = useContext(CartContext)
@@ -35,6 +36,14 @@ const ItemDetailContainer = () => {
     return <p>Producto no encontrado</p>;
   }
 
+  const handleAgregar = () => {
+    agregarAlCarrito(producto)
+  }
+
+  const notify = () => {
+    toast(`Se agrego exitosamente ${producto.descripcion}`);
+  }
+
   return (
     <div className="itemListContainer">
       <div className="carruselContainer">
@@ -56,7 +65,7 @@ const ItemDetailContainer = () => {
           <h2 className='detailNombre'>{producto.descripcion}</h2>
           <h2 className='detailAdicional'>{producto.descripcionAlterna}</h2>
           <p className='detailPrecio'>${producto.precio}</p>
-          <button onClick={() => agregarAlCarrito(producto)} className="botones agregarProducto detailAgregar" id={producto.id}>Agregar</button>
+          <button onClick={() => { notify(); handleAgregar(); }} className="botones agregarProducto detailAgregar" id={producto.id}>Agregar</button>
         </div>
       </div>
     </div>
