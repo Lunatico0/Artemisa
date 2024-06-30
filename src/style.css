@@ -851,7 +851,7 @@ div .checkOut .items {
   min-width: 25rem;
   width: 40%;
   height: 28rem;
-  overflow: scroll;
+  overflow: auto;
   overflow-x: hidden;
 }
 div .checkOut .items .producto {
@@ -860,7 +860,7 @@ div .checkOut .items .producto {
   align-items: center;
   height: 6rem;
   min-width: 23rem;
-  border: 1px solid #333;
+  border: 1px solid #505050;
   border-radius: 0.5rem;
   backdrop-filter: blur(10px);
   justify-content: space-between;
