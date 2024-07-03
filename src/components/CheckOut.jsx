@@ -60,7 +60,7 @@ const CheckOut = () => {
                 <p className='cantidad'>Cant. {prod.cantidad}</p>
                 <NavLink to={`/item/${prod.id}`} className='prodDesc'>{prod.descripcion}</NavLink>
               </div>
-              <p className='prodPrice'>${prod.precio * prod.cantidad}</p>
+              <p className='prodPrice'>${(prod.precio * prod.cantidad).toFixed(2)}</p>
             </div>)
           )}
         </div>
