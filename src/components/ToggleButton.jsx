@@ -12,6 +12,7 @@ const ToggleButton = () => {
       {options.map(opt => (
         <button
           key={opt.text}
+          aria-label={`swithc ` + opt.text + ` mode`}
           className={`size-6 text-xl m-1 
           ${darkMode === opt.text && "text-sky-600"}`}
           onClick={() => handleDarkMode(opt.text)}
