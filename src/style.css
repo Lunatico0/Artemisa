@@ -1091,10 +1091,10 @@ div .finalizar button:active {
   display: none;
 }
 .footer .nav .nav-item .nav-link {
-  color: #fcfcfc;
+  color: rgba(252, 252, 252, 0.6);
 }
 .footer .nav .nav-item .active {
-  color: #100e10;
+  color: #fcfcfc;
   background-color: #6b6b6b;
 }
 .footer h2 {

@@ -14,10 +14,10 @@
   .nav{
     .nav-item{
       .nav-link{
-        color: $textLight;
+        color: rgba($textLight, .6);
       }
       .active{
-        color: $textDark;
+        color: $textLight;
         background-color: $accent;
       }
     }
