@@ -42,6 +42,7 @@ const truncateText = (text, lines, containerRef) => {
 const Item = ({ producto }) => {
 
   const navigate = useNavigate();
+  const defaultCant = 1;
   const descripcionRef = useRef(null);
   const [descripcionTruncada, setDescripcionTruncada] = useState(producto.descripcion);
 
@@ -65,7 +66,7 @@ const Item = ({ producto }) => {
   ]
   
   const handleAgregar = () => {
-    agregarAlCarrito(producto, 1)
+    agregarAlCarrito(producto, defaultCant)
   }
 
   const notify = () => {
