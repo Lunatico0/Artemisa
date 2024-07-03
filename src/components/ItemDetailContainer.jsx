@@ -9,9 +9,9 @@ import { Breadcrumb } from 'react-bootstrap';
 import { toast } from 'react-toastify';
 
 const ItemDetailContainer = () => {
-  const { breadcrumb } = useContext(CartContext)
+  const { agregarAlCarrito, handleChangeCantidad, cantidad, setCantidad } = useContext(CartContext)
   const { id } = useParams();
-  const [producto, setProducto] = useState()
+  const [producto, setProducto] = useState(null);
 
   let imagenesProd = [
     producto?.imagenPrincipal || "",
@@ -20,14 +20,12 @@ const ItemDetailContainer = () => {
     producto?.imagenesSecundarias?.imagen3 || ""
   ]
 
-  const { agregarAlCarrito } = useContext(CartContext)
-
   useEffect(() => {
     const productoRef = doc(db, "productos", id)
-
     getDoc(productoRef)
       .then(res => {
         setProducto({ ...res.data(), id: res.id })
+        setCantidad(1);
       })
 
   }, [id])
@@ -37,11 +35,12 @@ const ItemDetailContainer = () => {
   }
 
   const handleAgregar = () => {
-    agregarAlCarrito(producto)
-  }
+    agregarAlCarrito(producto, cantidad);
+    notify();
+  };
 
   const notify = () => {
-    toast(`Se agrego exitosamente ${producto.descripcion}`);
+    toast(`Se agregaron ${cantidad} ${producto.descripcion}`);
   }
 
   return (
@@ -65,11 +64,14 @@ const ItemDetailContainer = () => {
           <h2 className='detailNombre'>{producto.descripcion}</h2>
           <h2 className='detailAdicional'>{producto.descripcionAlterna}</h2>
           <p className='detailPrecio'>${producto.precio}</p>
-          <button onClick={() => { notify(); handleAgregar(); }} className="botones agregarProducto detailAgregar" id={producto.id}>Agregar</button>
+          <div>
+            <input className='text-black cantidad' type="number" value={cantidad} min="1" onChange={handleChangeCantidad} />
+            <button onClick={handleAgregar} className="botones agregarProducto detailAgregar" id={producto.id}>Agregar</button>
+          </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default ItemDetailContainer

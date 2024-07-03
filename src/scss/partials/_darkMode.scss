@@ -1,4 +1,4 @@
-.oscuro {
+.dark {
   color: $textLight;
   background-color: $backgroundDark;
 
@@ -60,6 +60,9 @@
       .breadcrumb {
         .breadcrumb-item {
           a {
+            color: $textLight;
+          }
+          &::before{
             color: $textLight;
           }
         }

@@ -142,20 +142,11 @@
         .detalles {
           cursor: pointer;
 
-          .itemDetallesNombre {
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-            color: $textLight;
-            text-wrap: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-          }
-
           .itemDetallesDescripcion {
             line-height: 24px;
             font-size: 1rem;
             margin-bottom: 0.5rem;
-            color: $textLight;
+            color: $textDark;
             display: -webkit-box;
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 2;
@@ -172,7 +163,7 @@
             font-size: 1.25rem;
             margin-bottom: 0.5rem;
             font-weight: bold;
-            color: $textLight;
+            color: $textDark;
           }
         }
       }

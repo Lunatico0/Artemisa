@@ -2,15 +2,20 @@
 
   .breadcrumb {
 
-    .breadcrumb-item{
+    .breadcrumb-item {
       list-style: none;
-      a{
+
+      a {
         text-decoration: underline;
+        color: $textDark;
+      }
+
+      &::before {
         color: $textDark;
       }
     }
 
-    .breadcrumb-item.active{
+    .breadcrumb-item.active {
       color: rgba($textDark, .7);
     }
   }
@@ -71,6 +76,47 @@
     background-color: rgba($textLight, .6);
     border-radius: .5rem;
 
+    div {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      .cantidad {
+        width: 15%;
+        margin: 0;
+        text-align: center;
+        -moz-appearance: textfield;
+        border-top-left-radius: .5rem;
+        border-bottom-left-radius: .5rem;
+
+        &::-webkit-inner-spin-button,
+        &::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+      }
+
+      .botones {
+        border-top-right-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+        align-self: center;
+        width: 75%;
+        padding: 0.5rem 1rem;
+        background-color: $secondary;
+        color: $textLight;
+        text-transform: uppercase;
+        cursor: pointer;
+        border: 2px solid $secondary;
+        transition: background-color 0.3s ease, color 0.3s ease;
+
+        &:hover {
+          background-color: $primary;
+          color: $textDark;
+        }
+      }
+
+    }
+
     .detailPrecio {
       align-self: flex-end;
       font-size: 24px;
@@ -87,22 +133,5 @@
       font-size: 1.3rem;
     }
 
-    .botones {
-      align-self: center;
-      width: 90%;
-      padding: 0.5rem 1rem;
-      background-color: $secondary;
-      color: $textLight;
-      text-transform: uppercase;
-      border-radius: .3rem;
-      cursor: pointer;
-      border: 2px solid $secondary;
-      transition: background-color 0.3s ease, color 0.3s ease;
-
-      &:hover {
-        background-color: $primary;
-        color: $textDark;
-      }
-    }
   }
 }

@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 * {
   padding: 0;
   margin: 0;
@@ -116,196 +119,199 @@ footer .footer-bottom {
   margin-top: 20px;
 }
 
-.oscuro {
+.dark {
   color: #fcfcfc;
   background-color: #333;
 }
-.oscuro .carro {
+.dark .carro {
   color: #fcfcfc;
 }
-.oscuro .carro .producto .prodDesc {
+.dark .carro .producto .prodDesc {
   color: #fcfcfc;
 }
-.oscuro .carro .carroInfo .botones button {
+.dark .carro .carroInfo .botones button {
   color: #fcfcfc;
   background: rgba(252, 252, 252, 0.3);
 }
-.oscuro .carro .carroInfo .botones .comprar {
+.dark .carro .carroInfo .botones .comprar {
   background: rgba(252, 252, 252, 0.2);
 }
-.oscuro .carro .carroInfo .botones .comprar .navLink {
+.dark .carro .carroInfo .botones .comprar .navLink {
   color: #fcfcfc;
 }
-.oscuro .mainContainer .sliderContainer .arrows {
+.dark .mainContainer .sliderContainer .arrows {
   color: #fcfcfc;
 }
-.oscuro .generalCont {
+.dark .generalCont {
   background-color: #333;
   color: #fcfcfc;
 }
-.oscuro .generalCont .marmolSuperior {
+.dark .generalCont .marmolSuperior {
   background-image: url("/src/assets/marmolNegro.jpeg");
 }
-.oscuro .generalCont .container .contenido .notFound {
+.dark .generalCont .container .contenido .notFound {
   background-color: #333;
   color: #fcfcfc;
 }
-.oscuro .itemListContainer {
+.dark .itemListContainer {
   color: #fcfcfc;
 }
-.oscuro .itemListContainer .navcrumb .breadcrumb .breadcrumb-item a {
+.dark .itemListContainer .navcrumb .breadcrumb .breadcrumb-item a {
   color: #fcfcfc;
 }
-.oscuro .itemListContainer .navcrumb .breadcrumb .breadcrumb-item.active {
+.dark .itemListContainer .navcrumb .breadcrumb .breadcrumb-item::before {
+  color: #fcfcfc;
+}
+.dark .itemListContainer .navcrumb .breadcrumb .breadcrumb-item.active {
   color: rgba(252, 252, 252, 0.6);
 }
-.oscuro .itemListContainer .tituloProductos {
+.dark .itemListContainer .tituloProductos {
   color: #fcfcfc;
 }
-.oscuro .itemListContainer .tituloProductos .navLink {
+.dark .itemListContainer .tituloProductos .navLink {
   color: #fcfcfc;
 }
-.oscuro .itemListContainer .itemDetail .itemDetailAside {
+.dark .itemListContainer .itemDetail .itemDetailAside {
   border: 1px solid rgba(216, 216, 216, 0.8);
   background-color: rgba(16, 14, 16, 0.6);
 }
-.oscuro .header {
+.dark .header {
   color: #fcfcfc;
 }
-.oscuro .header .carrito a span {
+.dark .header .carrito a span {
   color: #fcfcfc;
 }
-.oscuro .header .headerCont {
+.dark .header .headerCont {
   background-color: #333;
 }
-.oscuro .header .headerCont .nav .navMenu .navItem .navLink {
+.dark .header .headerCont .nav .navMenu .navItem .navLink {
   color: #fcfcfc;
 }
-.oscuro .header .headerCont .nav .navMenu .navItem .subMenu {
+.dark .header .headerCont .nav .navMenu .navItem .subMenu {
   background-color: #333;
 }
-.oscuro .header .headerCont .nav .navMenu .navItem .subMenu .subNavItem .subNavLink {
+.dark .header .headerCont .nav .navMenu .navItem .subMenu .subNavItem .subNavLink {
   color: #fcfcfc;
 }
-.oscuro .header .headerCont .nav .navMenu .navItem .subMenu .subNavItem .subNavLink:hover {
+.dark .header .headerCont .nav .navMenu .navItem .subMenu .subNavItem .subNavLink:hover {
   background-color: rgba(252, 252, 252, 0.3);
 }
-.oscuro .checkOut .items .producto .cantProd .cantidad {
+.dark .checkOut .items .producto .cantProd .cantidad {
   color: #fcfcfc;
 }
-.oscuro .checkOut .items .producto .cantProd .prodDesc {
+.dark .checkOut .items .producto .cantProd .prodDesc {
   color: #fcfcfc;
 }
-.oscuro .checkOut .items .producto .prodPrice {
+.dark .checkOut .items .producto .prodPrice {
   color: #fcfcfc;
 }
-.oscuro .checkOut .register {
+.dark .checkOut .register {
   background-color: rgba(51, 51, 51, 0.5);
 }
-.oscuro .checkOut .register .form .nombre input, .oscuro div .checkOut .register .form .apellido input, div .oscuro .checkOut .register .form .apellido input,
-.oscuro div .checkOut .register .form .direccion input,
-div .oscuro .checkOut .register .form .direccion input,
-.oscuro div .checkOut .register .form .tel input,
-div .oscuro .checkOut .register .form .tel input,
-.oscuro div .checkOut .register .form .email input,
-div .oscuro .checkOut .register .form .email input,
-.oscuro div .checkOut .register .form .localidad input,
-div .oscuro .checkOut .register .form .localidad input,
-.oscuro div .checkOut .register .form .coments input,
-div .oscuro .checkOut .register .form .coments input,
-.oscuro div .checkOut .register .form > input input,
-div .oscuro .checkOut .register .form > input input,
-.oscuro .checkOut .register .form .nombre textarea,
-.oscuro div .checkOut .register .form .apellido textarea,
-div .oscuro .checkOut .register .form .apellido textarea,
-.oscuro div .checkOut .register .form .direccion textarea,
-div .oscuro .checkOut .register .form .direccion textarea,
-.oscuro div .checkOut .register .form .tel textarea,
-div .oscuro .checkOut .register .form .tel textarea,
-.oscuro div .checkOut .register .form .email textarea,
-div .oscuro .checkOut .register .form .email textarea,
-.oscuro div .checkOut .register .form .localidad textarea,
-div .oscuro .checkOut .register .form .localidad textarea,
-.oscuro div .checkOut .register .form .coments textarea,
-div .oscuro .checkOut .register .form .coments textarea,
-.oscuro div .checkOut .register .form > input textarea,
-div .oscuro .checkOut .register .form > input textarea {
+.dark .checkOut .register .form .nombre input, .dark div .checkOut .register .form .apellido input, div .dark .checkOut .register .form .apellido input,
+.dark div .checkOut .register .form .direccion input,
+div .dark .checkOut .register .form .direccion input,
+.dark div .checkOut .register .form .tel input,
+div .dark .checkOut .register .form .tel input,
+.dark div .checkOut .register .form .email input,
+div .dark .checkOut .register .form .email input,
+.dark div .checkOut .register .form .localidad input,
+div .dark .checkOut .register .form .localidad input,
+.dark div .checkOut .register .form .coments input,
+div .dark .checkOut .register .form .coments input,
+.dark div .checkOut .register .form > input input,
+div .dark .checkOut .register .form > input input,
+.dark .checkOut .register .form .nombre textarea,
+.dark div .checkOut .register .form .apellido textarea,
+div .dark .checkOut .register .form .apellido textarea,
+.dark div .checkOut .register .form .direccion textarea,
+div .dark .checkOut .register .form .direccion textarea,
+.dark div .checkOut .register .form .tel textarea,
+div .dark .checkOut .register .form .tel textarea,
+.dark div .checkOut .register .form .email textarea,
+div .dark .checkOut .register .form .email textarea,
+.dark div .checkOut .register .form .localidad textarea,
+div .dark .checkOut .register .form .localidad textarea,
+.dark div .checkOut .register .form .coments textarea,
+div .dark .checkOut .register .form .coments textarea,
+.dark div .checkOut .register .form > input textarea,
+div .dark .checkOut .register .form > input textarea {
   color: #fcfcfc;
   background-color: rgba(51, 51, 51, 0.7);
   border: 1px solid rgba(252, 252, 252, 0.5);
 }
-.oscuro .checkOut .register .form .nombre span, .oscuro div .checkOut .register .form .apellido span, div .oscuro .checkOut .register .form .apellido span,
-.oscuro div .checkOut .register .form .direccion span,
-div .oscuro .checkOut .register .form .direccion span,
-.oscuro div .checkOut .register .form .tel span,
-div .oscuro .checkOut .register .form .tel span,
-.oscuro div .checkOut .register .form .email span,
-div .oscuro .checkOut .register .form .email span,
-.oscuro div .checkOut .register .form .localidad span,
-div .oscuro .checkOut .register .form .localidad span,
-.oscuro div .checkOut .register .form .coments span,
-div .oscuro .checkOut .register .form .coments span,
-.oscuro div .checkOut .register .form > input span,
-div .oscuro .checkOut .register .form > input span {
+.dark .checkOut .register .form .nombre span, .dark div .checkOut .register .form .apellido span, div .dark .checkOut .register .form .apellido span,
+.dark div .checkOut .register .form .direccion span,
+div .dark .checkOut .register .form .direccion span,
+.dark div .checkOut .register .form .tel span,
+div .dark .checkOut .register .form .tel span,
+.dark div .checkOut .register .form .email span,
+div .dark .checkOut .register .form .email span,
+.dark div .checkOut .register .form .localidad span,
+div .dark .checkOut .register .form .localidad span,
+.dark div .checkOut .register .form .coments span,
+div .dark .checkOut .register .form .coments span,
+.dark div .checkOut .register .form > input span,
+div .dark .checkOut .register .form > input span {
   color: rgba(252, 252, 252, 0.7);
 }
-.oscuro .checkOut .register .form .nombre input:focus ~ span, .oscuro div .checkOut .register .form .apellido input:focus ~ span, div .oscuro .checkOut .register .form .apellido input:focus ~ span,
-.oscuro div .checkOut .register .form .direccion input:focus ~ span,
-div .oscuro .checkOut .register .form .direccion input:focus ~ span,
-.oscuro div .checkOut .register .form .tel input:focus ~ span,
-div .oscuro .checkOut .register .form .tel input:focus ~ span,
-.oscuro div .checkOut .register .form .email input:focus ~ span,
-div .oscuro .checkOut .register .form .email input:focus ~ span,
-.oscuro div .checkOut .register .form .localidad input:focus ~ span,
-div .oscuro .checkOut .register .form .localidad input:focus ~ span,
-.oscuro div .checkOut .register .form .coments input:focus ~ span,
-div .oscuro .checkOut .register .form .coments input:focus ~ span,
-.oscuro div .checkOut .register .form > input input:focus ~ span,
-div .oscuro .checkOut .register .form > input input:focus ~ span, .oscuro .checkOut .register .form .nombre input:valid ~ span, .oscuro div .checkOut .register .form .apellido input:valid ~ span, div .oscuro .checkOut .register .form .apellido input:valid ~ span,
-.oscuro div .checkOut .register .form .direccion input:valid ~ span,
-div .oscuro .checkOut .register .form .direccion input:valid ~ span,
-.oscuro div .checkOut .register .form .tel input:valid ~ span,
-div .oscuro .checkOut .register .form .tel input:valid ~ span,
-.oscuro div .checkOut .register .form .email input:valid ~ span,
-div .oscuro .checkOut .register .form .email input:valid ~ span,
-.oscuro div .checkOut .register .form .localidad input:valid ~ span,
-div .oscuro .checkOut .register .form .localidad input:valid ~ span,
-.oscuro div .checkOut .register .form .coments input:valid ~ span,
-div .oscuro .checkOut .register .form .coments input:valid ~ span,
-.oscuro div .checkOut .register .form > input input:valid ~ span,
-div .oscuro .checkOut .register .form > input input:valid ~ span, .oscuro .checkOut .register .form .nombre textarea:focus ~ span, .oscuro div .checkOut .register .form .apellido textarea:focus ~ span, div .oscuro .checkOut .register .form .apellido textarea:focus ~ span,
-.oscuro div .checkOut .register .form .direccion textarea:focus ~ span,
-div .oscuro .checkOut .register .form .direccion textarea:focus ~ span,
-.oscuro div .checkOut .register .form .tel textarea:focus ~ span,
-div .oscuro .checkOut .register .form .tel textarea:focus ~ span,
-.oscuro div .checkOut .register .form .email textarea:focus ~ span,
-div .oscuro .checkOut .register .form .email textarea:focus ~ span,
-.oscuro div .checkOut .register .form .localidad textarea:focus ~ span,
-div .oscuro .checkOut .register .form .localidad textarea:focus ~ span,
-.oscuro div .checkOut .register .form .coments textarea:focus ~ span,
-div .oscuro .checkOut .register .form .coments textarea:focus ~ span,
-.oscuro div .checkOut .register .form > input textarea:focus ~ span,
-div .oscuro .checkOut .register .form > input textarea:focus ~ span, .oscuro .checkOut .register .form .nombre textarea.valid ~ span, .oscuro div .checkOut .register .form .apellido textarea.valid ~ span, div .oscuro .checkOut .register .form .apellido textarea.valid ~ span,
-.oscuro div .checkOut .register .form .direccion textarea.valid ~ span,
-div .oscuro .checkOut .register .form .direccion textarea.valid ~ span,
-.oscuro div .checkOut .register .form .tel textarea.valid ~ span,
-div .oscuro .checkOut .register .form .tel textarea.valid ~ span,
-.oscuro div .checkOut .register .form .email textarea.valid ~ span,
-div .oscuro .checkOut .register .form .email textarea.valid ~ span,
-.oscuro div .checkOut .register .form .localidad textarea.valid ~ span,
-div .oscuro .checkOut .register .form .localidad textarea.valid ~ span,
-.oscuro div .checkOut .register .form .coments textarea.valid ~ span,
-div .oscuro .checkOut .register .form .coments textarea.valid ~ span,
-.oscuro div .checkOut .register .form > input textarea.valid ~ span,
-div .oscuro .checkOut .register .form > input textarea.valid ~ span {
+.dark .checkOut .register .form .nombre input:focus ~ span, .dark div .checkOut .register .form .apellido input:focus ~ span, div .dark .checkOut .register .form .apellido input:focus ~ span,
+.dark div .checkOut .register .form .direccion input:focus ~ span,
+div .dark .checkOut .register .form .direccion input:focus ~ span,
+.dark div .checkOut .register .form .tel input:focus ~ span,
+div .dark .checkOut .register .form .tel input:focus ~ span,
+.dark div .checkOut .register .form .email input:focus ~ span,
+div .dark .checkOut .register .form .email input:focus ~ span,
+.dark div .checkOut .register .form .localidad input:focus ~ span,
+div .dark .checkOut .register .form .localidad input:focus ~ span,
+.dark div .checkOut .register .form .coments input:focus ~ span,
+div .dark .checkOut .register .form .coments input:focus ~ span,
+.dark div .checkOut .register .form > input input:focus ~ span,
+div .dark .checkOut .register .form > input input:focus ~ span, .dark .checkOut .register .form .nombre input:valid ~ span, .dark div .checkOut .register .form .apellido input:valid ~ span, div .dark .checkOut .register .form .apellido input:valid ~ span,
+.dark div .checkOut .register .form .direccion input:valid ~ span,
+div .dark .checkOut .register .form .direccion input:valid ~ span,
+.dark div .checkOut .register .form .tel input:valid ~ span,
+div .dark .checkOut .register .form .tel input:valid ~ span,
+.dark div .checkOut .register .form .email input:valid ~ span,
+div .dark .checkOut .register .form .email input:valid ~ span,
+.dark div .checkOut .register .form .localidad input:valid ~ span,
+div .dark .checkOut .register .form .localidad input:valid ~ span,
+.dark div .checkOut .register .form .coments input:valid ~ span,
+div .dark .checkOut .register .form .coments input:valid ~ span,
+.dark div .checkOut .register .form > input input:valid ~ span,
+div .dark .checkOut .register .form > input input:valid ~ span, .dark .checkOut .register .form .nombre textarea:focus ~ span, .dark div .checkOut .register .form .apellido textarea:focus ~ span, div .dark .checkOut .register .form .apellido textarea:focus ~ span,
+.dark div .checkOut .register .form .direccion textarea:focus ~ span,
+div .dark .checkOut .register .form .direccion textarea:focus ~ span,
+.dark div .checkOut .register .form .tel textarea:focus ~ span,
+div .dark .checkOut .register .form .tel textarea:focus ~ span,
+.dark div .checkOut .register .form .email textarea:focus ~ span,
+div .dark .checkOut .register .form .email textarea:focus ~ span,
+.dark div .checkOut .register .form .localidad textarea:focus ~ span,
+div .dark .checkOut .register .form .localidad textarea:focus ~ span,
+.dark div .checkOut .register .form .coments textarea:focus ~ span,
+div .dark .checkOut .register .form .coments textarea:focus ~ span,
+.dark div .checkOut .register .form > input textarea:focus ~ span,
+div .dark .checkOut .register .form > input textarea:focus ~ span, .dark .checkOut .register .form .nombre textarea.valid ~ span, .dark div .checkOut .register .form .apellido textarea.valid ~ span, div .dark .checkOut .register .form .apellido textarea.valid ~ span,
+.dark div .checkOut .register .form .direccion textarea.valid ~ span,
+div .dark .checkOut .register .form .direccion textarea.valid ~ span,
+.dark div .checkOut .register .form .tel textarea.valid ~ span,
+div .dark .checkOut .register .form .tel textarea.valid ~ span,
+.dark div .checkOut .register .form .email textarea.valid ~ span,
+div .dark .checkOut .register .form .email textarea.valid ~ span,
+.dark div .checkOut .register .form .localidad textarea.valid ~ span,
+div .dark .checkOut .register .form .localidad textarea.valid ~ span,
+.dark div .checkOut .register .form .coments textarea.valid ~ span,
+div .dark .checkOut .register .form .coments textarea.valid ~ span,
+.dark div .checkOut .register .form > input textarea.valid ~ span,
+div .dark .checkOut .register .form > input textarea.valid ~ span {
   color: rgba(252, 252, 252, 0.7);
   background-color: rgba(51, 51, 51, 0.5);
 }
-.oscuro .compraRealizada .graciasCompra {
+.dark .compraRealizada .graciasCompra {
   background-color: rgba(51, 51, 51, 0.5);
   color: #fcfcfc;
 }
-.oscuro .finalizar .total {
+.dark .finalizar .total {
   color: #fcfcfc;
 }
 
@@ -313,6 +319,7 @@ div .oscuro .checkOut .register .form > input textarea.valid ~ span {
   width: 100%;
   position: fixed;
   display: block;
+  top: 0;
   left: 0;
   z-index: 10;
 }
@@ -330,6 +337,7 @@ div .oscuro .checkOut .register .form > input textarea.valid ~ span {
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(7px);
+  height: 3rem;
 }
 .header .brand.hidden {
   display: none;
@@ -399,12 +407,6 @@ div .oscuro .checkOut .register .form > input textarea.valid ~ span {
 .header .headerCont .carrito {
   width: 4rem;
 }
-.header .headerCont .carrito .darkMode {
-  position: inherit;
-  width: 100%;
-  border: none;
-  background-color: transparent;
-}
 .header .headerCont .carrito a {
   position: relative;
   text-decoration: none;
@@ -428,46 +430,15 @@ div .oscuro .checkOut .register .form > input textarea.valid ~ span {
   top: 25%;
   left: 50%;
 }
-.header .headerCont .carrito .toggle-button {
-  position: relative;
+.header .headerCont .carrito .darkMode {
+  position: fixed;
 }
-.header .headerCont .carrito .toggle-button #toggle {
-  display: none;
+.header .headerCont .carrito .sticky {
+  top: -3rem;
 }
-.header .headerCont .carrito .toggle-button .display {
-  width: 64px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 99px;
-  background-color: transparent;
-  position: relative;
-}
-.header .headerCont .carrito .toggle-button .display .label {
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-}
-.header .headerCont .carrito .toggle-button .display .circle {
-  border: 1.5px solid black;
-  width: 80%;
-  height: 80%;
-  border-radius: 99px;
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  top: -8.25rem;
-}
-.header .headerCont .carrito .toggle-button .display .circle svg {
-  width: 25px;
-  position: absolute;
-  color: black;
-}
-.header .headerCont .carrito .toggle-button .display .circle .sol {
-  color: #ffd600;
+
+header.sticky {
+  top: -3rem;
 }
 
 .carro {
@@ -517,22 +488,37 @@ div .oscuro .checkOut .register .form > input textarea.valid ~ span {
 .carro .producto .cantProd {
   position: relative;
   display: flex;
-  flex: 1 0 5rem;
-  justify-content: space-between;
+  justify-content: center;
   margin-right: 1rem;
   text-wrap: nowrap;
-  gap: 0.5rem;
 }
 .carro .producto .cantProd .cantidad {
+  width: 3rem;
+  margin: 0;
+  margin-inline: 1px;
+  text-align: center;
+  -moz-appearance: textfield;
+  background-color: rgba(74, 74, 74, 0.6);
+  color: #fcfcfc;
+}
+.carro .producto .cantProd .cantidad::-webkit-inner-spin-button, .carro .producto .cantProd .cantidad::-webkit-outer-spin-button {
+  -webkit-appearance: none;
   margin: 0;
 }
+.carro .producto .cantProd .cantidad:focus-visible {
+  margin-top: 1px;
+  height: calc(1.5rem - 2px);
+  outline-color: rgba(252, 252, 252, 0.6);
+  outline-width: 1px;
+  outline-style: solid;
+}
 .carro .producto .cantProd .boton {
+  text-align: center;
   width: 1.5rem;
   height: 1.5rem;
   background-color: #4a4a4a;
   color: #fcfcfc;
   text-transform: uppercase;
-  border-radius: 50%;
   cursor: pointer;
   border: none;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -541,6 +527,14 @@ div .oscuro .checkOut .register .form > input textarea.valid ~ span {
 .carro .producto .cantProd .boton:hover {
   background-color: #a19d9d;
   color: #100e10;
+}
+.carro .producto .cantProd .boton.btnCantProdMas {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.carro .producto .cantProd .boton.btnCantProdMenos {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
 }
 .carro .producto .eliminar {
   position: absolute;
@@ -718,19 +712,11 @@ div .oscuro .checkOut .register .form > input textarea.valid ~ span {
 .itemListContainer .productos .item .itemDetalles .detalles {
   cursor: pointer;
 }
-.itemListContainer .productos .item .itemDetalles .detalles .itemDetallesNombre {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: #fcfcfc;
-  text-wrap: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
 .itemListContainer .productos .item .itemDetalles .detalles .itemDetallesDescripcion {
   line-height: 24px;
   font-size: 1rem;
   margin-bottom: 0.5rem;
-  color: #fcfcfc;
+  color: #100e10;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -747,7 +733,7 @@ div .oscuro .checkOut .register .form > input textarea.valid ~ span {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
   font-weight: bold;
-  color: #fcfcfc;
+  color: #100e10;
 }
 
 .navcrumb .breadcrumb .breadcrumb-item {
@@ -755,6 +741,9 @@ div .oscuro .checkOut .register .form > input textarea.valid ~ span {
 }
 .navcrumb .breadcrumb .breadcrumb-item a {
   text-decoration: underline;
+  color: #100e10;
+}
+.navcrumb .breadcrumb .breadcrumb-item::before {
   color: #100e10;
 }
 .navcrumb .breadcrumb .breadcrumb-item.active {
@@ -804,6 +793,40 @@ div .oscuro .checkOut .register .form > input textarea.valid ~ span {
   background-color: rgba(252, 252, 252, 0.6);
   border-radius: 0.5rem;
 }
+.itemDetail .itemDetailAside div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.itemDetail .itemDetailAside div .cantidad {
+  width: 15%;
+  margin: 0;
+  text-align: center;
+  -moz-appearance: textfield;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.itemDetail .itemDetailAside div .cantidad::-webkit-inner-spin-button, .itemDetail .itemDetailAside div .cantidad::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.itemDetail .itemDetailAside div .botones {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  align-self: center;
+  width: 75%;
+  padding: 0.5rem 1rem;
+  background-color: #4a4a4a;
+  color: #fcfcfc;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 2px solid #4a4a4a;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.itemDetail .itemDetailAside div .botones:hover {
+  background-color: #a19d9d;
+  color: #100e10;
+}
 .itemDetail .itemDetailAside .detailPrecio {
   align-self: flex-end;
   font-size: 24px;
@@ -816,22 +839,6 @@ div .oscuro .checkOut .register .form > input textarea.valid ~ span {
 }
 .itemDetail .itemDetailAside .detailAdicional {
   font-size: 1.3rem;
-}
-.itemDetail .itemDetailAside .botones {
-  align-self: center;
-  width: 90%;
-  padding: 0.5rem 1rem;
-  background-color: #4a4a4a;
-  color: #fcfcfc;
-  text-transform: uppercase;
-  border-radius: 0.3rem;
-  cursor: pointer;
-  border: 2px solid #4a4a4a;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-.itemDetail .itemDetailAside .botones:hover {
-  background-color: #a19d9d;
-  color: #100e10;
 }
 
 div .checkOut {

@@ -77,7 +77,6 @@ const Item = ({ producto }) => {
       <Carrusel imagenes={imagenesProd} autoPlay={false} showIndicators={false} />
       <div className="itemDetalles">
         <div className='detalles' onClick={itemDetalles} id={producto.id}>
-          <h2 className='itemDetallesNombre' >{producto.nombre}</h2>
           <p className='itemDetallesDescripcion' ref={descripcionRef}>{descripcionTruncada}</p>
           <p className='itemDetallesPrecio'>u$s{producto.precio}</p>
         </div>
