@@ -157,6 +157,9 @@
         border-top-right-radius: .5rem;
 
         .navLink {
+          display: inline-block;
+          height: 100%;
+          align-content: center;
           color: $textDark;
           text-decoration: none;
         }

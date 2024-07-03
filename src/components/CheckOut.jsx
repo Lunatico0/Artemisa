@@ -68,43 +68,43 @@ const CheckOut = () => {
           <form id='checkout-form' className='form' onSubmit={handleSubmit(comprar)}>
             <div className="nombre">
 
-              <input type="text" {...register("nombre")} required />
+              <input aria-label='Nombre' type="text" {...register("nombre")} required />
               <span>Nombre</span>
 
             </div>
             <div className="apellido">
 
-              <input type="text" {...register("apellido")} required />
+              <input aria-label='Apellido' type="text" {...register("apellido")} required />
               <span>Apellido</span>
 
             </div>
             <div className="email">
 
-              <input type="email" {...register("email")} required />
+              <input aria-label='e-Mail' type="email" {...register("email")} required />
               <span>e-mail</span>
 
             </div>
             <div className="tel">
 
-              <input type='tel' {...register("telefono")} required />
+              <input aria-label='Telefono' type='tel' {...register("telefono")} required />
               <span>Telefono</span>
 
             </div>
             <div className="direccion">
 
-              <input type='text' {...register("direccion")} required />
+              <input aria-label='Direeccion' type='text' {...register("direccion")} required />
               <span>Direccion</span>
 
             </div>
             <div className="localidad">
 
-              <input type="text" {...register("localidad")} required />
+              <input aria-label='Localidad' type="text" {...register("localidad")} required />
               <span>Localidad</span>
 
             </div>
             <div className="coments">
 
-              <textarea type="text" id='coments' className={`coments ${isValid ? 'valid' : ''}`} {...register("comentarios")} onChange={handleValidation} />
+              <textarea aria-label='Comentarios' type="text" id='coments' className={`coments ${isValid ? 'valid' : ''}`} {...register("comentarios")} onChange={handleValidation} />
               <span>Comentarios</span>
 
             </div>

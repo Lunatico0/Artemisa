@@ -20,6 +20,7 @@ const Carrito = () => {
               <button className='boton btnCantProdMenos' onClick={() => handleRestar(prod)}>-</button>
               <input
                 min="1"
+                aria-label='itemCantidad'
                 className='cantidad'
                 type="number"
                 value={prod.cantidad}
