@@ -150,7 +150,6 @@ export const CartProvider = ({ children }) => {
       carrito,
       darkMode,
       options,
-      cantidad,
       agruparProductos,
       handleSumar,
       handleRestar,
