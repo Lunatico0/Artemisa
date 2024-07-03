@@ -86,6 +86,7 @@ export const CartProvider = ({ children }) => {
 
   const agregarAlCarrito = (producto, cantidad) => {
     const productoEncontrado = carrito.find(prod => prod.id === producto.id);
+
     if (productoEncontrado) {
       setCarrito(carrito.map(prod => prod.id === producto.id ? { ...prod, cantidad: prod.cantidad + cantidad } : prod));
     } else {

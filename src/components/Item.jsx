@@ -65,7 +65,7 @@ const Item = ({ producto }) => {
   ]
   
   const handleAgregar = () => {
-    agregarAlCarrito(producto)
+    agregarAlCarrito(producto, 1)
   }
 
   const notify = () => {
