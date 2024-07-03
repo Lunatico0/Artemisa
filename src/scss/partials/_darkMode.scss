@@ -87,6 +87,15 @@
       .itemDetailAside {
         border: 1px solid #d8d8d8cc;
         background-color: rgba($textDark, .6);
+        div {    
+          .cantidad {    
+            &:focus-visible {
+              outline: none;
+              background-color: rgba($backgroundLight, .9);
+            }
+            background-color: rgba($backgroundLight, .7);
+          }
+        }
       }
     }
   }

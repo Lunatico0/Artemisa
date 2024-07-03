@@ -175,6 +175,13 @@ footer .footer-bottom {
   border: 1px solid rgba(216, 216, 216, 0.8);
   background-color: rgba(16, 14, 16, 0.6);
 }
+.dark .itemListContainer .itemDetail .itemDetailAside div .cantidad {
+  background-color: rgba(252, 252, 252, 0.7);
+}
+.dark .itemListContainer .itemDetail .itemDetailAside div .cantidad:focus-visible {
+  outline: none;
+  background-color: rgba(252, 252, 252, 0.9);
+}
 .dark .header {
   color: #fcfcfc;
 }
@@ -805,10 +812,16 @@ header.sticky {
   -moz-appearance: textfield;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
+  background-color: rgba(51, 51, 51, 0.4);
+  border: solid 1px rgba(51, 51, 51, 0.3);
 }
 .itemDetail .itemDetailAside div .cantidad::-webkit-inner-spin-button, .itemDetail .itemDetailAside div .cantidad::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+.itemDetail .itemDetailAside div .cantidad:focus-visible {
+  outline: none;
+  background-color: rgba(51, 51, 51, 0.3);
 }
 .itemDetail .itemDetailAside div .botones {
   border-top-right-radius: 0.5rem;
