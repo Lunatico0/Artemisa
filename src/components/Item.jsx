@@ -65,8 +65,8 @@ const Item = ({ producto }) => {
     producto.imagenesSecundarias?.imagen3 || ""
   ]
   
-  const handleAgregar = () => {
-    agregarAlCarrito(producto, defaultCant)
+  const handleAgregar = (prod) => {
+    agregarAlCarrito(prod, defaultCant)
   }
 
   const notify = () => {
@@ -77,11 +77,11 @@ const Item = ({ producto }) => {
     <div className='item'>
       <Carrusel imagenes={imagenesProd} autoPlay={false} showIndicators={false} />
       <div className="itemDetalles">
-        <div className='detalles' onClick={itemDetalles}>
+        <div className='detalles' onClick={itemDetalles} id={producto.id}>
           <p className='itemDetallesDescripcion' ref={descripcionRef}>{descripcionTruncada}</p>
           <p className='itemDetallesPrecio'>u$s{producto.precio}</p>
         </div>
-        <button onClick={() => { notify(); handleAgregar(); }} className="botones agregarProducto" id={producto.id}>Agregar</button>
+        <button onClick={() => { notify(); handleAgregar(producto); }} className="botones agregarProducto" >Agregar</button>
       </div>
     </div>
   );
