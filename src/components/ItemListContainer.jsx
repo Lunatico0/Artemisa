@@ -75,7 +75,7 @@ const ItemListContainer = () => {
             <Item key={producto.id} producto={producto} />
           ))
         ) : (
-          <IonLoading isOpen={true} className="custom-loading text-gray-400 absolute z-10 block text-center font-bold top-0 left-0 right-0 bottom-0 mt-96" show-backdrop={false} showBackdrop='false' translucent='tru' backdropDismiss="false" animated='true' spinner={"lines-sharp"} message="Cargando.." />
+          <IonLoading isOpen={true} className="loading flex justify-center items-center h-screen w-full absolute top-0 text-gray-400" show-backdrop={false} showBackdrop='false' translucent='true' backdropDismiss="false" spinner={"lines-sharp"} message="Cargando.." />
          )}
       </div>
     </div>

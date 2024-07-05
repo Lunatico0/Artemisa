@@ -21,6 +21,13 @@ html {
   background-attachment: fixed;
 }
 
+body .loading .loading-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 7.5rem;
+}
+
 .generalCont .marmolSuperior {
   position: fixed;
   background-image: url("/src/assets/marmolBlanco.jpg");
