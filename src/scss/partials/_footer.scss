@@ -1,22 +1,26 @@
 .footer {
   position: fixed;
+  text-align: center;
   left: 0;
+  bottom: 0;
   width: 100vw;
   background: $backgroundFooter;
   color: $textLight;
   padding: 20px;
   z-index: 2;
 
+
   &.hidden {
     display: none;
   }
 
-  .nav{
-    .nav-item{
-      .nav-link{
+  .nav {
+    .nav-item {
+      .nav-link {
         color: rgba($textLight, .6);
       }
-      .active{
+
+      .active {
         color: $textLight;
         background-color: $accent;
       }
@@ -33,6 +37,11 @@
     padding: 10px;
 
     a {
+      color: $textLight;
+      margin: 0 5px;
+      text-decoration: none;
+      font-size: 18px;
+
       svg {
         color: $textLight;
         height: 3rem;
@@ -42,6 +51,22 @@
           color: $primary;
         }
       }
+    }
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .footer-section {
+      margin: 10px;
+      flex: 1;
+
+      h2 {
+        margin-bottom: 10px;
+      }
+
     }
   }
 
@@ -56,7 +81,7 @@
         margin-bottom: 10px;
 
         a {
-          color: #fff;
+          color: $textLight;
           text-decoration: none;
           transition: color 0.3s ease;
 
@@ -71,11 +96,12 @@
   .footer-bottom {
     text-align: center;
     border-top: 1px solid #444;
-    padding-top: 10px;
-    margin-top: 20px;
+    padding-top: 1rem;
+    margin-top: 1.5rem;
     font-size: 0.9em;
   }
 }
+
 
 @media (max-width: 768px) {
   .footer {

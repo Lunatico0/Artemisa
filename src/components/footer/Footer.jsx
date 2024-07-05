@@ -4,7 +4,7 @@ import Tabs from 'react-bootstrap/Tabs';
 import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
-  const [footerStyle, setFooterStyle] = useState({ bottom: '-9rem' });
+  const [footerStyle, setFooterStyle] = useState({ bottom: '-10rem' });
   const footerRef = useRef(null);
   const [activeTab, setActiveTab] = useState('redes-sociales');
 
@@ -17,7 +17,7 @@ const Footer = () => {
   };
 
   const ocultarFooter = () => {
-    setFooterStyle({ bottom: '-9rem' });
+    setFooterStyle({ bottom: '-10rem' });
     setActiveTab('redes-sociales'); // Restablecer la tab activa
   };
 

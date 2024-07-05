@@ -12,6 +12,7 @@
 
 p {
   margin: 0;
+  padding: 0;
 }
 
 html {
@@ -77,53 +78,6 @@ body .loading .loading-wrapper {
   object-fit: fill;
   min-width: 100%;
   max-height: 143%;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-}
-
-footer {
-  background-color: #333;
-  color: #fcfcfc;
-  text-align: center;
-  padding: 20px 0;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
-footer .footer-content {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-footer .footer-content .footer-section {
-  margin: 10px;
-  flex: 1;
-}
-footer .footer-content .footer-section h2 {
-  margin-bottom: 10px;
-}
-footer .footer-content .footer-section ul {
-  list-style: none;
-  padding: 0;
-}
-footer .footer-content .footer-section ul li {
-  margin: 5px 0;
-}
-footer .footer-content .footer-section ul li a {
-  color: #fcfcfc;
-  text-decoration: none;
-}
-footer .footer-content .footer-section .socials a {
-  color: #fcfcfc;
-  margin: 0 5px;
-  text-decoration: none;
-  font-size: 18px;
-}
-footer .footer-bottom {
-  margin-top: 20px;
 }
 
 .dark {
@@ -1090,7 +1044,9 @@ div .finalizar button:active {
 
 .footer {
   position: fixed;
+  text-align: center;
   left: 0;
+  bottom: 0;
   width: 100vw;
   background: #202020;
   color: #fcfcfc;
@@ -1115,6 +1071,12 @@ div .finalizar button:active {
   justify-content: space-around;
   padding: 10px;
 }
+.footer .socials a {
+  color: #fcfcfc;
+  margin: 0 5px;
+  text-decoration: none;
+  font-size: 18px;
+}
 .footer .socials a svg {
   color: #fcfcfc;
   height: 3rem;
@@ -1122,6 +1084,18 @@ div .finalizar button:active {
 }
 .footer .socials a svg:hover {
   color: #a19d9d;
+}
+.footer .footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.footer .footer-content .footer-section {
+  margin: 10px;
+  flex: 1;
+}
+.footer .footer-content .footer-section h2 {
+  margin-bottom: 10px;
 }
 .footer .footer-section {
   margin-bottom: 20px;
@@ -1134,7 +1108,7 @@ div .finalizar button:active {
   margin-bottom: 10px;
 }
 .footer .footer-section ul li a {
-  color: #fff;
+  color: #fcfcfc;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -1144,8 +1118,8 @@ div .finalizar button:active {
 .footer .footer-bottom {
   text-align: center;
   border-top: 1px solid #444;
-  padding-top: 10px;
-  margin-top: 20px;
+  padding-top: 1rem;
+  margin-top: 1.5rem;
   font-size: 0.9em;
 }
 
