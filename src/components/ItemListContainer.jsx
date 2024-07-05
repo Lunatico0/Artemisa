@@ -6,10 +6,10 @@ import Item from './Item';
 import Carrusel from './Carrusel';
 import imagenes from "../data/carruselImagenes.json";
 import { CartContext } from '../context/CartContext';
-import { IonButton, IonLoading } from '@ionic/react';
+import { IonLoading } from '@ionic/react';
 
 const ItemListContainer = () => {
-  let { breadcrumb } = useContext(CartContext)
+  let { breadcrumb } = useContext(CartContext);
   const [productos, setProductos] = useState([]);
   const [titulo, setTitulo] = useState("");
   const { categoryId } = useParams();
@@ -65,8 +65,7 @@ const ItemListContainer = () => {
 
   return (
     <div className="itemListContainer">
-
-      {productos.length > 0 && <Carrusel imagenes={imagenes} autoPlay={true} showIndicators={true} /> }
+      {productos.length > 0 && <Carrusel imagenes={imagenes} autoPlay={true} showIndicators={true} />}
 
       <h1 className='tituloProductos'>{titulo}</h1>
       <div className='productos'>
@@ -75,8 +74,8 @@ const ItemListContainer = () => {
             <Item key={producto.id} producto={producto} />
           ))
         ) : (
-          <IonLoading isOpen={true} className="loading flex justify-center items-center h-screen w-full absolute top-0 text-gray-400" show-backdrop={false} showBackdrop='false' translucent='true' backdropDismiss="false" spinner={"circular"} message="Cargando.." />
-         )}
+          <IonLoading isOpen={true} className="loading flex justify-center items-center h-screen w-full absolute top-0 text-gray-400" show-backdrop={false} showBackdrop={false} translucent={true} backdropDismiss={false} spinner={"circular"} message="Cargando.." />
+        )}
       </div>
     </div>
   );
