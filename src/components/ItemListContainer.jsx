@@ -6,6 +6,7 @@ import Item from './Item';
 import Carrusel from './Carrusel';
 import imagenes from "../data/carruselImagenes.json";
 import { CartContext } from '../context/CartContext';
+import { IonButton, IonLoading } from '@ionic/react';
 
 const ItemListContainer = () => {
   let { breadcrumb } = useContext(CartContext)
@@ -65,9 +66,8 @@ const ItemListContainer = () => {
   return (
     <div className="itemListContainer">
 
-      {/* {productos.length > 0 ? <Carrusel imagenes={imagenes} autoPlay={true} showIndicators={true} /> : <ProgressBar animated now={80} />} */}
+      {productos.length > 0 && <Carrusel imagenes={imagenes} autoPlay={true} showIndicators={true} /> }
 
-      <Carrusel imagenes={imagenes} autoPlay={true} showIndicators={true} />
       <h1 className='tituloProductos'>{titulo}</h1>
       <div className='productos'>
         {productos.length > 0 ? (
@@ -75,8 +75,8 @@ const ItemListContainer = () => {
             <Item key={producto.id} producto={producto} />
           ))
         ) : (
-          "No hay productos"
-        )}
+          <IonLoading isOpen={true} className="custom-loading text-gray-400 absolute z-10 block text-center font-bold top-0 left-0 right-0 bottom-0 mt-96" show-backdrop={false} showBackdrop='false' translucent='tru' backdropDismiss="false" animated='true' spinner={"lines-sharp"} message="Cargando.." />
+         )}
       </div>
     </div>
   );
