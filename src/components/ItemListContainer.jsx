@@ -64,7 +64,7 @@ const ItemListContainer = () => {
   }, [categoryId]);
 
   return (
-    <div className="itemListContainer">
+    <main className="itemListContainer">
       {productos.length > 0 && <Carrusel imagenes={imagenes} autoPlay={true} showIndicators={true} />}
 
       <h1 className='tituloProductos'>{titulo}</h1>
@@ -77,7 +77,7 @@ const ItemListContainer = () => {
           <IonLoading isOpen={true} className="loading flex justify-center items-center h-screen w-full absolute top-0 text-gray-400" show-backdrop={false} showBackdrop={false} translucent={true} backdropDismiss={false} spinner={"circular"} message="Cargando.." />
         )}
       </div>
-    </div>
+    </main>
   );
 };
 
