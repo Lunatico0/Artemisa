@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef, useState } from 'react';
+import { useContext, useEffect, useRef, useState, useLayoutEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { CartContext } from '../context/CartContext';
 import Carrusel from './Carrusel';
@@ -7,7 +7,6 @@ import { toast } from 'react-toastify';
 //* Truncar descripcion de cada item despues de 2 lineas segun el ancho del container
 const truncateText = (text, lines, containerRef) => {
   if (!containerRef.current) return text;
-  
 
   const computedStyle = window.getComputedStyle(containerRef.current);
   const lineHeight = parseFloat(computedStyle.lineHeight);
@@ -35,51 +34,63 @@ const truncateText = (text, lines, containerRef) => {
     }
     return truncatedText + '...';
   }
-
   return text;
 };
 
 const Item = ({ producto }) => {
-
   const navigate = useNavigate();
   const defaultCant = 1;
   const descripcionRef = useRef(null);
-  const [descripcionTruncada, setDescripcionTruncada] = useState(producto.descripcion);
+  const titleRef = useRef(null);
+  const [descripcionTruncada, setDescripcionTruncada] = useState('');
+  const [titleTruncado, setTitleTruncado] = useState('');
 
-  const { agregarAlCarrito } = useContext(CartContext)
-
+  const { agregarAlCarrito } = useContext(CartContext);
 
   const itemDetalles = (e) => {
     navigate(`/item/${e.currentTarget.id}`);
   };
 
   useEffect(() => {
-    setDescripcionTruncada(truncateText(producto.descripcion, 2, descripcionRef));
+    let tonoValue = '';
+    let compCantValue = '';
+    let softDesc = '';
+    producto.description.forEach(desc => {
+      if (desc.label === 'TONO') {
+        tonoValue = desc.value;
+      }
+      if (desc.label === 'COMPOSICIÓN') {
+        compCantValue = desc.value;
+      } else if (desc.label === 'CANT. DE PIEZAS POR CAJA') {
+        compCantValue = desc.value;
+      }
+      softDesc = tonoValue + ' ' + compCantValue;
+      setDescripcionTruncada(truncateText(softDesc, 1, descripcionRef));
+    });
+  }, [producto.description]);
 
-  }, [producto.descripcion]);
+  useLayoutEffect(() => {
+    if (titleRef.current) {
+      setTitleTruncado(truncateText(producto.title, 1, titleRef));
+    }
+  }, [producto.title]);
 
-  let imagenesProd = [
-    producto.imagenPrincipal,
-    producto.imagenesSecundarias?.imagen1 || "",
-    producto.imagenesSecundarias?.imagen2 || "",
-    producto.imagenesSecundarias?.imagen3 || ""
-  ]
-  
   const handleAgregar = (prod) => {
-    agregarAlCarrito(prod, defaultCant)
-  }
+    agregarAlCarrito(prod, defaultCant);
+  };
 
   const notify = () => {
-    toast(`Se agrego exitosamente ${producto.descripcion}`);
-  }
+    toast(`Se agregó exitosamente ${producto.title}`);
+  };
 
   return (
     <div className='item'>
-      <Carrusel imagenes={imagenesProd} autoPlay={false} showIndicators={false} />
+      <Carrusel className='prodSlider' imagenes={producto.thumbnails} autoPlay={false} showIndicators={false} />
       <div className="itemDetalles">
-        <div className='detalles' onClick={itemDetalles} id={producto.id}>
+        <div className='detalles' onClick={itemDetalles} id={producto._id}>
+          <p className='itemDetallesTitulo' ref={titleRef}>{titleTruncado}</p>
           <p className='itemDetallesDescripcion' ref={descripcionRef}>{descripcionTruncada}</p>
-          <p className='itemDetallesPrecio'>u$s{producto.precio}</p>
+          <p className='itemDetallesPrecio'>US${producto.price.toFixed(2)}</p>
         </div>
         <button onClick={() => { notify(); handleAgregar(producto); }} className="botones agregarProducto" >Agregar</button>
       </div>
