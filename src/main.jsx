@@ -2,9 +2,13 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './style.css'
+import { ThemeProvider } from "@material-tailwind/react";
+import { ApiProvider } from './context/apiContext.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <ApiProvider>
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
+  </ApiProvider>,
 )
