@@ -13,7 +13,7 @@ import NotFound from './components/NotFound';
 import Footer from './components/footer/Footer';
 import Carrusel from './components/Carrusel';
 import CheckOut from './components/purchase/CheckOut.jsx';
-import CargarProductos from './components/CargarProductos';
+// import CargarProductos from './components/CargarProductos';
 import Ticket from './components/purchase/Ticket.jsx';
 
 function AppContent() {
@@ -41,7 +41,7 @@ function AppContent() {
               <Route path='/item/:id' element={<ItemDetailContainer />} />
               <Route path='/carrito' element={<Carrito />} />
               <Route path='/finalizar-compra' element={<CheckOut />} />
-              <Route path='/cargar-productos' element={<CargarProductos />} />
+              {/* <Route path='/cargar-productos' element={<CargarProductos />} /> */}
               <Route path="/ticket/:ticketId" element={<Ticket />} />
               <Route path='/carrusel' element={<Carrusel />} />
               <Route path='/*' element={<NotFound />} />
