@@ -2,6 +2,7 @@ import { useContext, useEffect } from "react";
 import { ApiContext } from "../../context/apiContext.jsx";
 import { CartContext } from "../../context/CartContext.jsx";
 import { IonIcon } from '@ionic/react';
+import { caretBackOutline, caretForwardOutline } from 'ionicons/icons';
 
 const Pagination = () => {
   const { filters, applyFilters, dataWhithPagination } = useContext(ApiContext);
@@ -64,7 +65,7 @@ const Pagination = () => {
         disabled={page === 1}
         onClick={() => handlePageChange(page - 1)}
       >
-        <IonIcon icon="caret-back-outline" />
+        <IonIcon icon={caretBackOutline} />
       </button>
 
       {generatePageNumbers().map((p, index) =>
@@ -92,7 +93,7 @@ const Pagination = () => {
         disabled={page === totalPages}
         onClick={() => handlePageChange(page + 1)}
       >
-        <IonIcon icon="caret-forward-outline" />
+        <IonIcon icon={caretForwardOutline} />
       </button>
     </div>
   );

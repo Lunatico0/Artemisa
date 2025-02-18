@@ -3,6 +3,7 @@ import { ApiContext } from "../../context/apiContext.jsx";
 import { useParams, useSearchParams } from "react-router-dom";
 import { generateBreadcrumb, getCategoryNames } from "../utils/utilFunctions.jsx";
 import { IonIcon } from '@ionic/react';
+import { searchOutline } from 'ionicons/icons';
 
 const Filters = ({ breadcrumb = [] }) => {
   const { applyFilters, categories } = useContext(ApiContext);
@@ -92,7 +93,7 @@ const Filters = ({ breadcrumb = [] }) => {
             onClick={handleSearch} // 🔥 Botón de búsqueda
             className="px-3 py-1 text-textDark rounded-r bg-principal  hover:bg-secondary"
           >
-            <IonIcon icon="search-outline" />
+            <IonIcon icon={searchOutline} />
           </button>
         </div>
 

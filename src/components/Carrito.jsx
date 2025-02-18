@@ -3,6 +3,7 @@ import { CartContext } from '../context/CartContext';
 import { NavLink } from 'react-router-dom';
 import Loader from './utils/Loader.jsx';
 import { IonIcon } from '@ionic/react';
+import { cartOutline, trashOutline, bagCheckOutline } from 'ionicons/icons';
 
 const Carrito = () => {
   const {
@@ -24,7 +25,7 @@ const Carrito = () => {
             className='w-fit mx-2 px-4 py-2 m-0 backdrop-blur-md rounded-lg text-textDark dark:text-textLight bg-backgroundDark/20 dark:bg-backgroundLight/20'>
             Carrito
             <span className="relative top-1 left-1">
-              <IonIcon icon="cart-outline" />
+              <IonIcon icon={cartOutline} />
             </span>
           </h2>
 
@@ -111,7 +112,7 @@ const Carrito = () => {
                     uppercase cursor-pointer'
                     onClick={() => eliminarProducto(prod.product._id)}
                   >
-                    <IonIcon size='large' icon="trash-outline" />
+                    <IonIcon size='large' icon={trashOutline} />
                   </button>
                 </div>
               </div>
@@ -125,7 +126,7 @@ const Carrito = () => {
             >
               Vaciar carrito
               <span className="relative top-0.5 pl-1">
-                <IonIcon icon="trash-outline" />
+                <IonIcon icon={trashOutline} />
               </span>
             </button>
             <button className='bg-acento rounded-r-full pr-6 pl-3 py-1.5'>
@@ -134,7 +135,7 @@ const Carrito = () => {
                 to="/finalizar-compra"
               >
                 Finalizar Compra <span className="relative top-0.5 pl-1 no-underline">
-                  <IonIcon icon="bag-check-outline" />
+                  <IonIcon icon={bagCheckOutline} />
                   </span>
               </NavLink>
             </button>

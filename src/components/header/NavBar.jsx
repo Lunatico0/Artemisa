@@ -2,6 +2,7 @@ import { useContext, useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import ToggleButton from '../ToggleButton.jsx';
 import { IonIcon } from '@ionic/react';
+import { caretDownOutline, caretUpOutline } from 'ionicons/icons';
 import { ApiContext } from '../../context/apiContext.jsx';
 import { CartContext } from '../../context/CartContext.jsx';
 import { handleCategoryClick, handleSubcategoryClick, handleSubsubcategoryClick } from '../utils/utilFunctions.jsx';
@@ -58,15 +59,16 @@ const NavBar = () => {
                       onClick={() => toggleCategory(categoria.categoriaId)}
                       className="lg:hidden text-textDark dark:text-textLight"
                     >
-                      <IonIcon icon={openCategory === categoria.categoriaId ? "caret-down-outline" : "caret-up-outline"} />
+                      <IonIcon icon={openCategory === categoria.categoriaId ? caretDownOutline : caretUpOutline} />
                     </button>
                   )}
                 </div>
 
                 {/* 🔽 Subcategorías */}
                 <ul
-                  className={`lg:absolute lg:left-0 lg:top-full lg:hidden lg:group-hover:flex lg:flex-col bg-principal w-full lg:w-auto shadow-lg rounded transition-all pl-2
-                    ${openCategory === categoria.categoriaId ? "block" : "hidden"}`} // 📌 Estado en mobile, hover en desktop
+                  className={`lg:absolute lg:left-0 lg:top-full lg:hidden lg:group-hover:flex lg:flex-col bg-principal w-full lg:w-auto shadow-lg rounded transition-all ml-2 pl-2 md:ml-0 pr-2 md:pr-0
+                  ${openCategory === categoria.categoriaId ? "block" : "hidden"}`
+                }
                 >
                   {categoria.subcategorias.map((subcategoria) => (
                     <li className="relative w-full lg:w-auto group/sub" key={subcategoria.subcategoriaId}>
@@ -84,15 +86,15 @@ const NavBar = () => {
                             onClick={() => toggleSubcategory(subcategoria.subcategoriaId)}
                             className="lg:hidden text-textDark dark:text-textLight"
                           >
-                            <IonIcon icon={openSubcategory === subcategoria.subcategoriaId ? "caret-down-outline" : "caret-up-outline"} />
+                            <IonIcon icon={openSubcategory === subcategoria.subcategoriaId ? caretDownOutline : caretUpOutline} />
                           </button>
                         )}
                       </div>
 
                       {/* 🔽 Subsubcategorías */}
                       <ul
-                        className={`lg:absolute lg:left-full lg:top-0 lg:hidden lg:group-hover/sub:flex lg:flex-col lg:w-auto
-                        bg-secondary w-full shadow-lg rounded transition-all lg:-ml-4 pl-2
+                        className={`lg:absolute lg:left-full lg:top-0 lg:hidden lg:group-hover/sub:flex lg:flex-col lg:w-auto ml-2 pl-2 md:ml-0 pr-2 md:pr-0
+                        bg-secondary w-full shadow-lg rounded transition-all lg:-ml-4
                         ${openSubcategory === subcategoria.subcategoriaId ? "block" : "hidden"}`
                         }
                       >
@@ -104,7 +106,7 @@ const NavBar = () => {
                                 onClick={() =>
                                   handleSubsubcategoryClick(categoria, subcategoria, subsubcategoria, applyFilters, setBreadcrumb, navigate, closeMenu)
                                 }
-                                className="block px-8 py-2 no-underline text-textDark dark:text-textLight rounded hover:bg-secondary/70 w-full"
+                                className="block px-8 py-2 pl-2 no-underline text-textDark dark:text-textLight rounded hover:bg-secondary/70 w-full"
                               >
                                 {subsubcategoria.subsubcategoriaNombre}
                               </NavLink>
