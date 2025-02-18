@@ -4,8 +4,8 @@ import { useParams, useSearchParams } from "react-router-dom";
 import { generateBreadcrumb, getCategoryNames } from "../utils/utilFunctions.jsx";
 import { IonIcon } from '@ionic/react';
 
-const Filters = ({ setFilteredProducts, breadcrumb = [] }) => {
-  const { products, applyFilters, categories } = useContext(ApiContext);
+const Filters = ({ breadcrumb = [] }) => {
+  const { applyFilters, categories } = useContext(ApiContext);
   const [searchParams, setSearchParams] = useSearchParams();
   const currentSort = searchParams.get("sort") || "defa";
   const { categoryId, subcategoryId, subsubcategoryId } = useParams()

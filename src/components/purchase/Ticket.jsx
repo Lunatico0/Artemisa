@@ -8,12 +8,8 @@ const Ticket = () => {
   const { ticketId } = useParams();
   const [ticket, setTicket] = useState(location.state?.ticket || null);
   const { fetchTicketById } = useContext(ApiContext);
-  const options = {
-    weekday: "long",
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  };
+  const hourOptions = { hour: '2-digit', minute: '2-digit', hour12: false };
+  const dateOptions = { day: '2-digit', month: '2-digit', year: 'numeric' };
 
   useEffect(() => {
     const loadTicket = async () => {
@@ -48,7 +44,11 @@ const Ticket = () => {
           <p className='mb-1'><strong>Email:</strong> {ticket.purchaser.email}</p>
           <p className='mb-1'><strong>Teléfono:</strong> {ticket.purchaser.telefono}</p>
           <p className='mb-1'><strong>Dirección:</strong> {ticket.purchaser.direccion}, {ticket.purchaser.localidad}</p>
-          <p><strong>Fecha:</strong> {new Date(ticket.purchase_datetime).toLocaleString('en-GB', { hour12: false })}</p>
+          <p>
+            <strong>Fecha:</strong> {new Date(ticket.purchase_datetime).toLocaleDateString('es-ES', dateOptions)},
+            {new Date(ticket.purchase_datetime).toLocaleTimeString('es-ES', hourOptions)}
+          </p>
+
         </div>
 
         <div className="border-b pb-3 mb-3">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Input, Textarea, Button } from "@material-tailwind/react";
+import { Input, Textarea } from "@material-tailwind/react";
 import { Controller } from "react-hook-form";
 
 const CheckOutForm = ({ control, handleSubmit, comprar }) => {
@@ -14,6 +14,7 @@ const CheckOutForm = ({ control, handleSubmit, comprar }) => {
         <Controller
           name="nombre"
           control={control}
+          defaultValue=""
           render={({ field }) => (
             <Input color={`${darkTheme ? 'white' : 'black'}`} label="Nombre" {...field} required className="w-full border-none border-transparent" />
           )}
@@ -22,6 +23,7 @@ const CheckOutForm = ({ control, handleSubmit, comprar }) => {
         <Controller
           name="apellido"
           control={control}
+          defaultValue=""
           render={({ field }) => (
             <Input color={`${darkTheme ? 'white' : 'black'}`} label="Apellido" {...field} required className="w-full border-none border-transparent" />
           )}
@@ -30,6 +32,7 @@ const CheckOutForm = ({ control, handleSubmit, comprar }) => {
         <Controller
           name="email"
           control={control}
+          defaultValue=""
           render={({ field }) => (
             <Input color={`${darkTheme ? 'white' : 'black'}`} label="Email" type="email" {...field} required className="w-full border-none border-transparent" />
           )}
@@ -38,6 +41,7 @@ const CheckOutForm = ({ control, handleSubmit, comprar }) => {
         <Controller
           name="telefono"
           control={control}
+          defaultValue=""
           render={({ field }) => (
             <Input color={`${darkTheme ? 'white' : 'black'}`} label="Teléfono" type="tel" {...field} required className="w-full border-none border-transparent" />
           )}
@@ -46,6 +50,7 @@ const CheckOutForm = ({ control, handleSubmit, comprar }) => {
         <Controller
           name="direccion"
           control={control}
+          defaultValue=""
           render={({ field }) => (
             <Input color={`${darkTheme ? 'white' : 'black'}`} label="Dirección" {...field} required className="w-full border-none border-transparent" />
           )}
@@ -54,6 +59,7 @@ const CheckOutForm = ({ control, handleSubmit, comprar }) => {
         <Controller
           name="localidad"
           control={control}
+          defaultValue=""
           render={({ field }) => (
             <Input color={`${darkTheme ? 'white' : 'black'}`} label="Localidad" {...field} required className="w-full border-none border-transparent" />
           )}
@@ -62,6 +68,7 @@ const CheckOutForm = ({ control, handleSubmit, comprar }) => {
         <Controller
           name="comentarios"
           control={control}
+          defaultValue=""
           render={({ field }) => (
             <Textarea color={`${darkTheme ? 'white' : 'black'}`} label="Comentarios" {...field} className="col-sp border-none border-transparentan-2 w-full" />
           )}

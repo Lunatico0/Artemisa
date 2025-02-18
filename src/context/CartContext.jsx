@@ -160,7 +160,7 @@ export const CartProvider = ({ children }) => {
 
   // 🔹 Vaciar carrito
   const vaciarCarrito = async (confirm) => {
-    if(confirm){
+    if (confirm) {
       const confirmar = await confirmarAccion("¿Quieres eliminar este producto del carrito?");
       if (!confirmar) return;
     }
@@ -249,7 +249,7 @@ export const CartProvider = ({ children }) => {
   };
 
   const calcularCantidad = () => {
-    return carrito.reduce((acc, prod) => acc + prod.quantity, 0);
+    return new Set(carrito.map(prod => prod.product._id)).size;
   };
 
   const calcularTotal = () => {

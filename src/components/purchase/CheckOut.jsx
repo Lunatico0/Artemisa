@@ -87,7 +87,7 @@ const CheckOut = () => {
           <div
             className="flex flex-col px-2 pt-20 lg:pt-40 gap-3 z-20 lg:w-3/4 mx-auto h-[93dvh]"
           >
-            <div>
+            <div className="flex flex-col gap-2">
               {carrito.map(prod => (
                 <div key={prod.product._id} className="flex flex-row justify-between items-center border border-gray-800 rounded-lg gap-2 backdrop-blur-md">
                   <img
@@ -104,10 +104,18 @@ const CheckOut = () => {
                       <p className='flex gap-x-1 text-sm p-0 m-0 text-textDark dark:text-textLight'>{prod.product.description[0].label}: {prod.product.description[0].value}</p>
                     </div>
 
-                    <div className='flex flex-row w-full items-center justify-between pr-2'>
+                    <div className='flex flex-col md:flex-row items-start pr-2 justify-between'>
 
                       <p className='text-textDark dark:text-textLight font-semibold text-nowrap text-center m-0 p-0'>
-                        ${(prod.product.price * prod.quantity).toFixed(2)}
+                        Cant: {prod.quantity}
+                      </p>
+
+                      <p className='text-textDark dark:text-textLight font-semibold text-nowrap text-center m-0 p-0'>
+                        Precio unitario: ${prod.product.price.toFixed(2)}
+                      </p>
+
+                      <p className='text-textDark dark:text-textLight font-semibold text-nowrap text-center m-0 p-0'>
+                        Subtotal: ${(prod.product.price * prod.quantity).toFixed(2)}
                       </p>
                     </div>
 

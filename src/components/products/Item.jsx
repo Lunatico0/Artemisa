@@ -1,5 +1,5 @@
 import { useContext, useEffect, useRef, useState, useLayoutEffect } from 'react';
-import { useNavigate, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { CartContext } from '../../context/CartContext.jsx';
 import Carrusel from '../Carrusel.jsx';
 import { toast } from 'react-toastify';
@@ -38,7 +38,6 @@ const truncateText = (text, lines, containerRef) => {
 };
 
 const Item = ({ producto }) => {
-  const navigate = useNavigate();
   const defaultCant = 1;
   const descripcionRef = useRef(null);
   const titleRef = useRef(null);
