@@ -46,7 +46,10 @@ const Header = () => {
               sort: null,
               limit: 24,
             });
-            setBreadcrumb(null);
+            setBreadcrumb({
+              name: 'Todos los produtos',
+              path: `/`
+            });
           }}
         >
           ARTEMISA

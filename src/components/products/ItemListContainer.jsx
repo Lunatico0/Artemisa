@@ -4,15 +4,16 @@ import Item from "../products/Item.jsx";
 import Carrusel from "../Carrusel.jsx";
 import imagenes from "../../data/carruselImagenes.json";
 import { CartContext } from "../../context/CartContext.jsx";
-import { NavLink, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Loader from "../utils/Loader.jsx";
 import Filters from "./Filters.jsx";
 import Pagination from "./Pagination.jsx";
+import { getCategoryNames } from "../utils/utilFunctions.jsx";
 
 const ItemListContainer = () => {
   const { categoryId, subcategoryId, subsubcategoryId } = useParams();
-  const { products, loading, applyFilters, error } = useContext(ApiContext);
-  const { breadcrumb, viewWidth } = useContext(CartContext);
+  const { products, loading, applyFilters, error, categories } = useContext(ApiContext);
+  const { breadcrumb, setBreadcrumb, viewWidth } = useContext(CartContext);
   const [filteredProducts, setFilteredProducts] = useState(products);
   const mobileImages = []
 
@@ -28,7 +29,25 @@ const ItemListContainer = () => {
       subcategory: subcategoryId || null,
       subsubcategory: subsubcategoryId || null
     });
-  }, [categoryId, subcategoryId, subsubcategoryId]);
+
+    // Obtener nombres de las categorías
+    const { categoryName, subcategoryName, subsubcategoryName } = getCategoryNames(categoryId, subcategoryId, subsubcategoryId, categories);
+
+    // Crear el nuevo breadcrumb dinámicamente
+    const newBreadcrumb = [];
+    if (categoryName) {
+      newBreadcrumb.push({ name: categoryName, path: `/category/${categoryId}` });
+    }
+    if (subcategoryName) {
+      newBreadcrumb.push({ name: subcategoryName, path: `/category/${categoryId}/subcategory/${subcategoryId}` });
+    }
+    if (subsubcategoryName) {
+      newBreadcrumb.push({ name: subsubcategoryName, path: `/category/${categoryId}/subcategory/${subcategoryId}/subsubcategory/${subsubcategoryId}` });
+    }
+
+    // Actualizar el estado global del breadcrumb
+    setBreadcrumb(newBreadcrumb);
+  }, [categoryId, subcategoryId, subsubcategoryId, categories]);
 
   useEffect(() => {
     setFilteredProducts(products);

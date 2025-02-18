@@ -159,7 +159,12 @@ export const CartProvider = ({ children }) => {
   };
 
   // 🔹 Vaciar carrito
-  const vaciarCarrito = async () => {
+  const vaciarCarrito = async (confirm) => {
+    if(confirm){
+      const confirmar = await confirmarAccion("¿Quieres eliminar este producto del carrito?");
+      if (!confirmar) return;
+    }
+
     if (!cartId) return;
 
     try {

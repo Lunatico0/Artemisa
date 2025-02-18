@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { NavLink, useNavigate, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { CartContext } from '../../context/CartContext.jsx';
 import Carrusel from '../Carrusel.jsx';
 import { toast } from 'react-toastify';
@@ -8,14 +8,11 @@ import { generateBreadcrumb } from '../utils/utilFunctions.jsx';
 import Loader from '../utils/Loader.jsx';
 
 const ItemDetailContainer = () => {
-  const { agregarAlCarrito, handleChangeCantidad, cantidad, setCantidad, setBreadcrumb, viewWidth } = useContext(CartContext)
-  const { fetchProductById, loading, applyFilters, error, breadcrumb } = useContext(ApiContext);
+  const { agregarAlCarrito, handleChangeCantidad, cantidad, setCantidad, breadcrumb, setBreadcrumb, viewWidth } = useContext(CartContext)
+  const { fetchProductById, loading } = useContext(ApiContext);
   const [producto, setProducto] = useState(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const { id } = useParams();
-  const navigate = useNavigate();
-
-  console.log(breadcrumb)
 
   const scrollTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -24,8 +21,37 @@ const ItemDetailContainer = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       const product = await fetchProductById(id);
-      setProducto(product);
+      if (product) {
+        setProducto(product);
+
+        // 🔥 Create a breadcrumb dynamically based on the product category
+        if (product.category) {
+          const { categoriaNombre, categoriaId, subcategoria, subsubcategoria } = product.category;
+
+          const breadcrumbTrail = [
+            { name: categoriaNombre, path: `/category/${categoriaId}` }
+          ];
+
+          if (subcategoria) {
+            breadcrumbTrail.push({
+              name: subcategoria.subcategoriaNombre,
+              path: `/category/${categoriaId}/subcategory/${subcategoria.subcategoriaId}`
+            });
+          }
+
+          if (subcategoria.subsubcategoria) {
+            breadcrumbTrail.push({
+              name: subcategoria.subsubcategoria.subsubcategoriaNombre,
+              path: `/category/${categoriaId}/subcategory/${subcategoria?.subcategoriaId}/subsubcategory/${subcategoria.subsubcategoria.subsubcategoriaId}`
+            });
+          }
+
+          // Update breadcrumb state
+          setBreadcrumb(breadcrumbTrail);
+        }
+      }
     };
+
     scrollTop();
     fetchProduct();
   }, [id]);
@@ -56,7 +82,7 @@ const ItemDetailContainer = () => {
           <div className='relative mt-40 w-full lg:w-2/3 xl:w-1/2 mx-auto h-screen -top-20 md:top-0'>
 
             <div className='w-full px-2 pb-12'>
-            <nav className="mb-4">{generateBreadcrumb(breadcrumb)}</nav>
+              <nav className="mb-4">{generateBreadcrumb(breadcrumb)}</nav>
 
               {/* Item detail */}
               <div className="flex flex-col md:flex-row justify-between gap-2 md:gap-4">

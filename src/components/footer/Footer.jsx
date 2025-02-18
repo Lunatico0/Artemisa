@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
-import { FaWhatsapp, FaInstagram } from "react-icons/fa6";
 import { NavLink } from 'react-router-dom';
+import { IonIcon } from '@ionic/react';
 
 const Footer = () => {
   const [footerVisible, setFooterVisible] = useState(false);
@@ -74,10 +74,10 @@ const Footer = () => {
         {activeTab === "redes-sociales" && (
           <div className="flex justify-center gap-4">
             <a href="https://wa.me/+543435578195" target="_blank" className="text-3xl text-textLight">
-            <FaWhatsapp />
+            <IonIcon icon="logo-whatsapp" />
             </a>
             <a href="https://www.instagram.com/artemisapvc/" target="_blank" className="text-3xl text-textLight">
-            <FaInstagram />
+            <IonIcon icon="logo-instagram" />
             </a>
           </div>
         )}

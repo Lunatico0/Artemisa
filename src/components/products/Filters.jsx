@@ -2,6 +2,7 @@ import { useState, useContext, useEffect } from "react";
 import { ApiContext } from "../../context/apiContext.jsx";
 import { useParams, useSearchParams } from "react-router-dom";
 import { generateBreadcrumb, getCategoryNames } from "../utils/utilFunctions.jsx";
+import { IonIcon } from '@ionic/react';
 
 const Filters = ({ setFilteredProducts, breadcrumb = [] }) => {
   const { products, applyFilters, categories } = useContext(ApiContext);
@@ -43,7 +44,7 @@ const Filters = ({ setFilteredProducts, breadcrumb = [] }) => {
   };
 
   const handleSearch = () => {
-    if (searchQuery.trim() === "") return;
+    if (searchQuery.trim() === "") return; // Evita búsquedas vacías
     setSearchParams({ search: searchQuery });
     applyFilters({ search: searchQuery });
   };
@@ -91,7 +92,7 @@ const Filters = ({ setFilteredProducts, breadcrumb = [] }) => {
             onClick={handleSearch} // 🔥 Botón de búsqueda
             className="px-3 py-1 text-textDark rounded-r bg-principal  hover:bg-secondary"
           >
-            <ion-icon name="search-outline"></ion-icon>
+            <IonIcon icon="search-outline" />
           </button>
         </div>
 

@@ -1,6 +1,7 @@
 import { useContext, useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import ToggleButton from '../ToggleButton.jsx';
+import { IonIcon } from '@ionic/react';
 import { ApiContext } from '../../context/apiContext.jsx';
 import { CartContext } from '../../context/CartContext.jsx';
 import { handleCategoryClick, handleSubcategoryClick, handleSubsubcategoryClick } from '../utils/utilFunctions.jsx';
@@ -57,7 +58,7 @@ const NavBar = () => {
                       onClick={() => toggleCategory(categoria.categoriaId)}
                       className="lg:hidden text-textDark dark:text-textLight"
                     >
-                      <ion-icon name={openCategory === categoria.categoriaId ? "caret-down-outline" : "caret-up-outline"}></ion-icon>
+                      <IonIcon icon={openCategory === categoria.categoriaId ? "caret-down-outline" : "caret-up-outline"} />
                     </button>
                   )}
                 </div>
@@ -83,7 +84,7 @@ const NavBar = () => {
                             onClick={() => toggleSubcategory(subcategoria.subcategoriaId)}
                             className="lg:hidden text-textDark dark:text-textLight"
                           >
-                            <ion-icon name={openSubcategory === subcategoria.subcategoriaId ? "caret-down-outline" : "caret-up-outline"}></ion-icon>
+                            <IonIcon icon={openSubcategory === subcategoria.subcategoriaId ? "caret-down-outline" : "caret-up-outline"} />
                           </button>
                         )}
                       </div>

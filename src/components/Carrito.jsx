@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { CartContext } from '../context/CartContext';
 import { NavLink } from 'react-router-dom';
 import Loader from './utils/Loader.jsx';
+import { IonIcon } from '@ionic/react';
 
 const Carrito = () => {
   const {
@@ -11,7 +12,6 @@ const Carrito = () => {
     vaciarCarrito,
     loading,
     handleChangeCantidad,
-    viewWidth
   } = useContext(CartContext);
 
   return (
@@ -23,7 +23,9 @@ const Carrito = () => {
           <h2
             className='w-fit mx-2 px-4 py-2 m-0 backdrop-blur-md rounded-lg text-textDark dark:text-textLight bg-backgroundDark/20 dark:bg-backgroundLight/20'>
             Carrito
-            <span className="relative top-1 left-1"><ion-icon name="cart-outline"></ion-icon></span>
+            <span className="relative top-1 left-1">
+              <IonIcon icon="cart-outline" />
+            </span>
           </h2>
 
           <div className='flex flex-col -mt-3 pt-3 px-2 gap-3 max-h-[75dvh] overflow-auto'>
@@ -109,7 +111,7 @@ const Carrito = () => {
                     uppercase cursor-pointer'
                     onClick={() => eliminarProducto(prod.product._id)}
                   >
-                    <ion-icon size="large" name="trash-outline"></ion-icon>
+                    <IonIcon size='large' icon="trash-outline" />
                   </button>
                 </div>
               </div>
@@ -119,17 +121,21 @@ const Carrito = () => {
           <div className='px-2'>
             <button
               className='bg-hover dark:bg-bgFooter/60 backdrop-blur-lg text-textDark dark:text-textLight rounded-l-full pr-6 pl-3 py-1.5 items-center'
-              onClick={vaciarCarrito}
+              onClick={() => vaciarCarrito(true)}
             >
               Vaciar carrito
-              <span className="relative top-0.5 pl-1"><ion-icon name="trash-outline"></ion-icon></span>
+              <span className="relative top-0.5 pl-1">
+                <IonIcon icon="trash-outline" />
+              </span>
             </button>
             <button className='bg-acento rounded-r-full pr-6 pl-3 py-1.5'>
               <NavLink
                 className='no-underline text-textDark'
                 to="/finalizar-compra"
               >
-                Finalizar Compra <span className="relative top-0.5 pl-1 no-underline"><ion-icon name="bag-check-outline"></ion-icon></span>
+                Finalizar Compra <span className="relative top-0.5 pl-1 no-underline">
+                  <IonIcon icon="bag-check-outline" />
+                  </span>
               </NavLink>
             </button>
           </div>

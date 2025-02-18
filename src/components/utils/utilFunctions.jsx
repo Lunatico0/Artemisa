@@ -10,7 +10,10 @@ export const handleCategoryClick = (categoria, applyFilters, setBreadcrumb, navi
   applyFilters({ category: categoria.categoriaId, subcategory: null, subsubcategory: null });
 
   setBreadcrumb([
-    { name: categoria.categoriaNombre, path: `/category/${categoria.categoriaId}` }
+    {
+      name: categoria.categoriaNombre,
+      path: `/category/${categoria.categoriaId}`
+    }
   ]);
 
   navigate(`/category/${categoria.categoriaId}`);
@@ -22,8 +25,14 @@ export const handleSubcategoryClick = (categoria, subcategoria, applyFilters, se
   applyFilters({ category: categoria.categoriaId, subcategory: subcategoria.subcategoriaId, subsubcategory: null });
 
   setBreadcrumb([
-    { name: categoria.categoriaNombre, path: `/category/${categoria.categoriaId}` },
-    { name: subcategoria.subcategoriaNombre, path: `/category/${categoria.categoriaId}/subcategory/${subcategoria.subcategoriaId}` }
+    {
+      name: categoria.categoriaNombre,
+      path: `/category/${categoria.categoriaId}`
+    },
+    {
+      name: subcategoria.subcategoriaNombre,
+      path: `/category/${categoria.categoriaId}/subcategory/${subcategoria.subcategoriaId}`
+    }
   ]);
 
   navigate(`/category/${categoria.categoriaId}/subcategory/${subcategoria.subcategoriaId}`);
@@ -39,9 +48,18 @@ export const handleSubsubcategoryClick = (categoria, subcategoria, subsubcategor
   });
 
   setBreadcrumb([
-    { name: categoria.categoriaNombre, path: `/category/${categoria.categoriaId}` },
-    { name: subcategoria.subcategoriaNombre, path: `/category/${categoria.categoriaId}/subcategory/${subcategoria.subcategoriaId}` },
-    { name: subsubcategoria.subsubcategoriaNombre, path: `/category/${categoria.categoriaId}/subcategory/${subcategoria.subcategoriaId}/subsubcategory/${subsubcategoria.subsubcategoriaId}` }
+    {
+      name: categoria.categoriaNombre,
+      path: `/category/${categoria.categoriaId}`
+    },
+    {
+      name: subcategoria.subcategoriaNombre,
+      path: `/category/${categoria.categoriaId}/subcategory/${subcategoria.subcategoriaId}`
+    },
+    {
+      name: subsubcategoria.subsubcategoriaNombre,
+      path: `/category/${categoria.categoriaId}/subcategory/${subcategoria.subcategoriaId}/subsubcategory/${subsubcategoria.subsubcategoriaId}`
+    }
   ]);
 
   navigate(`/category/${categoria.categoriaId}/subcategory/${subcategoria.subcategoriaId}/subsubcategory/${subsubcategoria.subsubcategoriaId}`);
@@ -63,7 +81,6 @@ export const generateBreadcrumb = (breadcrumb) => {
   );
 };
 
-
 export const getCategoryNames = (categoryId, subcategoryId, subsubcategoryId, categories) => {
   let categoryName = null;
   let subcategoryName = null;
@@ -71,17 +88,14 @@ export const getCategoryNames = (categoryId, subcategoryId, subsubcategoryId, ca
 
   if (!categories || categories.length === 0) return { categoryName, subcategoryName, subsubcategoryName };
 
-  // Buscar la categoría principal
   const category = categories.find((cat) => cat.categoriaId === categoryId);
   if (category) {
     categoryName = category.categoriaNombre;
 
-    // Buscar la subcategoría si existe
     const subcategory = category.subcategorias.find((sub) => sub.subcategoriaId === subcategoryId);
     if (subcategory) {
       subcategoryName = subcategory.subcategoriaNombre;
 
-      // Buscar la sub-subcategoría si existe
       if (subcategory.subsubcategorias) {
         const subsubcategory = subcategory.subsubcategorias.find((subsub) => subsub.subsubcategoriaId === subsubcategoryId);
         if (subsubcategory) {

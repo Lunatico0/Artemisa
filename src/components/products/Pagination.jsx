@@ -1,6 +1,7 @@
 import { useContext, useEffect } from "react";
 import { ApiContext } from "../../context/apiContext.jsx";
 import { CartContext } from "../../context/CartContext.jsx";
+import { IonIcon } from '@ionic/react';
 
 const Pagination = () => {
   const { filters, applyFilters, dataWhithPagination } = useContext(ApiContext);
@@ -8,7 +9,7 @@ const Pagination = () => {
 
   const { page } = filters;
   const totalPages = dataWhithPagination?.totalPages ?? 1;
-  const maxNumbersToShow = viewWidth < 1024 ? 3 : 7;
+  const maxNumbersToShow = viewWidth < 1024 ? 3 : (totalPages <= 15 ? 5 : 7);
 
   useEffect(() => {
     if (!filters.page || filters.page < 1) {
@@ -25,75 +26,45 @@ const Pagination = () => {
   const generatePageNumbers = () => {
     if (!totalPages || totalPages < 1) return [1];
 
-    const pages = new Set(); // Usamos un Set para evitar duplicados
+    const pages = [];
     const half = Math.floor(maxNumbersToShow / 2);
-    const isMobile = viewWidth < 1024;
 
-    pages.add(1); // Siempre incluimos la primera página
+    pages.push(1);
 
-    if (isMobile) {
-      // --- Mobile Pagination ---
-      if (page > 3) {
-        pages.add("...");
-      }
+    let start = Math.max(2, page - half);
+    let end = Math.min(totalPages - 1, page + half);
 
-      if (page > 1 && page !== 1) {
-        pages.add(page - 1);
-      }
-
-      pages.add(page); // Página actual
-
-      if (page < totalPages && page !== totalPages) {
-        pages.add(page + 1);
-      }
-
-      if (page < totalPages - 2) {
-        pages.add("...");
-      }
-    } else {
-      // --- Desktop Pagination ---
-      if (page > half + 2) {
-        pages.add("...");
-      }
-
-      let start = Math.max(2, page - half);
-      let end = Math.min(totalPages - 1, page + half);
-
-      if (start === 2) {
-        end = Math.min(start + maxNumbersToShow - 2, totalPages - 1);
-      }
-      if (end === totalPages - 1) {
-        start = Math.max(2, end - maxNumbersToShow + 2);
-      }
-
-      for (let i = start; i <= end; i++) {
-        pages.add(i);
-      }
-
-      if (page < totalPages - half - 1) {
-        pages.add("...");
-      }
+    if (start > 2) {
+      pages.push("...");
     }
 
-    pages.add(totalPages); // Siempre incluimos la última página
+    for (let i = start; i <= end; i++) {
+      pages.push(i);
+    }
 
-    return Array.from(pages); // Convertimos el Set a Array antes de retornarlo
+    if (end < totalPages - 1) {
+      pages.push("...");
+    }
+
+    if (totalPages > 1) {
+      pages.push(totalPages);
+    }
+
+    return pages;
   };
-
-
 
   return (
     <div className="flex justify-center items-center gap-1 md:gap-2 mt-6">
 
       <button
         className={`px-2 py-1 md:px-3 md:py-2 md:block rounded-md text-white transition ${page === 1
-          ? "bg-gray-700 cursor-not-allowed"
-          : "bg-gray-500 hover:bg-gray-400"
+          ? "bg-bgFooter cursor-not-allowed"
+          : "bg-hover hover:bg-secondary"
           }`}
         disabled={page === 1}
         onClick={() => handlePageChange(page - 1)}
       >
-        <ion-icon name="caret-back-outline"></ion-icon>
+        <IonIcon icon="caret-back-outline" />
       </button>
 
       {generatePageNumbers().map((p, index) =>
@@ -104,7 +75,7 @@ const Pagination = () => {
             key={index}
             className={`px-2 py-1 md:px-3 md:py-2 md:block rounded-md transition ${p === page
               ? "bg-white text-black font-bold"
-              : "bg-gray-500 text-white hover:bg-gray-400"
+              : "bg-hover hover:bg-secondary text-white"
               }`}
             onClick={() => handlePageChange(p)}
           >
@@ -115,13 +86,13 @@ const Pagination = () => {
 
       <button
         className={`px-2 py-1 md:px-3 md:py-2 md:block rounded-md text-white transition ${page === totalPages
-          ? "bg-gray-700 cursor-not-allowed"
-          : "bg-gray-500 hover:bg-gray-400"
+          ? "bg-bgFooter cursor-not-allowed"
+          : "bg-hover hover:bg-secondary"
           }`}
         disabled={page === totalPages}
         onClick={() => handlePageChange(page + 1)}
       >
-        <ion-icon name="caret-forward-outline"></ion-icon>
+        <IonIcon icon="caret-forward-outline" />
       </button>
     </div>
   );
