@@ -4,11 +4,10 @@ import { useParams, useSearchParams } from "react-router-dom";
 import { generateBreadcrumb, getCategoryNames } from "../utils/utilFunctions.jsx";
 
 const Filters = ({ setFilteredProducts, breadcrumb = [] }) => {
-  const { products, applyFilters } = useContext(ApiContext);
+  const { products, applyFilters, categories } = useContext(ApiContext);
   const [searchParams, setSearchParams] = useSearchParams();
   const currentSort = searchParams.get("sort") || "defa";
-  const { categoryId, subcategoryId, subsubcategoryId } = useParams();
-  const { categories } = useContext(ApiContext);
+  const { categoryId, subcategoryId, subsubcategoryId } = useParams()
 
   const { categoryName, subcategoryName, subsubcategoryName } = getCategoryNames(categoryId, subcategoryId, subsubcategoryId, categories);
 
@@ -33,25 +32,26 @@ const Filters = ({ setFilteredProducts, breadcrumb = [] }) => {
 
   const [searchQuery, setSearchQuery] = useState("");
   const [sortOption, setSortOption] = useState(currentSort);
-  const [showFilters, setShowFilters] = useState(false); // Estado para mostrar/ocultar filtros en mobile
+  const [showFilters, setShowFilters] = useState(false);
 
   useEffect(() => {
     setSortOption(currentSort);
   }, [currentSort]);
 
-  const handleSearch = (query) => {
-    setSearchQuery(query);
-    if (!query) {
-      setFilteredProducts(products);
-      return;
+  const handleInputChange = (e) => {
+    setSearchQuery(e.target.value);
+  };
+
+  const handleSearch = () => {
+    if (searchQuery.trim() === "") return;
+    setSearchParams({ search: searchQuery });
+    applyFilters({ search: searchQuery });
+  };
+
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      handleSearch();
     }
-    const filtered = products.filter((product) =>
-      product.title.toLowerCase().includes(query.toLowerCase()) ||
-      (product.description && product.description.some((desc) =>
-        desc.value.toLowerCase().includes(query.toLowerCase())
-      ))
-    );
-    setFilteredProducts(filtered);
   };
 
   const handleSortChange = (e) => {
@@ -78,14 +78,22 @@ const Filters = ({ setFilteredProducts, breadcrumb = [] }) => {
         `}
       >
         {/* Barra de Búsqueda */}
-        <input
-          type="text"
-          placeholder="Buscar productos..."
-          value={searchQuery}
-          onChange={(e) => handleSearch(e.target.value)}
-          className={`w-full md:w-1/4 rounded border h-10 border-gray-500 dark:border-gray-600 px-2
-          focus:outline-none focus:ring-2 focus:ring-gray-400 ${showFilters && 'mb-2'}`}
-        />
+        <div className="flex">
+          <input
+            type="text"
+            placeholder="Buscar productos..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            onKeyDown={(e) => e.key === "Enter" && handleSearch()} // 🔥 Buscar al presionar Enter
+            className="w-full p-2 rounded-l border border-gray-300 dark:border-gray-600 focus:outline-none text-textDark"
+          />
+          <button
+            onClick={handleSearch} // 🔥 Botón de búsqueda
+            className="px-3 py-1 text-textDark rounded-r bg-principal  hover:bg-secondary"
+          >
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+        </div>
 
         {/* Breadcrumb */}
         {

@@ -27,7 +27,7 @@ function AppContent() {
       ></div>
       <div className="md:w-full md:mx-auto w-full">
         <div className="text-textDark h-screen mx-auto">
-          <div className="contenido">
+          <div className="contenido pb-20">
             <ToastContainer theme="dark" stacked autoClose={3000} position="bottom-right" />
             <Header />
             <Routes>

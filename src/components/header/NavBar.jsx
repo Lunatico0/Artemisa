@@ -1,6 +1,5 @@
 import { useContext, useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
-import CartWidget from './CartWidget.jsx';
 import ToggleButton from '../ToggleButton.jsx';
 import { ApiContext } from '../../context/apiContext.jsx';
 import { CartContext } from '../../context/CartContext.jsx';

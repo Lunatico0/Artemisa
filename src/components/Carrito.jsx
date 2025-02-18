@@ -10,7 +10,8 @@ const Carrito = () => {
     eliminarProducto,
     vaciarCarrito,
     loading,
-    handleChangeCantidad
+    handleChangeCantidad,
+    viewWidth
   } = useContext(CartContext);
 
   return (
@@ -18,7 +19,7 @@ const Carrito = () => {
       {loading ? (
         <Loader styles={"fixed lg:top-32 top-5 left-0 right-0 z-20 min-h-screen min-w-screen backdrop-blur-md mx-auto my-auto flex justify-center items-center"} />
       ) : carrito.length > 0 ? (
-        <div className="flex flex-col justify-between pt-20 lg:pt-40 gap-3 z-20 lg:w-3/4 mx-auto h-[93dvh]">
+        <div className={`flex flex-col justify-between pt-20 lg:pt-40 gap-3 z-20 lg:w-3/4 mx-auto h-[93dvh]`}>
           <h2
             className='w-fit mx-2 px-4 py-2 m-0 backdrop-blur-md rounded-lg text-textDark dark:text-textLight bg-backgroundDark/20 dark:bg-backgroundLight/20'>
             Carrito
@@ -136,8 +137,8 @@ const Carrito = () => {
 
         </div>
       ) : (
-        <div className="relative flex flex-col pt-24 px-2 gap-4 z-20 lg:w-3/4 mx-auto">
-          <h2>Tu carrito está vacío 😥</h2>
+        <div className="relative flex flex-col pt-20 lg:pt-40 px-2 gap-4 z-20 lg:w-3/4 mx-auto">
+          <h2 className='text-textDark dark:text-textLight'>Tu carrito está vacío 😥</h2>
         </div>
       )}
     </>

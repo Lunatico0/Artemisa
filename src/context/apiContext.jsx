@@ -10,6 +10,8 @@ export const ApiProvider = ({ children }) => {
   const [users, setUsers] = useState([]);
   const [carts, setCarts] = useState([]);
 
+  const [dataWhithPagination, setDataWPagination] = useState('')
+
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
@@ -18,8 +20,8 @@ export const ApiProvider = ({ children }) => {
     subcategory: null,
     subsubcategory: null,
     sort: null,
-    limit: 360,
-    page: 1,
+    search: null,
+    limit: 24,
   });
 
   const fetchData = async (endpoint, setData, responseKey = "payload", useFilters = true) => {
@@ -27,6 +29,7 @@ export const ApiProvider = ({ children }) => {
     setError(null);
     try {
       let url = `${BASE_URL}/${endpoint}`;
+
 
       if (useFilters) {
         const filterParams = { ...filters };
@@ -41,8 +44,11 @@ export const ApiProvider = ({ children }) => {
         url = `${url}?${params}`;
       }
 
+
       const response = await fetch(url);
       const data = await response.json();
+
+      setDataWPagination(data)
 
       if (response.ok && data.status === "success") {
         setData(data[responseKey]);
@@ -132,6 +138,7 @@ export const ApiProvider = ({ children }) => {
         filters,
         loading,
         error,
+        dataWhithPagination,
         fetchTicketById,
         applyFilters,
         fetchProductById,

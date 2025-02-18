@@ -7,11 +7,12 @@ import { CartContext } from "../../context/CartContext.jsx";
 import { NavLink, useParams } from "react-router-dom";
 import Loader from "../utils/Loader.jsx";
 import Filters from "./Filters.jsx";
+import Pagination from "./Pagination.jsx";
 
 const ItemListContainer = () => {
   const { categoryId, subcategoryId, subsubcategoryId } = useParams();
   const { products, loading, applyFilters, error } = useContext(ApiContext);
-  const { breadcrumb, viewWidth, setBreadcrumb } = useContext(CartContext);
+  const { breadcrumb, viewWidth } = useContext(CartContext);
   const [filteredProducts, setFilteredProducts] = useState(products);
   const mobileImages = []
 
@@ -59,6 +60,7 @@ const ItemListContainer = () => {
               ))
             }
           </div>
+          <Pagination />
         </main>
       )}
     </>

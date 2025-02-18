@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import { FaWhatsapp, FaInstagram } from "react-icons/fa6";
 import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
@@ -73,10 +74,10 @@ const Footer = () => {
         {activeTab === "redes-sociales" && (
           <div className="flex justify-center gap-4">
             <a href="https://wa.me/+543435578195" target="_blank" className="text-3xl text-textLight">
-              <ion-icon name="logo-whatsapp"></ion-icon>
+            <FaWhatsapp />
             </a>
             <a href="https://www.instagram.com/artemisapvc/" target="_blank" className="text-3xl text-textLight">
-              <ion-icon name="logo-instagram"></ion-icon>
+            <FaInstagram />
             </a>
           </div>
         )}

@@ -15,6 +15,8 @@ const ItemDetailContainer = () => {
   const { id } = useParams();
   const navigate = useNavigate();
 
+  console.log(breadcrumb)
+
   const scrollTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };

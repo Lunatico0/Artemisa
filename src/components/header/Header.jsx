@@ -44,8 +44,7 @@ const Header = () => {
               subcategory: null,
               subsubcategory: null,
               sort: null,
-              limit: 360,
-              page: 1,
+              limit: 24,
             });
             setBreadcrumb(null);
           }}
