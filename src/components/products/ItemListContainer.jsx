@@ -63,7 +63,7 @@ const ItemListContainer = () => {
         <main className="xl:w-3/4 mx-auto px-2 md:px-0 mt-20 lg:mt-40">
           <Carrusel
             className=""
-            imgClassName={`md:object-contain ${viewWidth <= 1024 ? 'top-0' : "-top-28"}`}
+            imgClassName={`md:object-contain ${viewWidth <= 1366 ? '-top-0' : "-top-28"}`}
             containerStyle={'h-auto md:min-h-96 min-h-48 flex item-center justify-center'}
             imagenes={viewWidth <= 1280 ? mobileImages : imagenes}
             autoPlay={true}

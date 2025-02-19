@@ -31,7 +31,7 @@ const Carrito = () => {
 
           <div className='flex flex-col -mt-3 pt-3 px-2 gap-3 max-h-[75dvh] overflow-auto'>
             {carrito.map(prod => (
-              <div key={prod.product._id} className="flex flex-row justify-between items-center border border-gray-800 rounded-lg gap-2 backdrop-blur-md">
+              <div key={prod.product._id} className="relative flex flex-row justify-between items-center border border-gray-800 rounded-lg gap-2 backdrop-blur-md">
                 <img
                   src={prod.product.thumbnails[0]}
                   alt={prod.product.title}
@@ -140,7 +140,6 @@ const Carrito = () => {
               </NavLink>
             </button>
           </div>
-
 
         </div>
       ) : (
