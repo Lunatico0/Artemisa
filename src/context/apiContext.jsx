@@ -53,8 +53,6 @@ export const ApiProvider = ({ children }) => {
           price: product.price * 1.4
         }));
 
-        console.log('updatedData', updatedData);
-
         setDataWPagination({ ...data, [responseKey]: updatedData });
         setData(updatedData);
       } else {
