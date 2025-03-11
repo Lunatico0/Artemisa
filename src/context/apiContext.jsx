@@ -30,7 +30,6 @@ export const ApiProvider = ({ children }) => {
     try {
       let url = `${BASE_URL}/${endpoint}`;
 
-
       if (useFilters) {
         const filterParams = { ...filters };
 
@@ -44,14 +43,20 @@ export const ApiProvider = ({ children }) => {
         url = `${url}?${params}`;
       }
 
-
       const response = await fetch(url);
       const data = await response.json();
 
-      setDataWPagination(data)
-
       if (response.ok && data.status === "success") {
-        setData(data[responseKey]);
+        // Multiplicar el precio de cada producto por 1.4
+        const updatedData = data[responseKey].map(product => ({
+          ...product,
+          price: product.price * 1.4
+        }));
+
+        console.log('updatedData', updatedData);
+
+        setDataWPagination({ ...data, [responseKey]: updatedData });
+        setData(updatedData);
       } else {
         throw new Error(data.message || "Error fetching data");
       }
